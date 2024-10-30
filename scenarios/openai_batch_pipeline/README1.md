@@ -183,7 +183,7 @@ Call logs are uploaded to a designated location in blob storage. This upload wil
 
 1. In the [Azure portal](https://portal.azure.com), navigate to **synapseworkspace<inject key="DeploymentID" enableCopy="false"/>** synapse workspace from **openai-<inject key="DeploymentID" enableCopy="false"/>** resource group. From the **Overview** tab, click on **Open** to launch the Synapse workspace.
 
-      ![](images/openai-5.png)
+      ![](images/image(9).png)
 
 1. Click into the **Develop (1)** section of the Synapse Studio, click the **+ (2)** sign in the top left, and select **SQL script (3)**. This will open a new window with a SQL script editor. 
 
