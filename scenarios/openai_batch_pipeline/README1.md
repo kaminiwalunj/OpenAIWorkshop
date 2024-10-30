@@ -130,21 +130,58 @@ Call logs are uploaded to a designated location in blob storage. This upload wil
 
 ## Task 2: Set up Synapse Workspace
 
-### **A. create synape workspace & sql pool**
+### **A. Create Synape Workspace & SQL Pool**
 
 1. In Azure portal, search for **Synapse** and select **Azure Synapse Analytics**.
 
+   ![](images/image(1).png)
+
 2. On the **Azure Synapse Analytics** page, Click on **+ Create**.
 3. You will be navigated to **Create Synapse Analytics** page where you will be configuring the synapse workspace.
-4. Provide the following details for creating a synapse workspace:
+4. On the Basics tab provide the following details :
 
-   **Subscription** : Use **Existing Subscription**.
-   **Resource Group** : Use **openai-<inject key="DeploymentID" enableCopy="false"></inject>**
-   **Workspace name** : **synapseworkspace<inject key="DeploymentID" enableCopy="false"></inject>**
+   - **Subscription** : Use **Existing Subscription(1)**.
+   - **Resource Group** : Use **openai-<inject key="DeploymentID" enableCopy="false"></inject>(2)**
+   - **Workspace name** : **synapseworkspace<inject key="DeploymentID" enableCopy="false"></inject>(3)**
+   - **Region** : Select Default region(4)
+   - **Select Data Lake Storage Gen2** : Select **From Subscription(5)**
+   - **Account name** : **asadatalake<inject key="DeploymentID" enableCopy="false"></inject>(6)**
+   - **File system name** : **defaultfs(7)**
+   - Click on **Next : Security>(8)**
 
-### **A. Create Target SQL Table**
+     ![](images/image(2).png)
 
-1. In the [Azure portal](https://portal.azure.com), navigate to **asaworkspace<inject key="DeploymentID" enableCopy="false"/>** synapse workspace from **openai-<inject key="DeploymentID" enableCopy="false"/>** resource group. From the **Overview** tab, click on **Open** to launch the Synapse workspace.
+5. On the **Security** tab, ensure that the Authentication method is set to **Use both local and Microsoft Entra ID authentication** and click on **Next: Networkikng**
+
+   ![](images/image(3).png)
+
+6. On the networking tab, make sure Managed virtual network is **Disable(1)** and **Allow connections from all IP addresses(2)** is checked then click on **Review + Create** and **Create** to deploy the resource.
+
+   ![](images/image(4).png)
+   
+7. Once the resource is deployed click on **Go to resource group**
+
+   ![](images/image(5).png)
+
+8. Navigate to the synapse workspace which you have created, Select **SQL Pools(1)** from left pane under Analytics pools and click on **+ New(2)**.
+
+   ![](images/image(6).png)   
+
+9. On the Basics tab of New dedicated SQL pool provide the following details:
+
+    - **Dedicated SQL pool name** : **openaisql01**
+    - **Performance level** : Reduce it to **DW100c**
+    - Click on **Next: Additional settings**
+   
+      ![](images/image(7).png)
+      
+10. Click on **Review + create** and wait for the deployment to complete.
+
+    ![](images/image(8).png) 
+   
+### **B. Create Target SQL Table**
+
+1. In the [Azure portal](https://portal.azure.com), navigate to **synapseworkspace<inject key="DeploymentID" enableCopy="false"/>** synapse workspace from **openai-<inject key="DeploymentID" enableCopy="false"/>** resource group. From the **Overview** tab, click on **Open** to launch the Synapse workspace.
 
       ![](images/openai-5.png)
 
@@ -152,7 +189,7 @@ Call logs are uploaded to a designated location in blob storage. This upload wil
 
       ![](images/synapse3.png)
 
-1. Copy and paste the following script into the editor **(1)**, then change the **Connect to** value by selecting **openaisql (2)** from the drop-down, and for **Use database**, ensure that **openaisql (3)** is selected, and click the **Run (4)** button in the top-left corner, as shown in the picture below. Finish this step by pressing **Publish all (5)** just above the **Run** button to publish our work thus far.
+1. Copy and paste the following script into the editor **(1)**, then change the **Connect to** value by selecting **openaisql01(2)** from the drop-down, and for **Use database**, ensure that **openaisql01(3)** is selected, and click the **Run (4)** button in the top-left corner, as shown in the picture below. Finish this step by pressing **Publish all (5)** just above the **Run** button to publish our work thus far.
 
     ```SQL 
     CREATE TABLE [dbo].[cs_detail]
@@ -171,7 +208,7 @@ Call logs are uploaded to a designated location in blob storage. This upload wil
 
       ![](images/publish-sqlscript.png)
 
-### **B. Create Source and Target Linked Services**
+### **C. Create Source and Target Linked Services**
 
 We'll next need to create two linked services: one for our source (the JSON files in the Data Lake) and another for the Synapse SQL Database that houses the table we created in the previous step.
 
@@ -199,7 +236,7 @@ We'll next need to create two linked services: one for our source (the JSON file
 
       ![](images/publish-linked.png)
    
-### **C. Create Synapse Data Flow**
+### **D. Create Synapse Data Flow**
 
 While still within the Synapse Studio, we will now need to create a **Data flow** to ingest our JSON data and write it to our SQL database. For this workshop, this will be a very simple data flow that ingests the data, renames some columns, and writes it back out to the target table.
 
@@ -286,7 +323,7 @@ While still within the Synapse Studio, we will now need to create a **Data flow*
 
       ![](images/completed-dataflow.png)
 
-### **D. Create Synapse Pipeline**
+### **E. Create Synapse Pipeline**
 
 1. Once we have created our **Data flow**, we will need to set up a **Pipeline** to house it. To create a **Pipeline**, navigate to the left-hand menu bar and choose the **Integrate (1)** option. Then click the **+ (2)** at the top of the Integrate menu to **Add a new resource** and choose **Pipeline (3)**.
 
@@ -303,7 +340,7 @@ Then expand the **Staging (3)** section at the bottom of the settings and utiliz
 
 4. Then click **Publish all** to publish your changes and save your progress.
 
-### **E. Trigger Synapse Pipeline**
+### **F. Trigger Synapse Pipeline**
 
 1. Once you have successfully published your work, we need to trigger our pipeline. To do this, just below the tabs at the top of the studio, there is a *lightning bolt* icon that says **Add trigger (1)**. Click to add a trigger and select **Trigger now (2)** to begin a pipeline run then when the window opens up click on **OK**.
 
