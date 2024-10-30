@@ -130,6 +130,18 @@ Call logs are uploaded to a designated location in blob storage. This upload wil
 
 ## Task 2: Set up Synapse Workspace
 
+### **A. create synape workspace & sql pool**
+
+1. In Azure portal, search for **Synapse** and select **Azure Synapse Analytics**.
+
+2. On the **Azure Synapse Analytics** page, Click on **+ Create**.
+3. You will be navigated to **Create Synapse Analytics** page where you will be configuring the synapse workspace.
+4. Provide the following details for creating a synapse workspace:
+
+   **Subscription** : Use **Existing Subscription**.
+   **Resource Group** : Use **openai-<inject key="DeploymentID" enableCopy="false"></inject>**
+   **Workspace name** : **synapseworkspace<inject key="DeploymentID" enableCopy="false"></inject>**
+
 ### **A. Create Target SQL Table**
 
 1. In the [Azure portal](https://portal.azure.com), navigate to **asaworkspace<inject key="DeploymentID" enableCopy="false"/>** synapse workspace from **openai-<inject key="DeploymentID" enableCopy="false"/>** resource group. From the **Overview** tab, click on **Open** to launch the Synapse workspace.
