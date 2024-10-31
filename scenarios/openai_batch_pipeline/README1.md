@@ -130,7 +130,7 @@ Call logs are uploaded to a designated location in blob storage. This upload wil
 
 ## Task 2: Set up Synapse Workspace
 
-### **A. Create Synape Workspace & SQL Pool**
+### **A. Setup Synape Workspace**
 
 1. In Azure portal, search for **Synapse** and select **Azure Synapse Analytics**.
 
@@ -177,7 +177,21 @@ Call logs are uploaded to a designated location in blob storage. This upload wil
       
 10. Click on **Review + create** and wait for the deployment to complete.
 
-    ![](images/image(8).png) 
+    ![](images/image(8).png)
+
+11. Now navigate back to the synapseworkspace<inject key="DeploymentID" enableCopy="false"></inject>, select **Apache Spark pools** from left pane under Analytics pools and click on **+ New**.
+
+    ![](images/image(01).png)  
+
+12. On New Apache Spark pool page, provide the following details and click on **Review + Create** then **Create** on the Review + Create tab to create the Apache Spark pool.
+
+    - **Apache Spark pool name** : **openaisparkpool**
+    - **Isolated Compute** : **Disabled**
+    - **Node size** : **Small(4vCores/32GB)**
+    - **Autoscale** : **Disabled**
+    - **Number of nodes** : **3**
+
+    ![](images/image(02).png)
    
 ### **B. Create Target SQL Table**
 
