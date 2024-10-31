@@ -175,7 +175,7 @@ Call logs are uploaded to a designated location in blob storage. This upload wil
    
       ![](images/image(7).png)
       
-10. Click on **Review + create** and wait for the deployment to complete.
+10. Click on **Review + create** then **Create** and wait for the deployment to complete.
 
     ![](images/image(8).png)
 
