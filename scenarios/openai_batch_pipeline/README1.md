@@ -191,7 +191,7 @@ Call logs are uploaded to a designated location in blob storage. This upload wil
     - **Autoscale** : **Disabled**
     - **Number of nodes** : **3**
 
-    ![](images/image(02).png)
+      ![](images/image(02).png)
    
 ### **B. Create Target SQL Table**
 
