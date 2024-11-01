@@ -8,17 +8,17 @@ In this lab, participants will develop an application using OpenAI's APIs and Py
 
       ![](images/p2.png)
 
-1. On **Azure Synapse Analytics** window select **asaworkspace<inject key="DeploymentID" enableCopy="false"/>**.   
+1. On **Azure Synapse Analytics** window select **synapseworkspace<inject key="DeploymentID" enableCopy="false"/>**.   
 
 1. On the **Overview** blade under the **Getting started** section, click **Open** to open Synapse Studio.
      
-     ![](images/open-workspace.png)
+     ![](../openai_batch_pipeline/images/image(9).png)
     
 1. Click on **Develop (1)**, then click on **+ (2)**, and select **Import**.
 
     ![](images/import-note.png)
 
-1. Navigate to the `C:\labfile\OpenAIWorkshop\scenarios\powerapp_and_python\python` location and select `OpenAI_notebook.ipynb`, then click on **Open**.
+1. Navigate to the `C:\labfile\OpenAIWorkshop-main\scenarios\powerapp_and_python\python` location and select `OpenAI_notebook.ipynb`, then click on **Open**.
 
      ![](images/notebook.png)
 
