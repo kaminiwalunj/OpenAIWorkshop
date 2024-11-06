@@ -14,7 +14,7 @@ You will be able to complete the following tasks:
 
 # Architecture Diagram
 
-   ![](images/batcharch.png)
+   ![](images/batcharch1.png)
 
 Call logs are uploaded to a designated location in blob storage. This upload will trigger the Azure Function, which utilizes the [Azure OpenAI Service](https://azure.microsoft.com/en-us/products/cognitive-services/openai-service/) for summarization, sentiment analysis, the product offering the conversation was about, the topic of the call, as well as a summary of the call. These results are written in a separate designated location in the blob storage. From there, Synapse Analytics is utilized to pull in the newly cleansed data to create a table that can be queried to derive further insights. 
 
