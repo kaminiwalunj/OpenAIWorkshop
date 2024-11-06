@@ -55,6 +55,8 @@ Call logs are uploaded to a designated location in blob storage. This upload wil
     
     ![](images/cloudshell.png)
 
+    > **Note**: Please disregard the warning `the storage file share subscription ID is not registered to Microsoft.CloudShell Namespace` and proceed with the next task.
+
 ### B. Upload files to a storage account:
 
 1. Run the following commands in the cloud shell to download and install Miniconda.
