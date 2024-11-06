@@ -55,12 +55,10 @@ Let's go ahead and launch the Azure OpenAI playground to learn about prompt engi
    
    > **Note**: Chat may not respond with the exact output as shown in the screenshots. Following are the examples of what you'll most likely see in this exercise, but the response may vary.
  
-
-
 ---
 ## Basic Prompt Examples
 
-> **Note:** Please feel free to enter anything listed in the `Prompt:` box into a `text-davinci-003` model in the [Azure OpenAI Studio's Playground](https://oai.azure.com/portal/playground) to follow along with these prompt examples. Be aware that you may receive different outputs than what is listed in the `Output:` box, given the nature of generative models
+> **Note:** Please feel free to enter anything listed in the `Prompt:` box into a `gpt-35-turbo-instruct` model in the [Azure OpenAI Studio's Playground](https://oai.azure.com/portal/playground) to follow along with these prompt examples. Be aware that you may receive different outputs than what is listed in the `Output:` box, given the nature of generative models
 
 You can achieve a lot with prompts, but the quality of results depends on how much information you provide in the prompt without being overly descriptive. A prompt can contain information like instructions or questions. As we will learn later with more advanced prompts, we can also supply examples of required outputs as well as context for our instructions.
 
@@ -76,11 +74,11 @@ GPT-3 is
  It is a large-scale language model that uses deep learning techniques to generate human-like text. GPT-3 uses a
  transformer-based architecture to generate text with context
 ```
-> **Note:**  The `Output` in our example ends abruptly because our **Max length (tokens)** variable is set to `=60`. **Max Length (tokens)** sets a limit on the number of tokens to generate in a response. The `text_davinci-003` model supports a maximum of 2048 tokens shared between a given prompt and response completion. (One token is roughly 4 characters for typical English text.)
+> **Note:**  The `Output` in our example ends abruptly because our **Max length (tokens)** variable is set to `=60`. **Max Length (tokens)** sets a limit on the number of tokens to generate in a response. The `gpt-35-turbo-instruct` model supports a maximum of 4000 tokens shared between a given prompt and response completion. (One token is roughly 4 characters for typical English text.)
 
-The `Output:` is a series of strings that make sense given the context provided by our prompt of `"GPT3-3 is"`. However, the output may be unwanted or unexpected based on our use-case. How can we refine, or engineer, our prompt in order to achieve our desired output?
+The `Output:` is a series of strings that make sense given the context provided by our prompt of `"GPT3-3 is"`. However, the output may be unwanted or unexpected based on our use case. How can we refine, or engineer, our prompt to achieve our desired output?
 
-The first thing we can do is provide explicit instructions as to what we want the model to do with our previous prompt. This is what is meant by _prompt engineering_: refining the input so as to produce the best output from the LLM.
+The first thing we can do is provide explicit instructions as to what we want the model to do with our previous prompt. This is what is meant by _prompt engineering_: refining the input to produce the best output from the LLM.
 
 *Prompt:*
 ```
@@ -93,10 +91,11 @@ GPT-3 is so intelligent that it can tell a joke without a punchline.
 ```
 
 Did our instructions improve our output? Admittedly, this is not the funniest joke ever told. And unlike supervised learning problems, there is no easy error or loss metric to compare between the two outputs. Let's look at exactly what we asked the model to generate and what we received:
+
 | Requirement | Output Meets Requirement? | 
-|-------------|--------|
+| ------------- | -------- |
 | Begin with the words, "GPT-3 is" | Yes, the `Output:` began with the words "GPT-3 is" |
-| The output be in the form of a joke | An attempt was made |
+| The output is in the form of a joke | An attempt was made |
 
 ---
 ## Standard Prompts
@@ -211,23 +210,21 @@ Not all the components are required for a prompt, and the format depends on the 
 
 There are many parameters that you can adjust to change the performance of your model:
 
-- **Temperature** - Controls randomness. Lowering the temperature means that the model produces more repetitive and deterministic responses. Increasing the temperature results in more unexpected or creative responses. Try adjusting temperature or Top P but not both.
+- **Parameters**: Custom parameters that alter the model responses. When you are starting out we recommend using the defaults for most parameters
 
-- **Max length (tokens)e** - Set a limit on the number of tokens per model response. The API supports a maximum of 4000 tokens shared between the prompt (including system message, examples, message history, and user query) and the model's response. One token is roughly four characters for typical English text.
+- **Past messages included**: Select the number of past messages to include in each new API request. This helps give the model context for new user queries. Setting this number to 10 will include 5 user queries and 5 system responses.
 
-- **Stop sequencese** - Make responses stop at a desired point, such as the end of a sentence or list. Specify up to four sequences where the model will stop generating further tokens in a response. The returned text won't contain the stop sequence.
+-  **Temperature**: Controls randomness. Lowering the temperature means that the model produces more repetitive and deterministic responses. Increasing the temperature results in more unexpected or creative responses. Try adjusting temperature or Top P but not both.
 
-- **Top probabilities (Top P)e** - Similar to temperature, this controls randomness but uses a different method. Lowering Top P narrows the model’s token selection to likelier tokens. Increasing Top P lets the model choose from tokens with both high and low likelihood. Try adjusting temperature or Top P but not both.
+- **Max response (tokens)**:	Set a limit on the number of tokens per model response. The API on the latest models supports a maximum of 128,000 tokens shared between the prompt (including system message, examples, message history, and user query) and the model's response. One token is roughly four characters for typical English text.
 
-- **Frequency penaltye** - Reduces the chance of repeating a token proportionally based on how often it has appeared in the text so far. This decreases the likelihood of repeating the exact same text in a response.
+- **Top p**:	Similar to temperature, this controls randomness but uses a different method. Lowering Top P narrows the model’s token selection to likelier tokens. Increasing Top P lets the model choose from tokens with both high and low likelihood. Try adjusting temperature or Top P but not both.
 
-- **Presence penaltye** - Reduce the chance of repeating any token that has appeared in the text at all so far. This increases the likelihood of introducing new topics in a response.
+- **Stop sequences**:	Stop sequence make the model end its response at a desired point. The model response ends before the specified sequence, so it won't contain the stop sequence text. For GPT-35-Turbo, using <|im_end|> ensures that the model response doesn't generate a follow-up user query. You can include as many as four-stop sequences.
 
-- **Pre-response texte** - Insert text after the user’s input and before the model’s response. This can help prepare the model for a response.
+- **Frequency penalty**: Reduces the chance of repeating a token proportionally based on how often it has appeared in the text so far. This decreases the likelihood of repeating the exact same text in a response.
 
-- **Post-response texte** - Insert text after the model’s generated response to encourage further user input, as when modeling a conversation.
-
-- **Max response** - Set a limit on the number of tokens per model response. The API supports a maximum of 4000 tokens shared between the prompt (including system message, examples, message history, and user query) and the model's response. One token is roughly four characters for typical English text.
+- **Presence penalty**: Reduce the chance of repeating any token that has appeared in the text at all so far. This increases the likelihood of introducing new topics in a response.
 
 The Current token count is viewable from the Chat playground. Since the API calls are priced by token and it's possible to set a max response token limit, you'll want to keep an eye out for the current token count to make sure the conversation-in doesn't exceed the max response token count.
 
