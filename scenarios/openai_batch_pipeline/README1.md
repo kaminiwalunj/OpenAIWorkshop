@@ -104,7 +104,7 @@ Call logs are uploaded to a designated location in blob storage. This upload wil
 
 1. In the [Azure portal](https://portal.azure.com), navigate to your Storage Account with the suffix `functions` resource by selecting the **openai-<inject key="DeploymentID" enableCopy="false"/>** resource group and selecting the Storage Account from the list of resources.
 
-    ![](images/storage-functions.png)
+    ![](images/storage-functions-new.png)
     
 1. Switch to the **Access keys (1)** blade and select **Show (2)**, which is next to the Connection String value. Select the copy button for the first **connection string (3)**. Paste the value into a text editor, such as Notepad.exe, for later reference.
 
