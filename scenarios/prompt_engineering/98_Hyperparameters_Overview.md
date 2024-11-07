@@ -12,7 +12,7 @@ When working with prompts, you will be interacting with the LLM via an API or di
 
 The general recommendation is to alter one, not both.
 
-### text-davinci-003 model
+### gpt-35-turbo-instruct model
 
 **temperature**
 ```
