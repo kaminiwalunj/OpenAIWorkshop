@@ -12,12 +12,6 @@ You will be able to complete the following tasks:
 - Task 2: Set up Synapse Workspace
 - Task 3: Query Results in Our SQL Table
 
-# Architecture Diagram
-
-   ![](images/batcharch1.png)
-
-Call logs are uploaded to a designated location in blob storage. This upload will trigger the Azure Function, which utilizes the [Azure OpenAI Service](https://azure.microsoft.com/en-us/products/cognitive-services/openai-service/) for summarization, sentiment analysis, the product offering the conversation was about, the topic of the call, as well as a summary of the call. These results are written in a separate designated location in the blob storage. From there, Synapse Analytics is utilized to pull in the newly cleansed data to create a table that can be queried to derive further insights. 
-
 ## Task 1: Ingest Data to Storage account
 
 ### A. Launch Azure Cloud Shell
