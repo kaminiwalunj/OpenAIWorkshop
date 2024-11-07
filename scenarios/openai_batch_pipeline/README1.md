@@ -385,6 +385,6 @@ Then expand the **Staging (3)** section at the bottom of the settings and utiliz
 
 ## Summary
 
-In this lab, you have ingested Data to Storage account, set up Synapse Workspace and produced Query Results in Our SQL Table.
+In this lab, you have uploaded the ingested Data in a Storage account, set up Synapse Workspace and produced Query Results in Our SQL Table.
 
 ### You have successfully completed the lab
