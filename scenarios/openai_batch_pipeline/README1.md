@@ -368,7 +368,7 @@ Then expand the **Staging (3)** section at the bottom of the settings and utiliz
 
       ![](images/pipline-succeeded.png)
 
-2. Now that the data is in the target table, it is available for usage by running SQL queries against it or connecting PowerBI and creating visualizations. The Azure Function is running as well, so try uploading some of the transcript files to the generated_documents folder in your container and see how the function processes it and creates a new file in the cleansed_documents file.
+2. Now that the data is in the target table, it is available for usage by running SQL queries against it or connecting PowerBI and creating visualizations. Upload some of the transcript files to the generated_documents folder in your container and see how it creates a new file in the cleansed_documents file.
 
 3. To query the new data, navigate to the menu on the left-hand side, and choose **Develop (1)**. Click on the existing **SQL Script (2)** and replace the content with the **SQL Code (3)** below. Then select **openaisql (4)** pool **Run (5)**. 
 
@@ -385,6 +385,6 @@ Then expand the **Staging (3)** section at the bottom of the settings and utiliz
 
 ## Summary
 
-This scenario allows the use of OpenAI to summarize and analyze customer service call logs for the fictitious company, Contoso. The data is ingested into a blob storage account and then processed by an Azure function. The Azure Function will return the customer sentiment, the product offering the conversation was about, the topic of the call, as well as a summary of the call. These results are written in a separate, designated location in the blob storage. From there, Synapse Analytics is utilized to pull in the newly cleansed data to create a table that can be queried to derive further insights.
+In this lab, you have ingested Data to Storage account, set up Synapse Workspace and produced Query Results in Our SQL Table.
 
 ### You have successfully completed the lab
