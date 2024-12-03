@@ -16,7 +16,7 @@ This lab focuses on creating an application using OpenAI capabilities integrated
 
     ![](./images/upload-importpackage.png)
 
-4. Navigate to `C:\labfile\OpenAIWorkshop-main\OpenAIWorkshop-main\scenarios\powerapp_and_python\powerapp` Select the **OpenAI-Playground_20230302010547.zip (1)** folder and click on **Open (2)**.
+4. Navigate to `C:\labfile\OpenAIWorkshop-main\scenarios\powerapp_and_python\powerapp` Select the **OpenAI-Playground_20230302010547.zip (1)** folder and click on **Open (2)**.
 
      ![](./images/openai-play.png)
 
