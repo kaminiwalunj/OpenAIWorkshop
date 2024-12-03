@@ -34,7 +34,7 @@ This lab focuses on creating an application using OpenAI capabilities integrated
 
    ![](./images/import-openai-package.png)
 
-9. Once the import is completed, click on **Apps (1)**, then click on `...` **(2)** next to **OpenAI Playground**, and click on **Edit (3)**.
+9. Once the import is completed, click on **Apps (1)**, then click on `⋮` **(2)** next to **OpenAI Playground**, and click on **Edit (3)**.
 
       ![](./images/powerapps-apps-edit.png)
 
