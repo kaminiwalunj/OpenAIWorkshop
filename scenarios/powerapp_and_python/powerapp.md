@@ -64,7 +64,7 @@ This lab focuses on creating an application using OpenAI capabilities integrated
 
      ![](./images/canves-play.png)
 
-17. If you get a popup asking to start a free trial, click on **Star a Free Trial**, then on **You need a Power Apps license to use this app** window select **Start a 30-day trial**. choose your region from the drop-down menu and click on the **Get started** button wait for 2-3 minutes It might take to start the trial.
+17. If you get a popup asking to start a free trial, click on **Star a Free Trial**, then on **You need a Power Apps license to use this app** window select **Start a 30-day trial**. choose your region from the drop-down menu and click on the **Start my trail** button wait for 2-3 minutes It might take to start the trial.
     
 18. In the **Canvas**, click on **Summary** **(1)** button and verify the **auto-filled text** **(2)**. Then click on the **Submit** **(3)** button to get the desired **Summary** **(4)**.
 
