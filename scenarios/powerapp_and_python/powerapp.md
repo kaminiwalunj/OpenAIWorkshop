@@ -34,39 +34,39 @@ This lab focuses on creating an application using OpenAI capabilities integrated
 
    ![](./images/import-openai-package.png)
 
-9. Once the import is completed, click on **Apps (1)**, then click on `⋮` **(2)** next to **OpenAI Playground**, and click on **Edit (3)**.
+9. Once the import is completed, Click on **Get Started**, click on **Apps (1)**, then click on `⋮` **(2)** next to **OpenAI Playground**, and click on **Edit (3)**.
 
       ![](./images/powerapps-apps-edit.png)
 
    >**Note**: If you're unable to see the **OpenAI Playground** option, please wait for 5 minutes, and in the meantime, try refreshing the page.
 
-10. You will observe that it has imported the Power App canvas app and the Power Automate Flow into the workspace.
+11. You will observe that it has imported the Power App canvas app and the Power Automate Flow into the workspace.
 
       ![](./images/powerapps-apps-view.png)
 
-11. To navigate back, click on **Back (1)**, then click **Leave (2)**.
+12. To navigate back, click on **Back (1)**, then click **Leave (2)**.
 
       ![](./images/powerapps-apps-exit.png)
 
-12. Next, on the **Flows (1)** tab, select **Openaisummarization (2)**, then click on `...` **(3)** and **Turn on (4)** your flow.
+13. Next, on the **Flows (1)** tab, select **Openaisummarization (2)**, then click on `...` **(3)** and **Turn on (4)** your flow.
 
       ![](./images/flow-on.png)
 
-13. Click on **Edit** for Openaisummarization.
+14. Click on **Edit** for Openaisummarization.
 
       ![](./images/flow-edit.png)
 
-14. Edit the Power Automate Flow HTTP step by updating the **https://your-resource-name.openai.azure.com/** with **<inject key="OpenAIEndpoint" enableCopy="true"/>** **(1)**, **deployment-id** with **<inject key="openaimodulename" enableCopy="true"/>** **(2)**, **api-version** with **2023-09-15-preview** **(3)**, **YOUR_API_KEY** with **<inject key="OpenAIKey" enableCopy="true"/>** **(4)**, and click on **Save** **(5)**.
+15. Edit the Power Automate Flow HTTP step by updating the **https://your-resource-name.openai.azure.com/** with **<inject key="OpenAIEndpoint" enableCopy="true"/>** **(1)**, **deployment-id** with **<inject key="openaimodulename" enableCopy="true"/>** **(2)**, **api-version** with **2023-09-15-preview** **(3)**, **YOUR_API_KEY** with **<inject key="OpenAIKey" enableCopy="true"/>** **(4)**, and click on **Save** **(5)**.
 
       ![](./images/update-values.png)
    
-15. From the **Apps (1)** page, click on the **OpenAI Playground** app to run the app by clicking on the **Play (2)** button.
+16. From the **Apps (1)** page, click on the **OpenAI Playground** app to run the app by clicking on the **Play (2)** button.
 
      ![](./images/canves-play.png)
 
-16. If you get a popup asking to start a free trial, click on **Star a Free Trial**, then on **You need a Power Apps license to use this app** window select **Start a 30-day trial**. choose your region from the drop-down menu and click on the **Get started** button wait for 2-3 minutes It might take to start the trial.
+17. If you get a popup asking to start a free trial, click on **Star a Free Trial**, then on **You need a Power Apps license to use this app** window select **Start a 30-day trial**. choose your region from the drop-down menu and click on the **Get started** button wait for 2-3 minutes It might take to start the trial.
     
-17. In the **Canvas**, click on **Summary** **(1)** button and verify the **auto-filled text** **(2)**. Then click on the **Submit** **(3)** button to get the desired **Summary** **(4)**.
+18. In the **Canvas**, click on **Summary** **(1)** button and verify the **auto-filled text** **(2)**. Then click on the **Submit** **(3)** button to get the desired **Summary** **(4)**.
 
      ![](./images/canves-output.png)
 
