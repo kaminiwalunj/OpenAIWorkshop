@@ -6,7 +6,7 @@ In this lab, participants will develop an application using OpenAI's APIs and Py
 
 1. Search and select **Azure Synapse Analytics** in the Azure portal.
 
-      ![](images/p2.png)
+      ![](images/azure_synapse-1.png)
 
 1. On **Azure Synapse Analytics** window select **asaworkspace<inject key="DeploymentID" enableCopy="false"/>**.   
 
