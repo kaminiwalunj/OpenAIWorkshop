@@ -41,7 +41,7 @@ You will be able to complete the following tasks:
 
       ![](images/10-06-2024(3).png)
 
-6. Enter the file share name as **blob (1)**, and click on **Select (2)**.
+6. Enter the file share name as **blob (1)**, select **OK**, and click on **Select (2)**.
 
     ![](images/10-06-2024(4).png)
 
@@ -122,7 +122,12 @@ You will be able to complete the following tasks:
 
    ![](images/pro4.png)
 
-      <validation step="ef9a8088-8af2-426f-9672-70c0b0c227b5" />
+<validation step="ef9a8088-8af2-426f-9672-70c0b0c227b5" />
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - If you receive a success message, you can proceed to the next task.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ## Task 2: Set up Synapse Workspace
 
@@ -165,29 +170,29 @@ You will be able to complete the following tasks:
 
 9. On the Basics tab of New dedicated SQL pool provide the following details:
 
-    - **Dedicated SQL pool name** : **openaisql01**
-    - **Performance level** : Reduce it to **DW100c**
-    - Click on **Next: Additional settings**
+    - **Dedicated SQL pool name** : **openaisql01 (1)**
+    - **Performance level** : Reduce it to **DW100c (2)**
+    - Click on **Next: Additional settings > (3)**
    
-      ![](images/image(7).png)
+      ![](images/image(7-1).png)
       
 10. Click on **Review + create** then **Create** and wait for the deployment to complete.
 
     ![](images/image(8).png)
 
-11. Now navigate back to the synapseworkspace<inject key="DeploymentID" enableCopy="false"></inject>, select **Apache Spark pools** from left pane under Analytics pools and click on **+ New**.
+11. Now navigate back to the **synapseworkspace<inject key="DeploymentID" enableCopy="false"></inject>**, select **Apache Spark pools (1)** from left pane under Analytics pools and click on **+ New (2)**.
 
-    ![](images/image(01).png)  
+    ![](images/image(01-1).png)  
 
-12. On New Apache Spark pool page, provide the following details and click on **Review + Create** then **Create** on the Review + Create tab to create the Apache Spark pool.
+12. On New Apache Spark pool page, provide the following details and click on **Review + Create (6)** then **Create** on the Review + Create tab to create the Apache Spark pool.
 
-    - **Apache Spark pool name** : **openaisparkpool**
-    - **Isolated Compute** : **Disabled**
-    - **Node size** : **Small(4vCores/32GB)**
-    - **Autoscale** : **Disabled**
-    - **Number of nodes** : **3**
+    - **Apache Spark pool name** : **openaisparkpool (1)**
+    - **Isolated Compute** : **Disabled (2)**
+    - **Node size** : **Small(4vCores/32GB) (3)**
+    - **Autoscale** : **Disabled (4)**
+    - **Number of nodes** : **3 (5)**
 
-      ![](images/image(02).png)
+      ![](images/image(02-22).png)
    
 ### **B. Create Target SQL Table**
 
@@ -361,7 +366,12 @@ Then expand the **Staging (3)** section at the bottom of the settings and utiliz
 
       ![](images/pipeline-run-1.png)
 
-      <validation step="3e716f01-6da8-431e-aa81-4041b9054091" />
+<validation step="3e716f01-6da8-431e-aa81-4041b9054091" />
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - If you receive a success message, you can proceed to the next task.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ## Task 3: Query Results in Our SQL Table
 
