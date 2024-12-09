@@ -1,6 +1,6 @@
-# **Getting Started with Your OpenAIWorkshop Workshop**
+# **Getting Started with your Azure OpenAI Workshop**
  
-Welcome to your OpenAIWorkshop workshop! We've prepared a seamless environment for you to explore and learn about Azure services. Let's begin by making the most of this experience:
+Welcome to your Azure OpenAI Workshop! We've prepared a seamless environment for you to explore and learn about Azure services. Let's begin by making the most of this experience:
  
 ## **Accessing Your Lab Environment**
  
