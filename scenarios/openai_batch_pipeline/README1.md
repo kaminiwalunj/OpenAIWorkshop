@@ -41,7 +41,7 @@ You will be able to complete the following tasks:
 
       ![](images/10-06-2024(3).png)
 
-6. Enter the file share name as **blob (1)**, and click on **Select (2)**.
+6. Enter the file share name as **blob (1)**, select **OK**, and click on **Select (2)**.
 
     ![](images/10-06-2024(4).png)
 
@@ -122,7 +122,12 @@ You will be able to complete the following tasks:
 
    ![](images/pro4.png)
 
-      <validation step="ef9a8088-8af2-426f-9672-70c0b0c227b5" />
+<validation step="ef9a8088-8af2-426f-9672-70c0b0c227b5" />
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - If you receive a success message, you can proceed to the next task.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ## Task 2: Set up Synapse Workspace
 
@@ -175,7 +180,7 @@ You will be able to complete the following tasks:
 
     ![](images/image(8).png)
 
-11. Now navigate back to the synapseworkspace<inject key="DeploymentID" enableCopy="false"></inject>, select **Apache Spark pools** from left pane under Analytics pools and click on **+ New**.
+11. Now navigate back to the **synapseworkspace<inject key="DeploymentID" enableCopy="false"></inject>**, select **Apache Spark pools** from left pane under Analytics pools and click on **+ New**.
 
     ![](images/image(01).png)  
 
