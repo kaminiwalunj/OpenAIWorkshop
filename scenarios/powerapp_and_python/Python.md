@@ -4,7 +4,7 @@
 
 In this lab, participants will develop an application using OpenAI's APIs and Python programming language. The goal is to demonstrate how to implement AI functionalities such as language generation, sentiment analysis, or recommendation systems using Python, leveraging OpenAI's powerful models and tools.
 
-1. Search and select **Azure Synapse Analytics** in the Azure portal.
+1. Navigate back to the **Azure Portal**. Search and select **Azure Synapse Analytics** in the Azure portal.
 
       ![](images/p2.png)
 
@@ -24,11 +24,11 @@ In this lab, participants will develop an application using OpenAI's APIs and Py
 
 1. Select **openaisparkpool** from the drop-down menu of **Attach to**.
 
-    ![](images/openai-sparkpool.png)
+    ![](images/openai-sparkpool(1).png)
 
 1. Run the notebook step-by-step to complete this exercise. Click on the **Run** button next to the cell.
 
-     ![](images/run.png)
+     ![](images/download.png)
 
 1. In **1. Install OpenAI**, click on the **Run** button next to the first cells, and click on the **stop session**. Please wait till **Apache Spark pools** turn to stop state. 
 
@@ -78,7 +78,12 @@ In this lab, participants will develop an application using OpenAI's APIs and Py
 
     ![](images/publish-1.png)
 
-   <validation step="f943c5b3-b07a-4779-bc2f-9e13ee01378a" />
+<validation step="f943c5b3-b07a-4779-bc2f-9e13ee01378a" />
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - If you receive a success message, you can proceed to the next task.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ## Summary
 

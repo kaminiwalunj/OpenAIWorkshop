@@ -28,12 +28,12 @@ Prompt engineering is a relatively [new discipline](https://www.businessinsider.
 This guide covers the basics of standard prompts to provide a rough idea of how to interact with and instruct the LLMs found on [Azure OpenAI Studio's Playground](https://oai.azure.com/portal/playground). 
 
 ###  Trying out Prompt Engineering with Azure OpenAI Playground
-Azure OpenAI Studio provides access to model management, deployment, experimentation, customization, and learning resources. The Chat playground within Azure OpenAI Studio is based on a conversation-in, message-out interface. You can initialize the session with a system message to set up the chat context.
+Azure AI Foundry Studio provides access to model management, deployment, experimentation, customization, and learning resources. The Chat playground within Azure AI Foundry Studio is based on a conversation-in, message-out interface. You can initialize the session with a system message to set up the chat context.
 
 In the Chat playground, you're able to add few-shot examples. The term few-shot refers to providing a few of examples to help the model learn what it needs to do. You can think of it in contrast to zero-shot, which refers to providing no examples.
 
 In the Assistant setup, you can provide few-shot examples of what the user input may be, and what the assistant response should be. The assistant tries to mimic the responses you include here in tone, rules, and format you've defined in your system message.
-Let's go ahead and launch the Azure OpenAI playground to learn about prompt engineering. 
+Let's go ahead and launch the Azure AI Foundry playground to learn about prompt engineering. 
 
 1. In the **Azure portal**, search for **OpenAI** and select **Azure OpenAI**.
 
@@ -41,17 +41,18 @@ Let's go ahead and launch the Azure OpenAI playground to learn about prompt engi
 
 1. On **Azure AI services | Azure OpenAI** blade, select **openai-<inject key="DeploymentID" enableCopy="false"/>**
 
-1. In the Azure OpenAI resource pane, click on **Go to Azure OpenAI Studio** it will navigate to **Azure AI Studio**.
+1. In the Azure OpenAI resource pane, click on **Go to Azure Azure AI Foundry Portal** it will navigate to **Azure AI Studio**.
 
-   ![](../natural_language_query/images/goto_ai.png)
+   ![](../natural_language_query/images/azurefoundry.png)
 
-1. In the **Azure AI Stuido**, click on **Chat** under play **Playgrounds** from the left menu.
+1. In the **Azure AI Foundry
+| Azure OpenAI Service**, click on **Chat** under play **Playgrounds** from the left menu.
 
-    ![](../natural_language_query/images/chat.png)
+    ![](../natural_language_query/images/azureaifoundry.png)
 
 1. In the **Chat** section, give any query from the **Chat session** **(2)** to get the response from the openai. 
 
-   ![](../natural_language_query/images/chat_bot-1-08.png)
+   ![](../natural_language_query/images/chat-playground.png)
    
    > **Note**: Chat may not respond with the exact output as shown in the screenshots. Following are the examples of what you'll most likely see in this exercise, but the response may vary.
  
