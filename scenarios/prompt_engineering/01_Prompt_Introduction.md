@@ -1,4 +1,4 @@
-# Exercise 4a: Introduction to Prompt Engineering & Azure OpenAI Studio
+# Exercise 4a: Introduction to Prompt Engineering & Azure AI Foundry portal
 
 ### Estimated Duration: 60 minutes
 
@@ -25,10 +25,10 @@ One way to think of a prompt is as a piece of text that is used to initiate or p
 ## What is prompt engineering?
 Prompt engineering is a relatively [new discipline](https://www.businessinsider.com/prompt-engineering-ai-chatgpt-jobs-explained-2023-3) for developing and optimizing prompts to efficiently use language models (LMs) across a wide variety of business applications. Prompt engineering skills help to better understand the capabilities and limitations of large language models (LLMs) and refine the completions (outputs) of LLMs. Prompt engineering is used to improve the capacity of LLMs on a wide range of common and complex tasks, such as question answering and arithmetic reasoning. Developers use prompt engineering to design robust and effective prompting techniques that interface with LLMs and other tools.
 
-This guide covers the basics of standard prompts to provide a rough idea of how to interact with and instruct the LLMs found on [Azure OpenAI Studio's Playground](https://oai.azure.com/portal/playground). 
+This guide covers the basics of standard prompts to provide a rough idea of how to interact with and instruct the LLMs found on [Azure AI Foundry portal's Playground](https://oai.azure.com/portal/playground). 
 
 ###  Trying out Prompt Engineering with Azure OpenAI Playground
-Azure AI Foundry Studio provides access to model management, deployment, experimentation, customization, and learning resources. The Chat playground within Azure AI Foundry Studio is based on a conversation-in, message-out interface. You can initialize the session with a system message to set up the chat context.
+Azure AI Foundry portal provides access to model management, deployment, experimentation, customization, and learning resources. The Chat playground within Azure AI Foundry portal is based on a conversation-in, message-out interface. You can initialize the session with a system message to set up the chat context.
 
 In the Chat playground, you're able to add few-shot examples. The term few-shot refers to providing a few of examples to help the model learn what it needs to do. You can think of it in contrast to zero-shot, which refers to providing no examples.
 
@@ -41,7 +41,7 @@ Let's go ahead and launch the Azure AI Foundry playground to learn about prompt 
 
 1. On **Azure AI services | Azure OpenAI** blade, select **openai-<inject key="DeploymentID" enableCopy="false"/>**
 
-1. In the Azure OpenAI resource pane, click on **Go to Azure Azure AI Foundry Portal** it will navigate to **Azure AI Studio**.
+1. In the Azure OpenAI resource pane, click on **Go to Azure Azure AI Foundry Portal** it will navigate to **Azure AI Foundry portal**.
 
    ![](../natural_language_query/images/azurefoundry.png)
 
@@ -59,7 +59,7 @@ Let's go ahead and launch the Azure AI Foundry playground to learn about prompt 
 ---
 ## Basic Prompt Examples
 
-> **Note:** Please feel free to enter anything listed in the `Prompt:` box into a `gpt-35-turbo-instruct` model in the [Azure OpenAI Studio's Playground](https://oai.azure.com/portal/playground) to follow along with these prompt examples. Be aware that you may receive different outputs than what is listed in the `Output:` box, given the nature of generative models
+> **Note:** Please feel free to enter anything listed in the `Prompt:` box into a `gpt-35-turbo-instruct` model in the [Azure AI Foundry portal's Playground](https://oai.azure.com/portal/playground) to follow along with these prompt examples. Be aware that you may receive different outputs than what is listed in the `Output:` box, given the nature of generative models
 
 You can achieve a lot with prompts, but the quality of results depends on how much information you provide in the prompt without being overly descriptive. A prompt can contain information like instructions or questions. As we will learn later with more advanced prompts, we can also supply examples of required outputs as well as context for our instructions.
 
