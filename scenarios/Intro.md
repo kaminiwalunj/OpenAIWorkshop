@@ -59,7 +59,7 @@ The architecture for this lab involves several key components:
 - **Microsoft Power Apps:** A low-code platform that allows users to build custom business applications without extensive coding knowledge.
 - **Prompt Engineering:** Involves crafting specific prompts or queries to elicit desired responses from AI models, influencing the output and behavior of AI systems.
 
-# Getting Started with the lab
+## Getting started with the lab
  
 Welcome to your Use Azure Open AI like a Pro to build powerful AI Applications Workshop! We've prepared a seamless environment for you to explore and learn about Azure services. Let's begin by making the most of this experience:
  
