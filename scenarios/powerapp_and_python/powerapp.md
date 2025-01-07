@@ -20,7 +20,7 @@ This lab focuses on creating an application using OpenAI capabilities integrated
 
      ![](./images/openai-play.png)
 
-5. Once the zip file is uploaded, in the **Review Package Content** for **OpenAI Playground**, click on the setup icon under **Actions**.
+5. Once the zip file is uploaded, in the **Review Package Content** for **OpenAI Playground**, click on the setup icon under **Action**.
 
      ![](./images/review-package-content.png)
 
