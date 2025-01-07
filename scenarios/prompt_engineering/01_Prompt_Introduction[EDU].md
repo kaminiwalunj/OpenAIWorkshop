@@ -41,13 +41,13 @@ Let's go ahead and launch the Azure OpenAI playground to learn about prompt engi
 
    ![](../natural_language_query/images/OpenAI-service.png)
 
-1. In the Azure OpenAI resource pane, click on **Go to Azure OpenAI Studio** it will navigate to **Azure AI Studio**.
+1. In the Azure OpenAI resource pane, click on **Go to Azure AI Foundry portal** it will navigate to **Azure AI Foundry | Azure OpenAI Service**.
 
-   ![](../natural_language_query/images/OpenAI-studio1.png)
+   ![](../natural_language_query/images/EDU1.png)
 
-1. In the **Azure AI Stuido**, click on **Chat** under play **Playground** from the left menu.
+1. In the ***Azure AI Foundry | Azure OpenAI Service**, click on **Chat** under play **Playground** from the left menu.
 
-   ![](../natural_language_query/images/OpenAI-chat.png)
+   ![](../natural_language_query/images/EDU2.png)
 
 ---
 ## Basic Prompt Examples
