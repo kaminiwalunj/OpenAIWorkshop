@@ -217,7 +217,7 @@ You will be able to complete the following tasks:
     )
     ```
     
-      ![](images/openai-6.png)
+      ![](images/openai-61.png)
     
 1. Next, click on **Publish** to publish the SQL script.
 
@@ -381,7 +381,7 @@ Then expand the **Staging (3)** section at the bottom of the settings and utiliz
 
 2. Now that the data is in the target table, it is available for usage by running SQL queries against it or connecting PowerBI and creating visualizations. Upload some of the transcript files to the generated_documents folder in your container and see how it creates a new file in the cleansed_documents file.
 
-3. To query the new data, navigate to the menu on the left-hand side, and choose **Develop (1)**. Click on the existing **SQL Script (2)** and replace the content with the **SQL Code (3)** below. Then select **openaisql (4)** pool **Run (5)**. 
+3. To query the new data, navigate to the menu on the left-hand side, and choose **Develop (1)**. Click on the existing **SQL Script (2)** and replace the content with the **SQL Code (3)** below. Then select **openaisql01 (4)** pool **Run (5)**. 
 
      ```SQL 
     SELECT sentiment, count(*) as "Sum of Sentiment"
@@ -392,7 +392,7 @@ Then expand the **Staging (3)** section at the bottom of the settings and utiliz
 
     - Your query results, if you are using the files uploaded as part of this repository or the workshop, you should see similar **Results (6)** to those below.
 
-         ![](images/pro6.png)
+         ![](images/pro61.png)
 
 ## Summary
 
