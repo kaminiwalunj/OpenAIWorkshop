@@ -12,9 +12,9 @@ In this exercise, you will create a deployment and model in Azure OpenAI studio 
 
    ![](images/OpenAI-service.png)
 
-1. In the Azure OpenAI resource pane, click on **Go to Azure OpenAI Studio** it will navigate to **Azure AI Studio**.
+1. In the Azure OpenAI resource pane, click on **Go to Azure AI Foundry portal** it will navigate to **Azure AI Foundry | Azure OpenAI Service**.
 
-   ![](images/OpenAI-studio1.png)
+   ![](images/EDU1.png)
 
 1. In the **Azure AI Studio**, select **Deployments** under Management and verify that two models with the corresponding **Deployment names** of **gptmodel** and **demomodel** are present and the capacity of the model is set to **15K TPM**.
 
