@@ -164,27 +164,32 @@ You will be able to complete the following tasks:
 
    ![](images/image(5).png)
 
-8. Navigate to the synapse workspace which you have created, Select **SQL Pools(1)** from left pane under Analytics pools and click on **+ New(2)**.
+8. Navigate to the synapse workspace which you have created, on the **Overview** page, click on **Open** under Open Synapse Studio to navigate to Azure Synapse Studio.
+   
+   ![](images/open-synapse-studio.png)
 
-   ![](images/image(6).png)   
+9. In the Azure Synapse Studio, navigate to **Manage > SQL pools** and then click on **+New**.
 
-9. On the Basics tab of New dedicated SQL pool provide the following details:
+   ![](images/new-sql-pool.png)
+   
+
+10. On the Basics tab of New dedicated SQL pool provide the following details:
 
     - **Dedicated SQL pool name** : **openaisql01 (1)**
     - **Performance level** : Reduce it to **DW100c (2)**
     - Click on **Next: Additional settings > (3)**
    
-      ![](images/image(7-1).png)
+      ![](images/sql-pool-name.png)
       
-10. Click on **Review + create** then **Create** and wait for the deployment to complete.
+11. Click on **Review + create** then **Create** and wait for the deployment to complete.
 
-    ![](images/image(8).png)
+    ![](images/sql-pool-create.png)
 
-11. Now navigate back to the **synapseworkspace<inject key="DeploymentID" enableCopy="false"></inject>**, select **Apache Spark pools (1)** from left pane under Analytics pools and click on **+ New (2)**.
+12. Now navigate back to Azure portal, **synapseworkspace<inject key="DeploymentID" enableCopy="false"></inject>**, select **Apache Spark pools (1)** from left pane under Analytics pools and click on **+ New (2)**.
 
     ![](images/image(01-1).png)  
 
-12. On New Apache Spark pool page, provide the following details and click on **Review + Create (6)** then **Create** on the Review + Create tab to create the Apache Spark pool.
+13. On New Apache Spark pool page, provide the following details and click on **Review + Create (6)** then **Create** on the Review + Create tab to create the Apache Spark pool.
 
     - **Apache Spark pool name** : **openaisparkpool (1)**
     - **Isolated Compute** : **Disabled (2)**
