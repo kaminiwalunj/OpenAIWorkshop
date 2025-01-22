@@ -177,11 +177,11 @@ You will be able to complete the following tasks:
 
     - **Dedicated SQL pool name** : **openaisql01 (1)**
     - **Performance level** : Reduce it to **DW100c (2)**
-    - Click on **Next: Additional settings > (3)**
+    - Click on **Review + create (3)**
    
       ![](images/sql-pool-name.png)
       
-11. Click on **Review + create** then **Create** and wait for the deployment to complete.
+11. On **Review + create** page, click on **Create** and wait for the deployment to complete.
 
     ![](images/sql-pool-create.png)
 
