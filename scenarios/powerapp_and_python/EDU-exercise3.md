@@ -26,7 +26,7 @@ In this exercise, You'll be using Python to develop applications powered by Open
 
 1. Select **openaisparkpool** from the drop-down menu of **Attach to**.
 
-    ![](images/openai-sparkpool.png)
+    ![](images/openai-sparkpool-1.png)
 
     >**Note**: Use the three ellipsis(...) button at the top right corner of your browser to zoom out the page, allowing you to view the **Attach to** option.
     
@@ -36,7 +36,7 @@ In this exercise, You'll be using Python to develop applications powered by Open
 
 1. In **2. Import helper libraries and instantiate credentials** replace the **AZURE_OPENAI_API_KEY** with **<inject key="OpenAIKey" enableCopy="true"/>** and **AZURE_OPENAI_ENDPOINT** with **<inject key="OpenAIEndpoint" enableCopy="true"/>** and Run the cell.
 
-     ![](images/instruct-8.png)
+     ![](images/instruct-8-1.png)
    
      > **Note:** If you encounter an error "Openai module not found", enter `%` in before the **pip install** in the Install OpenAI cell and re-run the notebook again.
 
