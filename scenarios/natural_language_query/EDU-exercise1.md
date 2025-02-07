@@ -1,5 +1,7 @@
 # Exercise 1: Getting Started with Azure OpenAI
 
+## Overview
+
 In this exercise, you will create a deployment and model in Azure OpenAI studio which you will be using in further exercises.
 
 ## Lab Objectives
