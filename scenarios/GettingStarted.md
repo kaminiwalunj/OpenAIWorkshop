@@ -22,21 +22,41 @@ By the end of this lab, you will be able to:
 
 ## Getting Started with Lab
 
-1. Once the environment is provisioned, a virtual machine (JumpVM) and lab guide will get loaded in your browser. Use this virtual machine throughout the workshop to perform the lab. You can see the number on the lab guide bottom area to switch to different exercises of the lab guide.
-
-   ![](media/img-1.png "Lab Environment")
-
-1. To get the lab environment details, you can select the **Environment Details** tab. Additionally, the credentials will also be emailed to your email address provided during registration. You can also open the Lab Guide on a separate and full window by selecting the **Split Window (1)** from the top right corner. Also, you can start, stop, and restart virtual machines from the **Resources** tab.
-
-   ![](media/Lab-env-1.png "Lab Environment")
+## Accessing Your Lab Environment
  
-    > You will see the SUFFIX value on the **Environment Details** tab, use it wherever you see SUFFIX or Deployment ID in lab steps.
+Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
+
+  ![OpenAI](images/new-get-start-25-9.png)
+ 
+## Exploring Your Lab Resources
+ 
+To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
+ 
+  ![OpenAI](images/new-get-start-25-2.png)
+ 
+## Utilizing the Split Window Feature
+ 
+For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
+ 
+  ![OpenAI](images/new-get-start-25-3.png)
+
+## Managing Your Virtual Machine
+ 
+Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
+
+  ![OpenAI](images/instruct-10.png)
+
+## Lab Guide Zoom In/Zoom Out
+ 
+1. To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
+
+     ![OpenAI](images/instruct-11.png)
 
 ## Login to Azure Portal
 
 1. In the JumpVM, click on the Azure portal shortcut of the Microsoft Edge browser from the desktop.
 
-   ![](media/img-3.png "Lab Environment")
+   ![](media/instruct-12.png "Lab Environment")
 
 1. In the Welcome to Microsoft Edge page, select **Start without your data**, and on the help for importing Google browsing data page select **Continue without this data** button and proceed to select **Confirm and start browsing** on the next page.
    
