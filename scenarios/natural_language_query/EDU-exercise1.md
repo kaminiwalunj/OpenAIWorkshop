@@ -1,8 +1,12 @@
 # Exercise 1: Getting Started with Azure OpenAI
 
 In this exercise, you will create a deployment and model in Azure OpenAI studio which you will be using in further exercises.
+
+## Lab Objectives
+
+- Task 1: Deploy Azure OpenAI Model
    
-## Task 1: Deploy Azure OpenAI Model.
+### Task 1: Deploy Azure OpenAI Model
 
 1. In the **Azure portal**, search for **OpenAI** and select **Azure OpenAI**.
 
@@ -26,5 +30,8 @@ In this exercise, you will create a deployment and model in Azure OpenAI studio 
 
    ![](images/openaikeys1new.png)
 
-**Summary:** In this exercise, you explored about a model and deployment in OpenAI studio to get started with OpenAI resource. You will be using the copied Key and Endpoint to get hands-on experience with Azure OpenAI Playground in further exercises.
+## Summary
 
+In this exercise, you explored about a model and deployment in OpenAI studio to get started with OpenAI resource. You will be using the copied Key and Endpoint to get hands-on experience with Azure OpenAI Playground in further exercises.
+
+### You have successfully completed the lab!

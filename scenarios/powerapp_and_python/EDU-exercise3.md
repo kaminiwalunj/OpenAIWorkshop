@@ -66,4 +66,8 @@ In this exercise, You'll be using Python to develop applications powered by Open
 
     ![](images/publish-1.png)
 
-**Summary:** With the help of this exercise, you were able to improve your programming abilities and gain an understanding of how to use OpenAI with Python to create apps.
+## Summary
+
+With the help of this exercise, you were able to improve your programming abilities and gain an understanding of how to use OpenAI with Python to create apps.
+
+### You have successfully completed the lab!
