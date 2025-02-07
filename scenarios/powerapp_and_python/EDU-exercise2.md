@@ -1,5 +1,7 @@
 # Exercise 3: Build Open AI application with Power App 
 
+## Overview
+
 In this exercise, you will learn how to integrate OpenAI with PowerApps. This exercise is all about combining the simplicity of PowerApp's low-code platform with the advanced capabilities of OpenAI. You'll see firsthand how these technologies can come together to create powerful applications.
 
 1. Navigate to https://make.powerapps.com/. On the Welcome to power Apps window from **Choose your country/region** drop down select your country, and then click on **Get started**.
