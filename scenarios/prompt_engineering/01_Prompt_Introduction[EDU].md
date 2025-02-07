@@ -1,4 +1,4 @@
-# Exercise 2: Introduction to Prompt Engineering & Azure OpenAI Studio
+# Exercise 2: Introduction to Prompt Engineering & Azure AI Foundry
 
 In this exercise, you'll explore the concept of prompt engineering, learning how to craft effective prompts for AI models. You'll get hands-on experience with Azure OpenAI Playground, experimenting with different types of prompts and understanding their elements and design tips.
 
@@ -26,11 +26,12 @@ Prompt engineering is a relatively [new discipline](https://www.businessinsider.
 This guide covers the basics of standard prompts to provide a rough idea of how to interact with and instruct the LLMs found on [Azure OpenAI Studio's Playground](https://oai.azure.com/portal/playground). 
 
 ###  Trying out Prompt Engineering with Azure OpenAI Playground
-Azure OpenAI Studio provides access to model management, deployment, experimentation, customization, and learning resources. The Chat playground within Azure OpenAI Studio is based on a conversation-in, message-out interface. You can initialize the session with a system message to set up the chat context.
+Azure AI Foundry provides access to model management, deployment, experimentation, customization, and learning resources. The Chat playground within Azure AI Foundry is based on a conversation-in, message-out interface. You can initialize the session with a system message to set up the chat context.
 
 In the Chat playground, you're able to add few-shot examples. The term few-shot refers to providing a few of examples to help the model learn what it needs to do. You can think of it in contrast to zero-shot, which refers to providing no examples.
 
 In the Assistant setup, you can provide few-shot examples of what the user input may be, and what the assistant response should be. The assistant tries to mimic the responses you include here in tone, rules, and format you've defined in your system message.
+
 Let's go ahead and launch the Azure OpenAI playground to learn about prompt engineering. 
 
 1. In the **Azure portal**, search for **OpenAI** and select **Azure OpenAI**.
