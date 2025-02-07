@@ -38,23 +38,23 @@ In this exercise, You'll be using Python to develop applications powered by Open
    
      > **Note:** If you encounter an error "Openai module not found", enter `%` in before the **pip install** in the Install OpenAI cell and re-run the notebook again.
 
-1. For **2. Choose a Model**, replace **model** value from **text-curie-001** to **demomodel** and Run the cell.
+1. For **2. Choose a Model**, replace **model** value from **gpt-35-turbo-instruct** to **demomodel** and Run the cell.
 
     ![](images/choosemodel.png)
 
-1. In **temperature**, replace **engine** value from **text-curie-001** to **demomodel** and Run the cell.
+1. In **temperature**, replace **engine** value from **gpt-35-turbo-instruct** to **demomodel** and Run the cell.
 
      ![](images/temp.png)
 
-1. In **top_p**, replace **engine** value from **text-curie-001** to **demomodel** and Run the cell.
+1. In **top_p**, replace **engine** value from **gpt-35-turbo-instruct** to **demomodel** and Run the cell.
 
      ![](images/top-p.png)
 
-1. For **n**, replace **engine** value from **text-curie-001** to **demomodel** and Run the cell.
+1. For **n**, replace **engine** value from **gpt-35-turbo-instruct** to **demomodel** and Run the cell.
 
      ![](images/n.png)
 
-1. In **logprobs**, replace **engine** value from **text-curie-001** to **demomodel** and Run the cell.
+1. In **logprobs**, replace **engine** value from **gpt-35-turbo-instruct** to **demomodel** and Run the cell.
 
      ![](images/logprobs.png)
 
