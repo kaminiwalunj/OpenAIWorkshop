@@ -26,19 +26,19 @@ By the end of this lab, you will be able to:
  
 Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
 
-  ![](media/new-get-start-25-9.png)
+  ![](media/instruct-15.png)
  
 ## Exploring Your Lab Resources
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
  
-  ![](media/new-get-start-25-2.png)
+  ![](media/instruct-21.png)
  
 ## Utilizing the Split Window Feature
  
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
  
-  ![](media/new-get-start-25-3.png)
+  ![](media/instruct-20.png)
 
 ## Managing Your Virtual Machine
  
