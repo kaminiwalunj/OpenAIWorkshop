@@ -20,7 +20,7 @@ In this exercise, you will create a deployment and model in Azure OpenAI studio 
 
    ![](images/EDU1.png)
 
-1. In the **Azure AI Studio**, select **Deployments** under Management and verify that two models with the corresponding **Deployment names** of **gptmodel** and **demomodel** are present and the capacity of the model is set to **15K TPM**.
+1. In the **Azure AI Foundry**, select **Deployments** under Management and verify that two models with the corresponding **Deployment names** of **gptmodel** and **demomodel** are present and the capacity of the model is set to **15K TPM**.
 
    ![](images/OpenAI-deployments.png)
 
@@ -32,6 +32,6 @@ In this exercise, you will create a deployment and model in Azure OpenAI studio 
 
 ## Summary
 
-In this exercise, you explored about a model and deployment in OpenAI studio to get started with OpenAI resource. You will be using the copied Key and Endpoint to get hands-on experience with Azure OpenAI Playground in further exercises.
+In this exercise, you explored about a model and deployment in OpenAI Foundry to get started with OpenAI resource. You will be using the copied Key and Endpoint to get hands-on experience with Azure OpenAI Playground in further exercises.
 
 ### You have successfully completed the lab!
