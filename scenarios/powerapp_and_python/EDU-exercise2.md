@@ -77,4 +77,8 @@ In this exercise, you will learn how to integrate OpenAI with PowerApps. This ex
     > **Note**: You can try the other available options in the portal i.e, **SQL**, **ClassifyText**, **Parse**, and **Classify**.
 
     
-**Summary:** In this exercise, You had looked into integrating PowerApps with OpenAI. You discovered how to combine the sophisticated OpenAI capabilities with PowerApp's low-code platform. 
+## Summary
+
+In this exercise, You had looked into integrating PowerApps with OpenAI. You discovered how to combine the sophisticated OpenAI capabilities with PowerApp's low-code platform. 
+
+### You have successfully completed the lab!
