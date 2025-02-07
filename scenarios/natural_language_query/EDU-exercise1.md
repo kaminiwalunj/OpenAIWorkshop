@@ -10,7 +10,7 @@ In this exercise, you will create a deployment and model in Azure OpenAI studio 
 
 1. In the **Azure portal**, search for **OpenAI** and select **Azure OpenAI**.
 
-   ![](images/OpenAI-search.png)
+   ![](images/OpenAI-search1.png)
 
 1. On **Azure AI Services | Azure OpenAI** blade, select **openai-<inject key="DeploymentID" enableCopy="false"/>**
 
