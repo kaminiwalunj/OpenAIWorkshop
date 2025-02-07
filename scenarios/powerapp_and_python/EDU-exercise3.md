@@ -1,5 +1,7 @@
 # Exercise 4: Build Open AI application with Python
 
+## Overview
+
 In this exercise, You'll be using Python to develop applications powered by OpenAI. This session is perfect for enhancing your programming skills and understanding how OpenAI can be utilized through Python.
 
 1. Search for Synapse and select **Azure Synapse Analytics** in the Azure portal.
@@ -12,7 +14,7 @@ In this exercise, You'll be using Python to develop applications powered by Open
 
 1. On the **Overview** blade under **Getting started** section, click **Open** to open Synapse Studio.
      
-    ![](images/open-workspace.png)
+    ![](images/instruct-6.png)
     
 1. Click on **Develop (1)** then click on **+ (2)** and select **Import**.
 
@@ -30,33 +32,33 @@ In this exercise, You'll be using Python to develop applications powered by Open
     
 1. In **1. Install OpenAI**, click on the **Run** button next to the two cells, and please wait till commands are executed. 
 
-     ![](images/run-python12.png)
+     ![](images/instruct-7.png)
 
 1. In **2. Import helper libraries and instantiate credentials** replace the **AZURE_OPENAI_API_KEY** with **<inject key="OpenAIKey" enableCopy="true"/>** and **AZURE_OPENAI_ENDPOINT** with **<inject key="OpenAIEndpoint" enableCopy="true"/>** and Run the cell.
 
-     ![](images/key-endpoint.png)
+     ![](images/instruct-8.png)
    
      > **Note:** If you encounter an error "Openai module not found", enter `%` in before the **pip install** in the Install OpenAI cell and re-run the notebook again.
 
 1. For **2. Choose a Model**, replace **model** value from **gpt-35-turbo-instruct** to **demomodel** and Run the cell.
 
-    ![](images/choosemodel.png)
+     ![](images/instruct.png)
 
 1. In **temperature**, replace **engine** value from **gpt-35-turbo-instruct** to **demomodel** and Run the cell.
 
-     ![](images/temp.png)
+      ![](images/instruct-1.png)
 
 1. In **top_p**, replace **engine** value from **gpt-35-turbo-instruct** to **demomodel** and Run the cell.
 
-     ![](images/top-p.png)
+      ![](images/instruct-2.png)
 
 1. For **n**, replace **engine** value from **gpt-35-turbo-instruct** to **demomodel** and Run the cell.
 
-     ![](images/n.png)
+      ![](images/instruct-3.png)
 
 1. In **logprobs**, replace **engine** value from **gpt-35-turbo-instruct** to **demomodel** and Run the cell.
 
-     ![](images/logprobs.png)
+      ![](images/instruct-4.png)
 
 1. After running the notebook successfully, click on **Publish all**.
 
