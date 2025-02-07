@@ -1,4 +1,30 @@
-# Getting Started with Lab
+# Building AI enabled Apps with Azure OpenAI
+
+
+### Overall Estimated Duration: 120 minutes
+
+
+### Overview
+This lab provides hands-on experience with Azure OpenAI Service, equipping you with the skills to deploy and work with OpenAI’s generative AI models in the Azure cloud environment. You’ll learn to provision resources, deploy models, and explore prompt engineering techniques. Through interactive exercises, you’ll experiment with the Completions and Chat playgrounds, integrate AI capabilities into applications, and build AI-powered solutions using Power Apps and Python.
+
+
+### Objective
+By the end of this lab, you will be able to:  
+
+- **Get Started with Azure OpenAI**: Understand the fundamentals of Azure OpenAI, including its capabilities, use cases, and integration with cloud services.  
+- **Master Prompt Engineering & Azure OpenAI Studio**: Learn how to craft effective prompts and leverage Azure OpenAI Studio to optimize AI model performance.  
+- **Build an OpenAI Application with Power Apps**: Develop and integrate AI-powered applications using Power Apps to automate workflows and enhance user interactions.  
+- **Build an OpenAI Application with Python**: Implement AI-driven solutions using Python, leveraging Azure OpenAI's APIs for various natural language processing tasks.  
+
+
+### Pre-Requisites
+- **Basic Knowledge of Azure and AI Services**: Familiarity with **Azure OpenAI Service**, its capabilities, and cloud-based AI integration.  
+- **Understanding of Prompt Engineering**: Basic knowledge of crafting effective prompts for AI models and using **Azure OpenAI Studio**.  
+- **Familiarity with Software Development**: Experience with programming concepts, particularly in **Python**, and working with APIs.  
+- **Experience with Low-Code Platforms** (Optional): Basic understanding of **Power Apps** for building AI-driven applications.  
+- **Basic Knowledge of Cloud & Security**: Understanding cloud deployment, API authentication, and security best practices in AI applications.  
+
+### Getting Started with Lab
 
 1. Once the environment is provisioned, a virtual machine (JumpVM) and lab guide will get loaded in your browser. Use this virtual machine throughout the workshop to perform the lab. You can see the number on the lab guide bottom area to switch to different exercises of the lab guide.
 
@@ -10,7 +36,7 @@
  
     > You will see the SUFFIX value on the **Environment Details** tab, use it wherever you see SUFFIX or Deployment ID in lab steps.
 
-## Login to Azure Portal
+### Login to Azure Portal
 
 1. In the JumpVM, click on the Azure portal shortcut of the Microsoft Edge browser from the desktop.
 
