@@ -35,7 +35,7 @@ Let's go ahead and launch the Azure OpenAI playground to learn about prompt engi
 
 1. In the **Azure portal**, search for **OpenAI** and select **Azure OpenAI**.
 
-   ![](../natural_language_query/images/OpenAI-search.png)
+   ![](../natural_language_query/images/OpenAI-search1.png)
 
 1. On **Azure AI Services | Azure OpenAI** blade, select **openai-<inject key="DeploymentID" enableCopy="false"/>**
 
