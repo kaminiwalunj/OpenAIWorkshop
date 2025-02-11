@@ -250,7 +250,7 @@ We'll next need to create two linked services: one for our source (the JSON file
 
 1. In the *New linked service* window that opens, fill in a name for your target linked service as **synapselinkedservice** **(1)**. Select **Legacy (2)** for the version. Select the **Azure subscription (3)** for which you have been working. Select the **synapseworkspace<inject key="DeploymentID" enableCopy="false"/> (4)** for **Server name** and **openaisql01 (5)** as the **Database name**. Be certain to change the **Authentication type** to **System-assigned managed identity (6)**, then scroll down and click on **Test connection (7)** and click **Create (8)**.
 
-      ![](images/pro8.png)
+      ![](images/new-openai-pro-feb-5.png)
 
 1. Once you have created the two linked services, be certain to press the **Publish all** button at the top to publish our work. Finalize the creation of the linked services and click **Publish**.
 
