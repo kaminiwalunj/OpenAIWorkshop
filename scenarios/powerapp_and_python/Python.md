@@ -22,6 +22,10 @@ In this lab, participants will develop an application using OpenAI's APIs and Py
 
      ![](images/notebook.png)
 
+1. Click the **Collapse** icon to maximize the screen.
+
+    ![](images/close-1.png)
+
 1. Select **openaisparkpool** from the drop-down menu of **Attach to**.
 
     ![](images/openai-sparkpool(1).png)
@@ -48,7 +52,14 @@ In this lab, participants will develop an application using OpenAI's APIs and Py
 
    ![](images/p22.png)
      
-    > **Note:** If you encounter an error "Openai module not found", enter `%` in before the **pip install** in the Install OpenAI cell and re-run the notebook again.
+    > **Note:** If you come across the error "OpenAI module not found," please follow these steps:
+
+     - Add * next to 0.* to initiate the installation of the latest OpenAI module.
+
+     - Run the "Install OpenAI" cell.
+Once the installation is complete, re-run the notebook.
+
+          ![](images/pip-install.png)
 
 1. For **2. Choose a Model**, and replace the **model** value from **text-curie-001** to **demomodel**.
 
@@ -78,12 +89,14 @@ In this lab, participants will develop an application using OpenAI's APIs and Py
 
     ![](images/publish-1.png)
 
-<validation step="f943c5b3-b07a-4779-bc2f-9e13ee01378a" />
+
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - If you receive a success message, you can proceed to the next task.
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
-> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+> - If you need any assistance, please contact us at Cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+<validation step="f943c5b3-b07a-4779-bc2f-9e13ee01378a" />
 
 ## Summary
 
