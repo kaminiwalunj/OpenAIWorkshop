@@ -4,9 +4,9 @@
 
 In this lab, participants will develop an application using OpenAI's APIs and Python programming language. The goal is to demonstrate how to implement AI functionalities such as language generation, sentiment analysis, or recommendation systems using Python, leveraging OpenAI's powerful models and tools.
 
-1. Navigate back to the **Azure Portal**. Search and select **Azure Synapse Analytics** in the Azure portal.
+1. Navigate back to the **Azure Portal**. Search **Azure Synapse Analytics (1)** and select **Azure Synapse Analytics (2)** in the Azure portal.
 
-      ![](images/p2.png)
+     ![](images/azure-syn.png)
 
 1. On **Azure Synapse Analytics** window select **synapseworkspace<inject key="DeploymentID" enableCopy="false"/>**.   
 
