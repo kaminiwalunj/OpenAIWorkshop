@@ -44,13 +44,17 @@ This lab focuses on creating an application using OpenAI capabilities integrated
 
       ![](./images/powerapps-apps-view.png)
 
+      >**Note**: If you see **Welcome to Power Apps Studio**, click **Skip** button.
+
 12. To navigate back, click on **Back (1)**, then click **Leave (2)**.
 
       ![](./images/powerapps-apps-exit.png)
 
-13. Next, on the **Flows (1)** tab, select **Openaisummarization (2)**, then click on `...` **(3)** and **Turn on (4)** your flow.
+13. Next, on the **Flows (1)** tab, select radio button  for **Openaisummarization (2)**, then click on `...` **(3)** and **Turn on (4)** your flow.
 
       ![](./images/flow-on.png)
+
+      >**Note**: If you see **Welcome to Power Automate**, click **Get started** button.
 
 14. Click on **Edit** for Openaisummarization.
 
@@ -60,11 +64,11 @@ This lab focuses on creating an application using OpenAI capabilities integrated
 
       ![](./images/update-values.png)
    
-16. From the **Apps (1)** page, click on the **OpenAI Playground** app to run the app by clicking on the **Play (2)** button.
+16. From the **Apps (1)** page, click on the radio button for **OpenAI Playground** app to run the app by clicking on the **Play (2)** button.
 
      ![](./images/canves-play.png)
 
-17. If you get a popup asking to start a free trial, click on **Star a Free Trial**, then on **You need a Power Apps license to use this app** window select **Start a 30-day trial**. choose your region from the drop-down menu and click on the **Start my trail** button wait for 2-3 minutes It might take to start the trial.
+17. If you get a popup asking to start a free trial, click on **Start a free trial**, then on **You need a Power Apps license to use this app** window select **Start a 30-day trial**. choose your region from the drop-down menu and click on the **Start my trail** button wait for 2-3 minutes It might take to start the trial.
     
 18. In the **Canvas**, click on **Summary** **(1)** button and verify the **auto-filled text** **(2)**. Then click on the **Submit** **(3)** button to get the desired **Summary** **(4)**.
 
@@ -77,4 +81,4 @@ This lab focuses on creating an application using OpenAI capabilities integrated
 
 In this lab, you have successfully integrated OpenAI APIs within Power Apps to enable functionalities like natural language processing, sentiment analysis, or personalized recommendations and built an application.
 
-### You have successfully completed the lab
+### You have successfully completed the lab. Click on **Next >>** to procced with next exercise.

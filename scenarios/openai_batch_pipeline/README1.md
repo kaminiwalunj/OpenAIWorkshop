@@ -106,7 +106,7 @@ You will be able to complete the following tasks:
 
    ![](images/storage-fuctions2.png)
 
-1. Go back to the cloud shell bash session and run the below command to upload the JSON files to the storage account by replacing the <CONNECTION_STRING> you copied in the previous step. This will take a few minutes to complete.
+1. Go back to the cloud shell bash session and run the below command to upload the JSON files to the storage account by replacing the **CONNECTION_STRING** you copied in the previous step. This will take a few minutes to complete.
 
     ```bash 
     python upload_docs.py --conn_string "<CONNECTION_STRING>"
@@ -116,7 +116,7 @@ You will be able to complete the following tasks:
 
    > **Note**: Execute "cd OpenAIWorkshop scenarios/openai_batch_pipeline/document_generation" if you are not inside OpenAIWorkshop/scenarios/openai_batch_pipeline/document_generation directory.
    
-1. Once you have successfully uploaded the JSON files to the storage account, navigate to **Containers (1)**, click on **workshop-data (2)** and select **cleansed-documents (3)** folder and verify that the files have been uploaded.
+1. Once you have successfully uploaded the JSON files to the storage account, navigate to **Containers (1)**, click on **workshop-data (2)** and select **cleansed_documents (3)** folder and verify that the files have been uploaded.
    
    ![](images/pro3.png)
 
@@ -152,11 +152,11 @@ You will be able to complete the following tasks:
 
      ![](images/image(2).png)
 
-5. On the **Security** tab, ensure that the Authentication method is set to **Use both local and Microsoft Entra ID authentication** and click on **Next: Networkikng**
+5. On the **Security** tab, ensure that the Authentication method is set to **Use both local and Microsoft Entra ID authentication** and click on **Next: Networking**
 
    ![](images/image(3).png)
 
-6. On the networking tab, make sure Managed virtual network is **Disable(1)** and **Allow connections from all IP addresses(2)** is checked then click on **Review + Create** and **Create** to deploy the resource.
+6. On the networking tab, make sure Managed virtual network is **Disable(1)** and **Allow connections from all IP addresses(2)** is checked then click on **Review + create** and **Create** to deploy the resource.
 
    ![](images/image(4).png)
    
@@ -189,7 +189,7 @@ You will be able to complete the following tasks:
 
     ![](images/image(01-1).png)  
 
-13. On New Apache Spark pool page, provide the following details and click on **Review + Create (6)** then **Create** on the Review + Create tab to create the Apache Spark pool.
+13. On New Apache Spark pool page, provide the following details and click on **Review + create (6)** then **Create** on the Review + Create tab to create the Apache Spark pool.
 
     - **Apache Spark pool name** : **openaisparkpool (1)**
     - **Isolated Compute** : **Disabled (2)**
@@ -248,9 +248,9 @@ We'll next need to create two linked services: one for our source (the JSON file
 
       ![](images/synapse8.png)
 
-1. In the *New linked service* window that opens, fill in a name for your target linked service as **synapselinkedservice** **(1)**. Select **Legacy (2)** for the version. Select the **Azure subscription (3)** for which you have been working. Select the **synapseworkspace<inject key="DeploymentID" enableCopy="false"/> (4)** for **Server name** and **openaisql01 (5)** as the **Database name**. Be certain to change the **Authentication type** to **System Assigned Managed Identity (6)**, then scroll down and click on **Test connection (7)** and click **Create (8)**.
+1. In the *New linked service* window that opens, fill in a name for your target linked service as **synapselinkedservice** **(1)**. Select **Legacy (2)** for the version. Select the **Azure subscription (3)** for which you have been working. Select the **synapseworkspace<inject key="DeploymentID" enableCopy="false"/> (4)** for **Server name** and **openaisql01 (5)** as the **Database name**. Be certain to change the **Authentication type** to **System-assigned managed identity (6)**, then scroll down and click on **Test connection (7)** and click **Create (8)**.
 
-      ![](images/pro8.png)
+      ![](images/new-openai-pro-feb-5.png)
 
 1. Once you have created the two linked services, be certain to press the **Publish all** button at the top to publish our work. Finalize the creation of the linked services and click **Publish**.
 
@@ -303,7 +303,7 @@ While still within the Synapse Studio, we will now need to create a **Data flow*
 
       ![](images/synapse18.png)
 
-1. Once the **Sink (1)** tile opens, choose **Inline (2)** for the *Sink type*. Then select **Azure Synapse Analytics (3)** for the *Inline dataset type*, and for the **Linked service**, select **Synapselinkedservice (4)**, which was created in the previous step. Ensure to run **Test connection (5)** for the linked service.
+1. Once the **Sink (1)** tile opens, choose **Inline (2)** for the *Sink type*. Then select **Azure Synapse Analytics (3)** for the *Inline dataset type*, and for the **Linked service**, select **synapselinkedservice (4)**, which was created in the previous step. Ensure to run **Test connection (5)** for the linked service.
 
       ![](images/sink-1.png)
 
@@ -313,7 +313,7 @@ While still within the Synapse Studio, we will now need to create a **Data flow*
 
            ![](images/p18.png)    
 
-      - In the Edit linked service window that opens, select the Azure selection method as **From Azure subscription** **(1)**. Select the **Azure subscription (2)** for which you have been working. Select the **asaworkspace<inject key="DeploymentID" enableCopy="false"/> (3)** for **Server name** and **openaisql (4)** as the **Database name**, and then click on **Test connection (5)** and click **Save (6)**.
+      - In the Edit linked service window that opens, select the Azure selection method as **From Azure subscription** **(1)**. Select the **Azure subscription (2)** for which you have been working. Select the **synapseworkspace<inject key="DeploymentID" enableCopy="false"/> (3)** for **Server name** and **openaisql (4)** as the **Database name**, and then click on **Test connection (5)** and click **Save (6)**.
 
            ![](images/p19.png)
 
@@ -327,8 +327,8 @@ While still within the Synapse Studio, we will now need to create a **Data flow*
 
 1. To correct this, let's use our **Select (1)** tile to change the names as follows to get the expected output values:
 
-    - **Summary**: `interaction_summary` **(2)**
-    - **CustomerSentiment**: `sentiment` **(3)**
+    - **summary**: `interaction_summary` **(2)**
+    - **customerSentiment**: `sentiment` **(3)**
 
          ![](images/select-1.png)
     
@@ -359,7 +359,7 @@ Then expand the **Staging (3)** section at the bottom of the settings and utiliz
 
       ![](images/staging-1.png)
 
-4. Then click **Publish all** to publish your changes and save your progress.
+4. Then click **Publish all** to publish your changes and save your progress, press the blue **Publish** button at the bottom left of it to save your changes.
 
 ### **F. Trigger Synapse Pipeline**
 
@@ -367,7 +367,7 @@ Then expand the **Staging (3)** section at the bottom of the settings and utiliz
 
       ![](images/trigger-1.png)
     
-2. To look at the pipeline run, navigate to the left-hand side of the screen and choose the **Monitor (1)** option. Then select the **Pipeline runs (2)** option in the **Integration** section. You will then see the pipeline run that you have triggered under the **Triggered (3)** section as **pipeline 1 (4)**. This pipeline should take approximately 4 minutes (if you are using the uploaded data for the workshop).
+2. To look at the pipeline run, navigate to the left-hand side of the screen and choose the **Monitor (1)** option. Then select the **Pipeline runs (2)** option in the **Integration** section. You will then see the pipeline run that you have triggered under the **Triggered (3)** section as **Pipeline 1 (4)**. This pipeline should take approximately 4 minutes (if you are using the uploaded data for the workshop).
 
       ![](images/pipeline-run-1.png)
 
@@ -403,4 +403,4 @@ Then expand the **Staging (3)** section at the bottom of the settings and utiliz
 
 In this lab, you have ingested the data to a Storage account, set up Synapse Workspace and produced Query Results in Our SQL Table.
 
-### You have successfully completed the lab
+### You have successfully completed the lab. Click on **Next >>** to procced with next exercise.
