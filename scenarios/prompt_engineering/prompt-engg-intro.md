@@ -76,7 +76,7 @@ GPT-3 is
 ```
 > **Note:**  The `Output` in our example ends abruptly because our **Max length (tokens)** variable is set to `=60`. **Max Length (tokens)** sets a limit on the number of tokens to generate in a response. The `text_davinci-003` model supports a maximum of 2048 tokens shared between a given prompt and response completion. (One token is roughly 4 characters for typical English text.)
 
-The `Output:` is a series of strings that make sense given the context provided by our prompt of `"GPT3-3 is"`. However, the output may be unwanted or unexpected based on our use-case. How can we refine, or engineer, our prompt in order to achieve our desired output?
+The `Output:` is a series of strings that make sense given the context provided by our prompt of `"GPT3-3 is"`. However, the output may be unwanted or unexpected based on our use case. How can we refine, or engineer, our prompt in order to achieve our desired output?
 
 The first thing we can do is provide explicit instructions as to what we want the model to do with our previous prompt. This is what is meant by _prompt engineering_: refining the input so as to produce the best output from the LLM.
 
@@ -94,7 +94,7 @@ Did our instructions improve our output? Admittedly, this is not the funniest jo
 | Requirement | Output Meets Requirement? | 
 |-------------|--------|
 | Begin with the words, "GPT-3 is" | Yes, the `Output:` began with the words "GPT-3 is" |
-| The output be in the form of a joke | An attempt was made |
+| The output is in the form of a joke | An attempt was made |
 
 ---
 ## Standard Prompts
@@ -158,7 +158,7 @@ Keep in mind that it's not required to use the QA format. The format depends on 
 ```
 This is awesome! // Positive
 This is bad! // Negative
-Wow that movie was rad! // Positive
+Wow, that movie was rad! // Positive
 What a horrible show! //
 ```
 
