@@ -41,7 +41,7 @@ Let's go ahead and launch the Azure OpenAI playground to learn about prompt engi
 
 1. On **Azure AI services | Azure OpenAI** blade, select **openai-<inject key="Deployment-ID" enableCopy="false"></inject>**
 
-1. In the Azure OpenAI resource pane, click on **Go to Azure AI Foundry Portal**. It will navigate to the **Azure AI Foundry portal**.
+1. In the Azure OpenAI resource pane, click on **Go to Azure AI Foundry portal**. It will navigate to the **Azure AI Foundry portal**.
 
    ![](../natural_language_query/images/17-12-24(4).png)
 
@@ -152,7 +152,7 @@ Q: <Question>?
 A:
 ```
 
-Keep in mind that it's not required to use the QA format. The format depends on the task at hand. For instance, you can perform a simple classification task and give examples that demonstrate the task as follows:
+Keep in mind that the QA format is not required. The format depends on the task at hand. For instance, you can perform a simple classification task and give examples that demonstrate the task as follows:
 
 *Prompt:*
 ```
