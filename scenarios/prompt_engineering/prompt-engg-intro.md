@@ -1,4 +1,3 @@
-
 # Lab-01: Introduction to Prompt Engineering & Azure OpenAI Studio [Read-Only]
 
 ### Estimated Duration: 60 minutes
@@ -15,8 +14,8 @@ In this exercise, you'll explore the concept of prompt engineering, learning how
 - [Chat playground parameters](#Chat-playground-parameters)
 - [General Tips for Designing Prompts](#general-tips-for-designing-prompts)
 
-
 ## What is a prompt?
+
 ![image](https://www.closerscopy.com/img/blinking-cursor-v2.gif)
 
 We've all seen the blinking cursor. Waiting expectantly for us to act, denoting our chance to provide input...
@@ -31,9 +30,9 @@ This guide covers the basics of standard prompts to provide a rough idea of how 
 ###  Trying out Prompt Engineering with Azure OpenAI Playground
 Azure OpenAI Studio provides access to model management, deployment, experimentation, customization, and learning resources. The Chat playground within Azure OpenAI Studio is based on a conversation-in, message-out interface. You can initialize the session with a system message to set up the chat context.
 
-In the Chat playground, you're able to add few-shot examples. The term few-shot refers to providing a few of examples to help the model learn what it needs to do. You can think of it in contrast to zero-shot, which refers to providing no examples.
+In the Chat playground, you're able to add a few-shot examples. The term few-shot refers to providing a few examples to help the model learn what it needs to do. You can think of it in contrast to zero-shot, which refers to providing no examples.
 
-In the Assistant setup, you can provide few-shot examples of what the user input may be, and what the assistant response should be. The assistant tries to mimic the responses you include here in tone, rules, and format you've defined in your system message.
+In the Assistant setup, you can provide a few-shot examples of what the user input may be, and what the assistant response should be. The assistant tries to mimic the responses you include here in tone, rules, and format you've defined in your system message.
 Let's go ahead and launch the Azure OpenAI playground to learn about prompt engineering. 
 
 1. In the **Azure portal**, search for **OpenAI** and select **Azure OpenAI**.
@@ -133,11 +132,11 @@ Given the standard format above, one popular and effective technique to promptin
 <Answer>
 
 <Question>?
-
+<Answer>
 ```
 
 ### Few-shot Question-Answer (QA) Format
-And you can already guess that its QA format version would look like this:
+You can already guess that its QA format version would look like this:
 
 ```
 Q: <Question>?
@@ -184,9 +183,7 @@ FedEx:
 Logistics, Delivery, and Shipping
 ```
 Few-shot prompts enable in-context learning, which is the ability of language models to learn tasks given only a few examples. We will see more of this in action in the upcoming advanced prompt engineering sections.
-
 ---
-
 
 ## Elements of a Prompt
 
@@ -214,7 +211,7 @@ There are many parameters that you can adjust to change the performance of your 
 
 - **Max length (tokens)e** - Set a limit on the number of tokens per model response. The API supports a maximum of 4000 tokens shared between the prompt (including system message, examples, message history, and user query) and the model's response. One token is roughly four characters for typical English text.
 
-- **Stop sequencese** - Make responses stop at a desired point, such as the end of a sentence or list. Specify up to four sequences where the model will stop generating further tokens in a response. The returned text won't contain the stop sequence.
+- **Stop sequences** - Make responses stop at a desired point, such as the end of a sentence or list. Specify up to four sequences where the model will stop generating further tokens in a response. The returned text won't contain the stop sequence.
 
 - **Top probabilities (Top P)e** - Similar to temperature, this controls randomness but uses a different method. Lowering Top P narrows the model’s token selection to likelier tokens. Increasing Top P lets the model choose from tokens with both high and low likelihood. Try adjusting temperature or Top P but not both.
 
@@ -222,7 +219,7 @@ There are many parameters that you can adjust to change the performance of your 
 
 - **Presence penaltye** - Reduce the chance of repeating any token that has appeared in the text at all so far. This increases the likelihood of introducing new topics in a response.
 
-- **Pre-response texte** - Insert text after the user’s input and before the model’s response. This can help prepare the model for a response.
+- **Pre-response text** - Insert text after the user’s input and before the model’s response. This can help prepare the model for a response.
 
 - **Post-response texte** - Insert text after the model’s generated response to encourage further user input, as when modeling a conversation.
 
@@ -231,7 +228,6 @@ There are many parameters that you can adjust to change the performance of your 
 The Current token count is viewable from the Chat playground. Since the API calls are priced by token and it's possible to set a max response token limit, you'll want to keep an eye out for the current token count to make sure the conversation-in doesn't exceed the max response token count.
 
 ## General Tips for Designing Prompts
-
 
 Here are some tips to keep in mind while you are designing your prompts:
 
