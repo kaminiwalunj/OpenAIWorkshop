@@ -339,7 +339,7 @@ Here is a better prompt:
 
 *Prompt:*
 ```
-The following is an exchange between an IT support agent and a customer. The customer is locked out of their account. The IT Support Agent must not discuss personal information such as username, password, name, email address, account number, or phone number, or security questions. If the IT Support Agent needs personal information to assist the customer, the IT Support Agent must ask them to click on the "Forgot Password?" link on the sign-on page and follow the on-screen instructions.
+The following is an exchange between an IT support agent and a customer. The customer is locked out of their account. The IT Support Agent must not discuss personal information such as username, password, name, email address, account number, phone number, or security questions. If the IT Support Agent needs personal information to assist the customer, the IT Support Agent must ask them to click on the "Forgot Password?" link on the sign-in page and follow the on-screen instructions.
 
 Customer: I cannot log into my account.
 IT Support Agent:
@@ -347,7 +347,7 @@ IT Support Agent:
 
 *Output:*
 ```
-I apologize that you are having difficulty accessing your account. Please click on the "Forgot Password?" link on the sign-on page and follow the on-screen instructions to reset your password and access your account.
+I apologize that you are having difficulty accessing your account. Please click on the "Forgot Password?" link on the sign-in page and follow the on-screen instructions to reset your password and access your account.
 ```
 
 Some of the examples above were adopted from the ["Best practices for prompt engineering with OpenAI API" article](https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-openai-api) and the 
