@@ -203,13 +203,5 @@ JSON:
   "Company": "Danone"
 }
 ```
-Now we can see that the model clearly understands that we want to only extract three entities from the text and nothing else.
-
----
-
-[Previous Section (Sample Scenarios)](./02_Sample_Scenarios/01_Text_Summarization.md)
-
-[Next Section (Fine Tuning)](./04_Fine_Tuning.md)
-
 
 ## You have successfully completed the lab.

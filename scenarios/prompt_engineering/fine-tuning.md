@@ -69,9 +69,4 @@ Hosting a Fine Tune model also has its cost, but on medium to high volumes, that
 
 [Fine Tuning in the Azure OpenAI Service](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/how-to/fine-tuning?pivots=programming-language-studio)
 
-
----
-
-[Previous Section (Advanced Concepts)](./03_Advanced_Concepts.md)
-
 ## You have successfully completed the lab.
