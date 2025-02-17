@@ -35,30 +35,32 @@ In the Chat playground, you're able to add a few-shot examples. The term few-sho
 In the Assistant setup, you can provide a few-shot examples of what the user input may be, and what the assistant response should be. The assistant tries to mimic the responses you include here in tone, rules, and format you've defined in your system message.
 Let's go ahead and launch the Azure OpenAI playground to learn about prompt engineering. 
 
-1. In the **Azure portal**, search for **OpenAI** and select **Azure OpenAI**.
+1. In the **Azure portal**, search for **Azure OpenAI (1)** and select **Azure OpenAI (2)**.
 
    ![](../natural_language_query/images/17-12-24(1).png)
 
-1. On **Azure AI services | Azure OpenAI** blade, select **openai-<inject key="Deployment-ID" enableCopy="false"></inject>**
+1. On **Azure AI services | Azure OpenAI** blade, select **OpenAIService-<inject key="Deployment-ID" enableCopy="false"></inject>**
+
+   ![](../natural_language_query/images/17022025(1).png)
 
 1. In the Azure OpenAI resource pane, click on **Go to Azure AI Foundry portal**. It will navigate to the **Azure AI Foundry portal**.
 
-   ![](../natural_language_query/images/17-12-24(4).png)
+   ![](../natural_language_query/images/17022025(2).png)
 
 1. In the **Azure AI Foundry | Azure OpenAI Service**, click on **Chat** under play **Playgrounds** from the left menu.
 
-    ![](../natural_language_query/images/azureaifoundry.png)
+   ![](../natural_language_query/images/17022025(3).png)
 
-1. In the **Chat** section, give any query from the **Chat session** **(2)** to get the response from the openai. 
+1. In the **Chat** section, give any query from the **Chat session** to get the response from the openai. 
 
-   ![](../natural_language_query/images/chat-playground.png)
+   ![](../natural_language_query/images/17022025(5).png)
    
    > **Note**: Chat may not respond with the exact output as shown in the screenshots. Following are the examples of what you'll most likely see in this exercise, but the response may vary.
 
 ---
 ## Basic Prompt Examples
 
-> **Note:** Please feel free to enter anything listed in the `Prompt:` box into a `text-davinci-003` model in the [Azure OpenAI Studio's Playground](https://oai.azure.com/portal/playground) to follow along with these prompt examples. Be aware that you may receive different outputs than what is listed in the `Output:` box, given the nature of generative models
+> **Note:** Please feel free to enter anything listed in the `Prompt:` box into a `gpt-35-deployment` model in the [Azure OpenAI Studio's Playground](https://oai.azure.com/portal/playground) to follow along with these prompt examples. Be aware that you may receive different outputs than what is listed in the `Output:` box, given the nature of generative models
 
 You can achieve a lot with prompts, but the quality of results depends on how much information you provide in the prompt without being overly descriptive. A prompt can contain information like instructions or questions. As we will learn later with more advanced prompts, we can also supply examples of required outputs as well as context for our instructions.
 
@@ -74,7 +76,6 @@ GPT-3 is
  It is a large-scale language model that uses deep learning techniques to generate human-like text. GPT-3 uses a
  transformer-based architecture to generate text with context
 ```
-> **Note:**  The `Output` in our example ends abruptly because our **Max length (tokens)** variable is set to `=60`. **Max Length (tokens)** sets a limit on the number of tokens to generate in a response. The `text_davinci-003` model supports a maximum of 2048 tokens shared between a given prompt and response completion. (One token is roughly 4 characters for typical English text.)
 
 The `Output:` is a series of strings that make sense given the context provided by our prompt of `"GPT3-3 is"`. However, the output may be unwanted or unexpected based on our use case. How can we refine, or engineer, our prompt in order to achieve our desired output?
 
