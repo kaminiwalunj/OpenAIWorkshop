@@ -60,7 +60,7 @@ Let's go ahead and launch the Azure OpenAI playground to learn about prompt engi
 ---
 ## Basic Prompt Examples
 
-> **Note:** Please feel free to enter anything listed in the `Prompt:` box into a `gpt-35-deployment` model in the [Azure OpenAI Studio's Playground](https://oai.azure.com/portal/playground) to follow along with these prompt examples. Be aware that you may receive different outputs than what is listed in the `Output:` box, given the nature of generative models
+> **Note:** Please feel free to enter anything listed in the `Prompt:` box into a `gpt-35-tubro` model in the [Azure OpenAI Studio's Playground](https://oai.azure.com/portal/playground) to follow along with these prompt examples. Be aware that you may receive different outputs than what is listed in the `Output:` box, given the nature of generative models
 
 You can achieve a lot with prompts, but the quality of results depends on how much information you provide in the prompt without being overly descriptive. A prompt can contain information like instructions or questions. As we will learn later with more advanced prompts, we can also supply examples of required outputs as well as context for our instructions.
 
