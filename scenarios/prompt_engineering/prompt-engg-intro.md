@@ -72,9 +72,7 @@ GPT-3 is
 ```
 *Output:*
 ```
- an autoregressive language model that was developed by OpenAI. It stands for Generative Pre-trained Transformer 3.
- It is a large-scale language model that uses deep learning techniques to generate human-like text. GPT-3 uses a
- transformer-based architecture to generate text with context
+GPT-3, or Generative Pre-trained Transformer 3, is a state-of-the-art language processing AI model developed by OpenAI. It is capable of performing a wide range of natural language processing tasks, such as text generation, translation, summarization, and more. GPT-3 has been praised for its ability to generate human-like text and has been widely used in various applications such as chatbots, content generation, and language understanding tasks.
 ```
 
 The `Output:` is a series of strings that make sense given the context provided by our prompt of `"GPT3-3 is"`. However, the output may be unwanted or unexpected based on our use case. How can we refine, or engineer, our prompt in order to achieve our desired output?
@@ -88,7 +86,7 @@ Tell me a joke that begins with: GPT-3 is
 
 *Output:*
 ```
-GPT-3 is so intelligent that it can tell a joke without a punchline.
+GPT-3 is so good at generating text that even Shakespeare would say, "To be or not to be, that is the question... but GPT-3 already knows the answer!"
 ```
 
 Did our instructions improve our output? Admittedly, this is not the funniest joke ever told. And unlike supervised learning problems, there is no easy error or loss metric to compare between the two outputs. Let's look at exactly what we asked the model to generate and what we received:
