@@ -1,6 +1,6 @@
 # Exercise 1: Build an Open AI Pipeline to Ingest Batch Data, Perform Intelligent Operations, and Analyze in Synapse
 
-### Estimated Duration: 90 minutes
+### Estimated Duration: 120 minutes
 
 This lab aims to demonstrate how to integrate OpenAI capabilities into Azure Synapse Analytics for processing batch data, performing intelligent operations like natural language processing or predictive analytics, and analyzing the results efficiently within the Synapse environment.
 
