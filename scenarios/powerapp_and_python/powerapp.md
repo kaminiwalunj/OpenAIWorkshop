@@ -1,6 +1,6 @@
 # Exercise 2: Build an Open AI application with Power App 
 
-### Estimated Duration: 60 minutes
+### Estimated Duration: 90 minutes
 
 This lab focuses on creating an application using OpenAI capabilities integrated with Microsoft Power Apps. Participants will learn how to build a functional application that leverages AI for tasks such as natural language understanding, data analysis, or customer interaction within the Power Apps framework.
 
