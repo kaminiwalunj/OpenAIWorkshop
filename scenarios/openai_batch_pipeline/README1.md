@@ -32,11 +32,16 @@ You will be able to complete the following tasks:
 
 5. Within the **Advanced settings** pane, enter the following details:
 
-    - **Subscription**: Default- Choose the only existing subscription assigned for this lab (1).
+    - **Subscription**: Default- Choose the only existing subscription assigned for this lab **(1)**.
+    
     - **Resource group**: Select **Use existing** **(2)**
+
       - openai-<inject key="DeploymentID" enableCopy="false"></inject>
+    
     - **Storage account**: Select **Use existing** **(3)**
+
       - openaistorage<inject key="DeploymentID" enableCopy="false"></inject>
+    
     - **File share**: Create a new file share **(4)**
 
       ![](images/10-06-2024(3).png)
@@ -45,7 +50,7 @@ You will be able to complete the following tasks:
 
     ![](images/10-06-2024(4).png)
 
-7.  Once the storage account is created, you will be prompted with the Bash window, as shown in the below screenshot.
+7.  Once the storage account is created, you will be prompted with the Bash window, as shown in the screenshot below.
     
     ![](images/cloudshell.png)
 
@@ -96,7 +101,7 @@ You will be able to complete the following tasks:
     ```
     > **Note**: If you encounter the "Conda: command not found" error, close your current CloudShell session, start a new bash session, and try running the commands from step 6 again.
     
-1. Type **y** and hit enter to proceed.
+1. Type **y** and hit Enter to proceed.
 
 1. In the [Azure portal](https://portal.azure.com), navigate to your Storage Account with the suffix `functions` resource by selecting the **openai-<inject key="DeploymentID" enableCopy="false"/>** resource group and selecting the Storage Account from the list of resources.
 
@@ -116,7 +121,7 @@ You will be able to complete the following tasks:
 
    > **Note**: Execute "cd OpenAIWorkshop scenarios/openai_batch_pipeline/document_generation" if you are not inside OpenAIWorkshop/scenarios/openai_batch_pipeline/document_generation directory.
    
-1. Once you have successfully uploaded the JSON files to the storage account, navigate to **Containers (1)**, click on **workshop-data (2)** and select **cleansed_documents (3)** folder and verify that the files have been uploaded.
+1. Once you have successfully uploaded the JSON files to the storage account, navigate to **Containers (1)**, click on **workshop-data (2)**, and select the **cleansed_documents (3)** folder and verify that the files have been uploaded.
    
    ![](images/pro3.png)
 
@@ -131,23 +136,23 @@ You will be able to complete the following tasks:
 
 ## Task 2: Set up Synapse Workspace
 
-### **A. Setup Synape Workspace**
+### **A. Set up Synapse Workspace**
 
 1. In Azure portal, search for **Synapse** and select **Azure Synapse Analytics**.
 
    ![](images/image(1).png)
 
 2. On the **Azure Synapse Analytics** page, Click on **+ Create**.
-3. You will be navigated to **Create Synapse Analytics** page where you will be configuring the synapse workspace.
-4. On the Basics tab provide the following details :
+3. You will be navigated to the **Create Synapse Analytics** page, where you will be configuring the Synapse workspace.
+4. On the Basics tab, provide the following details :
 
-   - **Subscription** : Use **Existing Subscription(1)**.
-   - **Resource Group** : Use **openai-<inject key="DeploymentID" enableCopy="false"></inject>(2)**
-   - **Workspace name** : **synapseworkspace<inject key="DeploymentID" enableCopy="false"></inject>(3)**
-   - **Region** : Select Default region(4)
-   - **Select Data Lake Storage Gen2** : Select **From Subscription(5)**
-   - **Account name** : **asadatalake<inject key="DeploymentID" enableCopy="false"></inject>(6)**
-   - **File system name** : **defaultfs(7)**
+   - **Subscription:** Use **Existing Subscription(1)**.
+   - **Resource Group:** Use **openai-<inject key="DeploymentID" enableCopy="false"></inject>(2)**
+   - **Workspace name:** **synapseworkspace<inject key="DeploymentID" enableCopy="false"></inject>(3)**
+   - **Region:** Select Default region(4)
+   - **Select Data Lake Storage Gen2:** Select **From Subscription(5)**
+   - **Account name:** **asadatalake<inject key="DeploymentID" enableCopy="false"></inject>(6)**
+   - **File system name:** **defaultfs(7)**
    - Click on **Next : Security>(8)**
 
      ![](images/image(2).png)
@@ -156,11 +161,11 @@ You will be able to complete the following tasks:
 
    ![](images/image(3).png)
 
-6. On the networking tab, make sure Managed virtual network is **Disable(1)** and **Allow connections from all IP addresses(2)** is checked then click on **Review + create** and **Create** to deploy the resource.
+6. On the networking tab, make sure Managed virtual network is **Disable(1)** and **Allow connections from all IP addresses(2)** is checked, then click on **Review + create** and **Create** to deploy the resource.
 
    ![](images/image(4).png)
    
-7. Once the resource is deployed click on **Go to resource group**
+7. Once the resource is deployed, click on **Go to resource group**
 
    ![](images/image(5).png)
 
@@ -171,31 +176,36 @@ You will be able to complete the following tasks:
 9. In the Azure Synapse Studio, navigate to **Manage > SQL pools** and then click on **+New**.
 
    ![](images/new-sql-pool.png)
-   
 
-10. On the Basics tab of New dedicated SQL pool provide the following details:
+10. On the Basics tab of the New dedicated SQL pool, provide the following details:
 
-    - **Dedicated SQL pool name** : **openaisql01 (1)**
-    - **Performance level** : Reduce it to **DW100c (2)**
+    - **Dedicated SQL pool name:** **openaisql01 (1)**
+
+    - **Performance level:** Reduce it to **DW100c (2)**
+
     - Click on **Review + create (3)**
    
       ![](images/sql-pool-name.png)
       
-11. On **Review + create** page, click on **Create** and wait for the deployment to complete.
+12. On **Review + create** page, click on **Create** and wait for the deployment to complete.
 
     ![](images/sql-pool-create.png)
 
-12. Now navigate back to Azure portal, **synapseworkspace<inject key="DeploymentID" enableCopy="false"></inject>**, select **Apache Spark pools (1)** from left pane under Analytics pools and click on **+ New (2)**.
+13. Now navigate back to Azure portal, **synapseworkspace<inject key="DeploymentID" enableCopy="false"></inject>**, select **Apache Spark pools (1)** from left pane under Analytics pools and click on **+ New (2)**.
 
     ![](images/image(01-1).png)  
 
-13. On New Apache Spark pool page, provide the following details and click on **Review + create (6)** then **Create** on the Review + Create tab to create the Apache Spark pool.
+14. On the New Apache Spark pool page, provide the following details and click on **Review + create (6)**, then **Create** on the Review + Create tab to create the Apache Spark pool.
 
-    - **Apache Spark pool name** : **openaisparkpool (1)**
-    - **Isolated Compute** : **Disabled (2)**
-    - **Node size** : **Small(4vCores/32GB) (3)**
-    - **Autoscale** : **Disabled (4)**
-    - **Number of nodes** : **3 (5)**
+    - **Apache Spark pool name:** **openaisparkpool (1)**
+
+    - **Isolated Compute:** **Disabled (2)**
+
+    - **Node size:** **Small(4vCores/32GB) (3)**
+
+    - **Autoscale:** **Disabled (4)**
+
+    - **Number of nodes:** **3 (5)**
 
       ![](images/image(02-22).png)
    
@@ -211,7 +221,7 @@ You will be able to complete the following tasks:
 
 1. Copy and paste the following script into the editor **(1)**, then change the **Connect to** value by selecting **openaisql01(2)** from the drop-down, and for **Use database**, ensure that **openaisql01(3)** is selected, and click the **Run (4)** button in the top-left corner, as shown in the picture below. Finish this step by pressing **Publish all (5)** just above the **Run** button to publish our work thus far.
 
-    ```SQL 
+    ```SQL
     CREATE TABLE [dbo].[cs_detail]
     (
     interaction_summary varchar(8000),
@@ -254,7 +264,7 @@ We'll next need to create two linked services: one for our source (the JSON file
 
       ![](images/newlinkedservice1.png)
 
-1. Once you have created the two linked services, be certain to press the **Publish all** button at the top to publish our work. Finalize the creation of the linked services and click **Publish**.
+1. Once you have created the two linked services, be certain to press the **Publish all** button at the top to publish your work. Finalize the creation of the linked services and click **Publish**.
 
       ![](images/publish-linked.png)
    
@@ -282,7 +292,7 @@ While still within the Synapse Studio, we will now need to create a **Data flow*
 
       ![](images/synapse15.png)
    
-1. Next, we'll need to move to the **Source options (1)** panel and drop down the **JSON settings (2)** options. We need to change the **Document form** option to the **Array of documents (3)** setting. This allows our flow to read each .JSON file as a separate entry into our database.
+1. Next, we'll need to move to the **Source options (1)** panel and drop down the **JSON settings (2)** options. We need to change the **Document form** option to the **Array of documents (3)** setting. This allows our flow to read each JSON file as a separate entry into our database.
 
       ![](images/synapse16.png)   
 
@@ -295,6 +305,7 @@ While still within the Synapse Studio, we will now need to create a **Data flow*
       ![](images/dataflow-datapreview.png)
       
       >**Note**: Click the collapse button in the left tab to clearly view the data preview option, making the preview easier to see.
+      
       >**Note**: If you're unable to view data under the Data Preview tab, please click on the Refresh button repeatedly until the data appears.
    
 1. Next, we can add in our **Select** tile and do our minor alterations before writing the data out to the Synapse SQL table. To begin, click the small **+ (1)** sign next to our ingestion tile and choose the **Select (2)** option.
@@ -309,7 +320,7 @@ While still within the Synapse Studio, we will now need to create a **Data flow*
 
       ![](images/sink-1.png)
 
-      > **Note**: If the test connection takes more than 3–4 minutes, follow the below steps.
+      > **Note**: If the test connection takes more than 3–4 minutes, follow the steps below.
 
       - Click on **Edit**.
 
@@ -331,8 +342,9 @@ While still within the Synapse Studio, we will now need to create a **Data flow*
 
 1. To correct this, let's use our **Select (1)** tile to change the names as follows to get the expected output values:
 
-    - **summary**: `interaction_summary` **(2)**
-    - **customerSentiment**: `sentiment` **(3)**
+    - **Summary**: `interaction_summary` **(2)**
+    
+    - **CustomerSentiment**: `sentiment` **(3)**
 
          ![](images/select-1.png)
     
@@ -363,11 +375,11 @@ Then expand the **Staging (3)** section at the bottom of the settings and utiliz
 
       ![](images/staging-1.png)
 
-4. Then click **Publish all** to publish your changes and save your progress, press the blue **Publish** button at the bottom left of it to save your changes.
+4. Then click **Publish all** to publish your changes and save your progress, and press the blue **Publish** button at the bottom left of it to save your changes.
 
 ### **F. Trigger Synapse Pipeline**
 
-1. Once you have successfully published your work, we need to trigger our pipeline. To do this, just below the tabs at the top of the studio, there is a *lightning bolt* icon that says **Add trigger (1)**. Click to add a trigger and select **Trigger now (2)** to begin a pipeline run then when the window opens up click on **OK**.
+1. Once you have successfully published your work, we need to trigger our pipeline. To do this, just below the tabs at the top of the studio, there is a *lightning bolt* icon that says **Add trigger (1)**. Click to add a trigger and select **Trigger now (2)** to begin a pipeline run, then when the window opens up, click on **OK**.
 
       ![](images/trigger-1.png)
     
@@ -390,7 +402,7 @@ Then expand the **Staging (3)** section at the bottom of the settings and utiliz
 
       ![](images/pipline-succeeded.png)
 
-2. Now that the data is in the target table, it is available for usage by running SQL queries against it or connecting PowerBI and creating visualizations. Upload some of the transcript files to the generated_documents folder in your container and see how it creates a new file in the cleansed_documents file.
+2. Now that the data is in the target table, it is available for usage by running SQL queries against it or connecting Power BI and creating visualizations. Upload some of the transcript files to the generated_documents folder in your container and see how it creates a new file in the cleansed_documents folder.
 
 3. To query the new data, navigate to the menu on the left-hand side, and choose **Develop (1)**. Click on the existing **SQL Script (2)** and replace the content with the **SQL Code (3)** below. Then select **openaisql01 (4)** pool **Run (5)**. 
 
@@ -407,6 +419,6 @@ Then expand the **Staging (3)** section at the bottom of the settings and utiliz
 
 ## Summary
 
-In this lab, you have ingested the data to a Storage account, set up Synapse Workspace and produced Query Results in Our SQL Table.
+In this lab, you have ingested the data into a Storage account, set up Synapse Workspace and produced Query Results in our SQL Table.
 
-### You have successfully completed the lab. Click on **Next >>** to procced with next exercise.
+### You have successfully completed the lab. Click on **Next >>** to proceed with the next exercise.
