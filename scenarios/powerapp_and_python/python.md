@@ -30,11 +30,11 @@ In this lab, participants will develop an application using OpenAI's APIs and Py
 
      ![](images/run.png)
 
-1. In **1. Install OpenAI**, click on the **Run** button next to the first cells, and click on the **stop session**. Please wait till **Apache Spark pools** turn to stop state. 
+1. In **1. Install OpenAI**, click on the **Run** button next to the first cell, and click on the **stop session**. Please wait till **Apache Spark pools** turn to the stop state. 
 
      ![](images/run-python1.png)
 
-      > **Note**: you may need to restart the kernel to use updated packages
+      > **Note**: You may need to restart the kernel to use updated packages
 
 1. In **2. Import helper libraries and instantiate credentials**, and replace the **AZURE_OPENAI_API_KEY** and **AZURE_OPENAI_ENDPOINT** with your API key and endpoint URL.
 
