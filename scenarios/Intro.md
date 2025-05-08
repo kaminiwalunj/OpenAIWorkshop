@@ -6,7 +6,6 @@
 
 These hands-on labs provide comprehensive training on integrating OpenAI capabilities into various applications and environments. They cover building pipelines in Azure Synapse for batch data processing and intelligent operations, creating applications with Power Apps and Python that leverage OpenAI's APIs for tasks like natural language processing and data analysis, and exploring advanced topics such as prompt engineering and model fine-tuning using Azure OpenAI Studio. The read-only sections offer theoretical insights into advanced concepts, fine-tuning techniques, hyperparameters in Azure OpenAI Service, and a glossary for understanding key terms and concepts. Together, these labs aim to equip participants with practical skills and theoretical knowledge necessary to effectively utilize OpenAI technologies across different platforms and applications.
 
-
 ## Objective
 
 This lab is designed to equip participants with hands-on experience in using Azure OpenAI to build powerful AI applications. By completing this lab, participants will learn to:
@@ -19,7 +18,7 @@ This lab is designed to equip participants with hands-on experience in using Azu
 
 1. **Introduction to Prompt Engineering & Azure OpenAI Studio:** Learn techniques for crafting effective prompts and utilize Azure OpenAI Studio for developing and deploying AI models. Participants will learn how to optimize AI model responses through effective prompt engineering and utilize Azure OpenAI Studio for model development.
 
-### Explore
+## Explore
 
 Explore and understand the read-only exercises to gain additional knowledge on Azure OpenAI concepts:
 
@@ -30,7 +29,6 @@ Explore and understand the read-only exercises to gain additional knowledge on A
 1. **Basic Overview of Azure OpenAI Service Hyperparameters (Read-Only):** Gain foundational understanding of hyperparameters in Azure OpenAI Service and their impact on model training and performance. Participants will acquire knowledge about hyperparameters in Azure OpenAI Service, crucial for model configuration and optimization.
 
 1. **Glossary (Read-Only):** Access definitions and explanations of key terms and concepts essential for understanding OpenAI and Azure OpenAI Service. Participants will familiarize themselves with key AI and Azure terminologies, enhancing their comprehension of related concepts and technologies.
-
 
 ## Prerequisites
 
@@ -43,7 +41,7 @@ Participants should have:
 
 ## Architecture
 
-These labs utilize Azure Synapse for data integration and analytics pipelines, Power Apps for intuitive Open AI application development, Python for AI-driven solutions using OpenAI APIs, and Azure OpenAI Studio for model development with prompt engineering. Read-only modules cover advanced AI concepts, fine-tuning, hyperparameters, and a glossary, providing foundational knowledge. Participants gain practical skills in leveraging OpenAI effectively across various applications within Azure environments.
+These labs utilize Azure Synapse for data integration and analytics pipelines, Power Apps for intuitive OpenAI application development, Python for AI-driven solutions using OpenAI APIs, and Azure OpenAI Studio for model development with prompt engineering. Read-only modules cover advanced AI concepts, fine-tuning, hyperparameters, and a glossary, providing foundational knowledge. Participants gain practical skills in leveraging OpenAI effectively across various applications within Azure environments.
 
 ## Architecture Diagram
 
@@ -105,7 +103,7 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
 
 1. In the Welcome to Microsoft Edge page, select **Start without your data**, and on the help for importing Google browsing data page select **Continue without this data** button and proceed to select **Confirm and start browsing** on the next page.
    
-1. On the **Sign in to Microsoft Azure** tab you will see a login screen, enter the following email/username and then click on **Next**. 
+1. On the **Sign in to Microsoft Azure** tab, you will see a login screen. Enter the following email/username and then click on **Next**. 
    * Email/Username: <inject key="AzureAdUserEmail"></inject>
    
      ![](media/image7.png "Enter Email")
@@ -125,10 +123,9 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
 
     ![](media/select-rg.png "Resource groups")
    
-1. Confirm you have resource groups present as shown in the below screenshot. The last six digits in the resource group name are unique for every user.
+1. Confirm you have resource groups present as shown in the screenshot below. The last six digits in the resource group name are unique for every user.
 
     ![](media/openai-1.png "Resource groups")
-   
 
 This hands-on lab aims to empower participants in leveraging OpenAI technologies within Azure environments, spanning data ingestion, application development, prompt engineering, model optimization, and theoretical AI concepts for comprehensive learning and application.
 
