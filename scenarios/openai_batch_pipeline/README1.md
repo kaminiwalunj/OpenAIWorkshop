@@ -92,8 +92,8 @@ You will be able to complete the following tasks:
 1. Run the below commands one by one to create and activate the conda environment in Cloudshell.
 
     ```bash 
-    git clone https://github.com/microsoft/OpenAIWorkshop.git
-    cd OpenAIWorkshop/scenarios/openai_batch_pipeline/document_generation
+    git clone https://github.com/CloudLabsAI-Azure/openaifilesworkshop.git
+    cd openaifilesworkshop/scenarios/openai_batch_pipeline/document_generation
     conda create -n document-creation
     conda activate document-creation
     pip install --upgrade pip
@@ -250,7 +250,7 @@ We'll next need to create two linked services: one for our source (the JSON file
 
       ![](images/synapse6.png)
 
-1. Provide the name for your linked service as **openailinkedservice (1)**. Change the **Authentication type** to **Account key (2)**. Then select the **subscription (3)** you have been working in, and finally select the storage account with the name **openaistorage<inject key="DeploymentID" enableCopy="false"></inject>** **(4)** that you created in the initial template and loaded the JSON files into then click on **Test connection (5)**. Once the connection is successful, click the **Create (6)** button in blue on the bottom left of the New linked service window.
+1. Provide the name of your linked service as **openailinkedservice (1)**. Change the **Authentication Type** to **Account Key (2)**. Next, select the **subscription (3)** you are working with and finally select the storage account with **functions (4)** as suffix that you created in the starter template and uploaded the JSON files to. Then click **Test Connection (5)**. After the connection is successful, click the blue **Create (6)** button in the bottom left corner of the New Linked Service window.
 
       ![](images/img-6a.png)
 
