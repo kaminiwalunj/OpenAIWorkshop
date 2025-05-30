@@ -1,5 +1,5 @@
 
-# OpenAI Workshop
+# Use Azure Open AI like a Pro to build powerful AI Applications
 
 ## Exercise 1: Build an Open AI Pipeline to Ingest Batch Data, Perform Intelligent Operations, and Analyze in Synapse
 
