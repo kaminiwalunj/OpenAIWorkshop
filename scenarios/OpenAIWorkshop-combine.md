@@ -1,5 +1,5 @@
 
-# OpenAI Workshop
+# Use Azure Open AI like a Pro to build powerful AI Applications
 
 ## Exercise 1: Build an Open AI Pipeline to Ingest Batch Data, Perform Intelligent Operations, and Analyze in Synapse
 
@@ -135,7 +135,7 @@ You will be able to complete the following tasks:
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-<validation step="ef9a8088-8af2-426f-9672-70c0b0c227b5" />
+<validation step="00e4628c-ed91-4b2a-a3ad-f4501680ab8e" />
 
 ### Task 2: Set up Synapse Workspace
 
@@ -396,7 +396,7 @@ Then expand the **Staging (3)** section at the bottom of the settings and utiliz
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-  <validation step="3e716f01-6da8-431e-aa81-4041b9054091" />
+  <validation step="dbae07c1-9770-48f1-98a2-a7c05efba22d" />
 
 ### Task 3: Query Results in Our SQL Table
 
@@ -577,7 +577,7 @@ In this lab, participants will develop an application using OpenAI's APIs and Py
 
     ![](./powerapp_and_python/images/publish-1.png)
 
-      <validation step="25c1c315-a610-4974-ae83-c5b3983d798e" />
+      <validation step="8731172f-4dc0-41e3-b500-a396412ffb59" />
 
 ## Exercise 4a: Introduction to Prompt Engineering & Azure AI Foundry portal
 
