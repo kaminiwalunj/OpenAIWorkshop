@@ -84,12 +84,7 @@ You will be able to complete the following tasks:
 
     ![](images/E2T1PBS3.png)
 
-1. Run the following command to store the miniconda installed path to the variable.
-
-    ```bash 
-    export PATH=~/miniconda3/bin:$PATH
-    ```
-1. Run the below commands one by one to create and activate the conda environment in Cloudshell.
+1. Run the below commands one by one to create and activate the conda environment in CloudShell.
 
     ```bash 
     git clone https://github.com/CloudLabsAI-Azure/openaifilesworkshop.git
@@ -106,19 +101,20 @@ You will be able to complete the following tasks:
     ```bash
     conda activate document-creation
     ```
-    > **Note**: If you encounter the "Conda: command not found" error after running this command, close your current CloudShell session, start a new Bash session, and then try running the commands of this Step 6 again.
+
+    > **Note:** If you encounter the **"Conda: command not found"** error after running this command, close your current CloudShell session, start a new Bash session, and then try running the commands of this **Step 6** again.
 
     ```bash
     pip install --upgrade pip
     pip install -r reqs.txt
     ```
-    > **Note**: If you encounter errors while running the above pip commands, execute the commands below:
 
-        ```bash
-        pip install --user --upgrade pip
-        pip install --user -r reqs.txt
-        ```
-    
+    > **Note:** If you encounter errors while running the above pip commands, execute the commands below:
+    >
+    >     pip install --user --upgrade pip
+    >     pip install --user -r reqs.txt
+
+
 1. Type **y** and hit Enter to proceed. 
     > **Note**: Proceed to the next step if you are not prompted for this.
 
