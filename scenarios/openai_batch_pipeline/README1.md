@@ -84,26 +84,41 @@ You will be able to complete the following tasks:
 
     ![](images/E2T1PBS3.png)
 
-1. Run the following command to store the miniconda installed path to the variable.
-
-    ```bash 
-    export PATH=~/miniconda3/bin:$PATH
-    ```
-1. Run the below commands one by one to create and activate the conda environment in Cloudshell.
+1. Run the below commands one by one to create and activate the conda environment in CloudShell.
 
     ```bash 
     git clone https://github.com/CloudLabsAI-Azure/openaifilesworkshop.git
+    ```
+
+    ```bash
     cd openaifilesworkshop/scenarios/openai_batch_pipeline/document_generation
+    ```
+
+    ```bash
     conda create -n document-creation
+    ```
+
+    ```bash
     conda activate document-creation
+    ```
+
+    > **Note:** If you encounter the **"Conda: command not found"** error after running this command, close your current CloudShell session, start a new Bash session, and then try running the commands of this **Step 6** again.
+
+    ```bash
     pip install --upgrade pip
     pip install -r reqs.txt
     ```
-    > **Note**: If you encounter the "Conda: command not found" error, close your current CloudShell session, start a new bash session, and try running the commands from step 6 again.
-    
-1. Type **y** and hit Enter to proceed.
 
-1. In the [Azure portal](https://portal.azure.com), navigate to your Storage Account with the suffix `functions` resource by selecting the **openai-<inject key="DeploymentID" enableCopy="false"/>** resource group and selecting the Storage Account from the list of resources.
+    > **Note:** If you encounter errors while running the above pip commands, execute the commands below:
+    >
+    >     pip install --user --upgrade pip
+    >     pip install --user -r reqs.txt
+
+
+1. Type **y** and hit Enter to proceed. 
+    > **Note**: Proceed to the next step if you are not prompted for this.
+
+1. In the [Azure portal](https://portal.azure.com), navigate to the **openai-<inject key="DeploymentID" enableCopy="false"/>** resource group, and then select your Storage Account with the `functions` suffix from the list of resources.
 
     ![](images/storage-functions-new.png)
     
@@ -151,7 +166,7 @@ You will be able to complete the following tasks:
    - **Workspace name:** **synapseworkspace<inject key="DeploymentID" enableCopy="false"></inject>(3)**
    - **Region:** Select Default region(4)
    - **Select Data Lake Storage Gen2:** Select **From Subscription(5)**
-   - **Account name:** **asadatalake<inject key="DeploymentID" enableCopy="false"></inject>(6)**
+   - **Account name:** Select **asadatalake<inject key="DeploymentID" enableCopy="false"></inject>(6)**
    - **File system name:** **defaultfs(7)**
    - Click on **Next : Security>(8)**
 
@@ -164,6 +179,8 @@ You will be able to complete the following tasks:
 6. On the networking tab, make sure Managed virtual network is **Disable(1)** and **Allow connections from all IP addresses(2)** is checked, then click on **Review + create** and **Create** to deploy the resource.
 
    ![](images/image(4).png)
+
+   > **Note**: The deployment might take approximately 5 minutes to complete.
    
 7. Once the resource is deployed, click on **Go to resource group**
 
@@ -190,6 +207,8 @@ You will be able to complete the following tasks:
 12. On **Review + create** page, click on **Create** and wait for the deployment to complete.
 
     ![](images/sql-pool-create.png)
+
+    > **Note**: The deployment might take approximately 10 minutes to complete.
 
 13. Now navigate back to Azure portal, **synapseworkspace<inject key="DeploymentID" enableCopy="false"></inject>**, select **Apache Spark pools (1)** from left pane under Analytics pools and click on **+ New (2)**.
 

@@ -307,6 +307,7 @@ natural language. It involves creating questions or statements that can be used 
 a response in natural language.
 ```
 It's not clear from the prompt above how many sentences to use, what style we need things output in, or what we intend to take away from the output. You might get passable responses with the above prompt; the better prompt would be very specific, concise, and to the point. Something like:
+
 *Prompt:*
 ```
 Provide a list with five bullet points, one sentence each, describing the benefits of prompt 
