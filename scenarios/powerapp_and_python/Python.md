@@ -32,9 +32,8 @@ In this lab, participants will develop an application using OpenAI's APIs and Py
 
 1. Click on the **▷ Run** button next to each cell, step-by-step, in the order mentioned below.
 
-     ![](images/download.png)
-
 <!--
+![This Image belonged to the previous step](images/download.png)
 
 1. In **1. Install OpenAI**, click on the **Run** button next to the first cells, and click on the **stop session**. Please wait till **Apache Spark pools** turn to stop state. 
 
