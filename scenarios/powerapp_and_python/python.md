@@ -26,17 +26,24 @@ In this lab, participants will develop an application using OpenAI's APIs and Py
 
     ![](images/openai-sparkpool.png)
 
-1. Run the notebook step-by-step to complete this exercise. Click on the **Run** button next to the cell.
+1. Click on the **▷ Run** button next to each cell, step-by-step, in the order mentioned below.
 
      ![](images/run.png)
+
+<!--
 
 1. In **1. Install OpenAI**, click on the **Run** button next to the first cell, and click on the **stop session**. Please wait till **Apache Spark pools** turn to the stop state. 
 
      ![](images/run-python1.png)
 
       > **Note**: You may need to restart the kernel to use updated packages
+-->
 
-1. In **2. Import helper libraries and instantiate credentials**, and replace the **AZURE_OPENAI_API_KEY** and **AZURE_OPENAI_ENDPOINT** with your API key and endpoint URL.
+1. Under **1. Install OpenAI**, click on the **Run** button next to the first cell. 
+
+     ![](images/Ex4-RunOpenAI.png)
+
+1. Under **2. Import helper libraries and instantiate credentials**, replace **AZURE_OPENAI_API_KEY** and **AZURE_OPENAI_ENDPOINT** with your API key and endpoint URL. Then, run this cell after updating the required values.
 
      ![](images/key-endpoint.png)
    
@@ -50,27 +57,27 @@ In this lab, participants will develop an application using OpenAI's APIs and Py
      
     > **Note:** If you encounter an error "Openai module not found", enter `%` in before the **pip install** in the Install OpenAI cell and re-run the notebook again.
 
-1. For **2. Choose a Model**, and replace the **model** value from **text-curie-001** to **demomodel**.
+1. For **2. Choose a Model**, replace the **model** value from **text-curie-001** to **demomodel** and **run** this cell.
 
     ![](images/choosemodel.png)
 
-1. In **temperature**, replace **engine** value from **text-curie-001** to **demomodel**.
+1. For the cell under **temperature**, replace the **engine** value from **text-curie-001** to **demomodel**, and run this cell.
 
      ![](images/temp.png)
 
-1. In **top_p**, replace **engine** value from **text-curie-001** to **demomodel**.
+1. For the cell under **top_p**, replace the **engine** value from **text-curie-001** to **demomodel**, and run this cell.
 
      ![](images/top-p.png)
 
-1. For **n**, replace **engine** value from **text-curie-001** to **demomodel**.
+1. For the cell under **n**, replace the **engine** value from **text-curie-001** to **demomodel**, and run this cell.
 
      ![](images/n.png)
 
-1. In **logprobs**, replace **engine** value from **text-curie-001** to **demomodel**.
+1. For the cell under **logprobs**, replace the **engine** value from **text-curie-001** to **demomodel**, and run this cell.
 
      ![](images/logprobs.png)
 
-1. After running the notebook successfully, click on **Publish all**.
+1. After running the Notebook cells successfully, click on **Publish all**.
 
      ![](images/publish.png)
 
@@ -78,7 +85,7 @@ In this lab, participants will develop an application using OpenAI's APIs and Py
 
     ![](images/publish-1.png)
 
-      <validation step="25c1c315-a610-4974-ae83-c5b3983d798e" />
+<validation step="25c1c315-a610-4974-ae83-c5b3983d798e" />
 
 ## Summary
 
