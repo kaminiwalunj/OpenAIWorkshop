@@ -8,7 +8,7 @@ This lab focuses on creating an application using OpenAI capabilities integrated
 
    ![](./images/welcome-1.png)
     
-2. Select **Apps** on the left navigation, click on **Import app** dropdown and select **From package (.zip)**. 
+2. Select **Apps (1)** on the left navigation, click on **Import app (2)** dropdown and select **From package (.zip) (3)**. 
 
     ![](./images/powerapps-import-01.png)
 
