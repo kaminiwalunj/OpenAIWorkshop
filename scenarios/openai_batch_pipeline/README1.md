@@ -22,6 +22,8 @@ You will be able to complete the following tasks:
 
 2. The first time you open the Cloud Shell, you may be prompted to choose the type of shell you want to use (*Bash* or *PowerShell*). Select **Bash**. If you don't see this option, skip the step.
 
+    ![](images/select-bash.png)
+
 3. Within the Getting Started pane, select **Mount storage account (1)**, select your **Storage account subscription (2)** from the dropdown and click **Apply (3)**.
 
    ![](images/10-06-2024(1).png)
@@ -84,6 +86,9 @@ You will be able to complete the following tasks:
 
     ![](images/E2T1PBS3.png)
 
+    > **Note:** Once the conda environment is installed, you can see the output message like this.
+    >  ![](images/conda-installed.png)
+
 1. Run the below commands one by one to create and activate the conda environment in CloudShell.
 
     ```bash 
@@ -118,7 +123,7 @@ You will be able to complete the following tasks:
 1. Type **y** and hit Enter to proceed. 
     > **Note**: Proceed to the next step if you are not prompted for this.
 
-1. In the [Azure portal](https://portal.azure.com), navigate to the **openai-<inject key="DeploymentID" enableCopy="false"/>** resource group, and then select your Storage Account with the `functions` suffix from the list of resources.
+1. In the [Azure portal](https://portal.azure.com), navigate to the **openai-<inject key="DeploymentID" enableCopy="false"/>** resource group, and then select your Storage Account with the `azfunctions` suffix from the list of resources.
 
     ![](images/storage-functions-new.png)
     
@@ -134,8 +139,12 @@ You will be able to complete the following tasks:
 
    ![](images/batch_file_upload2.png)
 
-   > **Note**: Execute "cd OpenAIWorkshop scenarios/openai_batch_pipeline/document_generation" if you are not inside OpenAIWorkshop/scenarios/openai_batch_pipeline/document_generation directory.
-   
+   > **Note**: Make sure you are in the **openaifilesworkshop/scenarios/openai_batch_pipeline/document_generation** directory before running the command. If you are not already in this directory, use the following command to navigate to it:
+   >```bash
+   >cd openaifilesworkshop/scenarios/openai_batch_pipeline/document_generation
+   >```   
+   > Once you're in the correct directory, you can execute the required command.
+      
 1. Once you have successfully uploaded the JSON files to the storage account, navigate to **Containers (1)**, click on **workshop-data (2)**, and select the **cleansed_documents (3)** folder and verify that the files have been uploaded.
    
    ![](images/pro3.png)
@@ -158,6 +167,9 @@ You will be able to complete the following tasks:
    ![](images/image(1).png)
 
 2. On the **Azure Synapse Analytics** page, Click on **+ Create**.
+
+   ![](images/create-synapse.png)
+
 3. You will be navigated to the **Create Synapse Analytics** page, where you will be configuring the Synapse workspace.
 4. On the Basics tab, provide the following details :
 
@@ -176,7 +188,7 @@ You will be able to complete the following tasks:
 
    ![](images/image(3).png)
 
-6. On the networking tab, make sure Managed virtual network is **Disable(1)** and **Allow connections from all IP addresses(2)** is checked, then click on **Review + create** and **Create** to deploy the resource.
+6. On the networking tab, make sure Managed virtual network is **Disable (1)** and **Allow connections from all IP addresses (2)** is checked, then click on **Review + create** and **Create** to deploy the resource.
 
    ![](images/image(4).png)
 
@@ -196,11 +208,11 @@ You will be able to complete the following tasks:
 
 10. On the Basics tab of the New dedicated SQL pool, provide the following details:
 
-    - **Dedicated SQL pool name:** **openaisql01 (1)**
+    - **Dedicated SQL pool name:** **openaisql01**
 
-    - **Performance level:** Reduce it to **DW100c (2)**
+    - **Performance level:** Reduce it to **DW100c**
 
-    - Click on **Review + create (3)**
+    - Click on **Review + create**
    
       ![](images/sql-pool-name.png)
       
@@ -214,7 +226,7 @@ You will be able to complete the following tasks:
 
     ![](images/image(01-1).png)  
 
-14. On the New Apache Spark pool page, provide the following details and click on **Review + create (6)**, then **Create** on the Review + Create tab to create the Apache Spark pool.
+14. On the New Apache Spark pool page, provide the following details and click on **Review + create (6)**, then click on **Create** tab to create the Apache Spark pool.
 
     - **Apache Spark pool name:** **openaisparkpool (1)**
 
@@ -351,7 +363,7 @@ While still within the Synapse Studio, we will now need to create a **Data flow*
            
            ![](images/new2.png)
 
-1. We will then need to head over to the **Settings (1)** tab and adjust the **Schema name** and **Table name**. If you utilized the script provided earlier to make the target table, the Schema name is **dbo (1)** and the Table name is **cs_detail (2)**.
+1. We will then need to head over to the **Settings (1)** tab and adjust the **Schema name** and **Table name**. If you utilized the script provided earlier to make the target table, the Schema name is **dbo (2)** and the Table name is **cs_detail (3)**.
 
       ![](images/synapse20.png)
 
@@ -413,7 +425,7 @@ Then expand the **Staging (3)** section at the bottom of the settings and utiliz
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-  <validation step="3e716f01-6da8-431e-aa81-4041b9054091" />
+<validation step="3e716f01-6da8-431e-aa81-4041b9054091" />
 
 ## Task 3: Query Results in Our SQL Table
 
