@@ -14,7 +14,7 @@ In this lab, participants will develop an application using OpenAI's APIs and Py
      
      ![](../openai_batch_pipeline/images/image(9).png)
     
-1. Click on **Develop (1)**, then click on **+ (2)**, and select **Import**.
+1. Click on **Develop (1)**, then click on **+ (2)**, and select **Import (3)**.
 
     ![](images/import-note.png)
 

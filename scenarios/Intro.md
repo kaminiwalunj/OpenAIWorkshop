@@ -113,11 +113,15 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
    
      ![](media/image8.png "Enter Password")
      
-1. If you see the pop-up **Stay Signed in?**, click No
+1. If you see the pop-up **Stay Signed in?**, click **No**
+
+   ![](media/stay-signed-in.png)
 
 1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
 
 1. If a **Welcome to Microsoft Azure** popup window appears, click **Cancel** to skip the tour.
+
+   ![](media/Azure-cancel-tour.png)
    
 1. Now you will see the Azure Portal Dashboard, click on **Resource groups** from the Navigate panel to see the resource groups.
 
@@ -138,5 +142,7 @@ Learner Support Contacts:
 - Live Chat Support: https://cloudlabs.ai/labs-support
 
 Now, click on **Next** from the lower right corner to move on to the next page.
+
+![](media/next-page.png)
 
 ### Happy Learning!!
