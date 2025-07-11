@@ -409,12 +409,12 @@ While still within the Synapse Studio, we will now need to create a **Data flow*
 
 2. Next, we need to add a **Data flow** to our Pipeline. With your new **Pipeline tab (1)** open, go to the **Activities** section and search for `data` **(2)** and select **Data flow (3)** activity and **drag-and-drop (4)** it into your Pipeline.
 
-      ![](images/data-drag-1.png)
+      ![](images/E1T2ES2.png)
 
 3. Under the **Settings (1)** tab of the **Data flow**, select the **Data flow (2)** drop-down menu and select the name of the data flow you created in the previous step. 
 Then expand the **Staging (3)** section at the bottom of the settings and utilize the drop-down menu for the **Staging linked service**. Choose the linked service you created **openailinkedservice (4)** to ensure the **Test connection (5)**. Next, set a **Staging storage folder** at the very bottom and enter **workshop-data/Staging** **(6)**.
 
-      ![](images/staging-1.png)
+      ![](images/E1T2ES3.png)
 
 4. Then click **Publish all** to publish your changes and save your progress, and press the blue **Publish** button at the bottom left of it to save your changes.
 
@@ -422,11 +422,11 @@ Then expand the **Staging (3)** section at the bottom of the settings and utiliz
 
 1. Once you have successfully published your work, we need to trigger our pipeline. To do this, just below the tabs at the top of the studio, there is a *lightning bolt* icon that says **Add trigger (1)**. Click to add a trigger and select **Trigger now (2)** to begin a pipeline run, then when the window opens up, click on **OK**.
 
-      ![](images/trigger-1.png)
+      ![](images/E1T2FS1.png)
     
 2. To look at the pipeline run, navigate to the left-hand side of the screen and choose the **Monitor (1)** option. Then select the **Pipeline runs (2)** option in the **Integration** section. You will then see the pipeline run that you have triggered under the **Triggered (3)** section as **Pipeline 1 (4)**. This pipeline should take approximately 4 minutes (if you are using the uploaded data for the workshop).
 
-      ![](images/pipeline-run-1.png)
+      ![](images/E1T2FS2.png)
 
 
 
@@ -441,7 +441,7 @@ Then expand the **Staging (3)** section at the bottom of the settings and utiliz
 
 1. Ensure that your pipeline run status has **Succeeded**.
 
-      ![](images/pipline-succeeded.png)
+      ![](images/E1T3S1.png)
 
 2. Now that the data is in the target table, it is available for usage by running SQL queries against it or connecting Power BI and creating visualizations. Upload some of the transcript files to the generated_documents folder in your container and see how it creates a new file in the cleansed_documents folder.
 
@@ -453,13 +453,17 @@ Then expand the **Staging (3)** section at the bottom of the settings and utiliz
     GROUP BY sentiment
     ORDER BY count(*) desc     
      ```
+    ![](images/E1T3S3.png)
+   
+ 4. Your query results, if you are using the files uploaded as part of this repository or the workshop, you should see similar **Results (6)** to those below.
 
-    - Your query results, if you are using the files uploaded as part of this repository or the workshop, you should see similar **Results (6)** to those below.
-
-         ![](images/pro61.png)
+    ![](images/E1T3S4.png)
+         
 
 ## Summary
 
 In this lab, you have ingested the data into a Storage account, set up Synapse Workspace and produced Query Results in our SQL Table.
 
 ### You have successfully completed the lab. Click on **Next >>** to proceed with the next exercise.
+
+![](images/next-page.png)
