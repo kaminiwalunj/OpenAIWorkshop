@@ -48,3 +48,5 @@ A token may be a word, part of a word, or just characters like punctuation. (e.g
 ## Summary
 
 In this lab, you are familiarized with OpenAI large language models (LLM), natural language processing (NLP), prompt, prompt engineering and tokens.
+
+### You have successfully completed the Hands-on Lab.
