@@ -16,7 +16,7 @@ In this lab, participants will develop an application using OpenAI's APIs and Py
     
 1. Click on **Develop (1)**, then click on **+ (2)**, and select **Import (3)**.
 
-    ![](images/import-note.png)
+    ![](images/E3S4.png)
 
 1. Navigate to the `C:\labfile\OpenAIWorkshop-main\scenarios\powerapp_and_python\python` location and select `OpenAI_notebook.ipynb`, then click on **Open**.
 
@@ -24,32 +24,33 @@ In this lab, participants will develop an application using OpenAI's APIs and Py
 
 1. Click the **Collapse** icon to maximize the screen.
 
-    ![](images/close-1.png)
+    ![](images/E3S6.png)
 
 1. Select **openaisparkpool** from the drop-down menu of **Attach to**.
 
-    ![](images/openai-sparkpool(1).png)
+    ![](images/E3S7.png)
 
 1. Click on the **▷ Run** button next to each cell, step-by-step, in the order mentioned below.
 
 1. Under **1. Install OpenAI**, click on the **Run** button next to the first cell. 
 
-    ![](images/Ex4-RunOpenAI.png)
+    ![](images/E3S9.png)
 
     > **Note**: If the **Install OpenAI** cell takes longer than expected and keeps looping, click on **Stop session**. Wait until the **Apache Spark pools** change to the **Stopped** state. You may need to restart the kernel to use the updated packages.
-      ![](images/run-python1.png)
+    
+    ![](images/EX3S9-1.png)
 
 1. Under **2. Import helper libraries and instantiate credentials**, replace **AZURE_OPENAI_API_KEY** and **AZURE_OPENAI_ENDPOINT** with your API key and endpoint URL. Then, run this cell after updating the required values.
 
-     ![](images/key-endpoint.png)
+     ![](images/Ex3S10.png)
    
-1. From Azure Portal, navigate to the **openaicustom-<inject key="DeploymentID" enableCopy="false"/>** resource group, and select the **openai-<inject key="DeploymentID" enableCopy="false"/>** Azure OpenAI resource.
+1. From Azure Portal, navigate to the **openaicustom-<inject key="DeploymentID" enableCopy="false"/> (1)** resource group, and select the **openai-<inject key="DeploymentID" enableCopy="false"/> (2)** Azure OpenAI resource.
 
-    ![](images/openai-resource.png)
+    ![](images/E3S11.png)
 
 1. Under Resource Management, select **Keys and Endpoint (1)**, and click **Show Keys (2)**. Copy **Key 1 (3)** and **Endpoint (4)**, and replace the **AZURE_OPENAI_API_KEY** and **AZURE_OPENAI_ENDPOINT** with your API key and Endpoint URL in the script.
 
-   ![](images/p22.png)
+   ![](images/E3S12.png)
      
     > **Note:** If you come across the error "OpenAI module not found," please follow these steps:
 
@@ -57,35 +58,35 @@ In this lab, participants will develop an application using OpenAI's APIs and Py
 
      - Run the "Install OpenAI" cell. Once the installation is complete, re-run the notebook.
 
-          ![](images/pip-install.png)
+          ![](images/E3S12-1.png)
 
 1. For **2. Choose a Model**, replace the **model** value from **text-curie-001** to **demomodel** and **run** this cell.
 
-    ![](images/choosemodel.png)
+    ![](images/E3S13.png)
 
 1. For the cell under **temperature**, replace the **engine** value from **text-curie-001** to **demomodel**, and run this cell.
 
-     ![](images/temp.png)
+     ![](images/E3S14.png)
 
 1. For the cell under **top_p**, replace the **engine** value from **text-curie-001** to **demomodel**, and run this cell.
 
-     ![](images/top-p.png)
+     ![](images/E3S15.png)
 
 1. For the cell under **n**, replace the **engine** value from **text-curie-001** to **demomodel**, and run this cell.
 
-     ![](images/n.png)
+     ![](images/E3S16.png)
 
 1. For the cell under **logprobs**, replace the **engine** value from **text-curie-001** to **demomodel**, and run this cell.
 
-     ![](images/logprobs.png)
+     ![](images/E3S17.png)
 
 1. After running the Notebook cells successfully, click on **Publish all**.
 
-     ![](images/publish.png)
+     ![](images/E3S18.png)
 
 1. Then click on **Publish** to save the changes. 
 
-    ![](images/publish-1.png)
+    ![](images/E3S19.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - If you receive a success message, you can proceed to the next task.
@@ -98,4 +99,6 @@ In this lab, participants will develop an application using OpenAI's APIs and Py
 
 In this lab, you have successfully developed an application by implementing AI functionalities such as language generation, sentiment analysis, or recommendation systems using Python, leveraging OpenAI's powerful models and tools.
 
-### You have successfully completed the lab
+### You have successfully completed the lab. Click on **Next >>** to proceed with the next exercise.
+
+![](images/next-page.png)
