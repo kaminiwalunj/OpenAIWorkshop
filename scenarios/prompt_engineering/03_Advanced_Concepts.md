@@ -212,3 +212,6 @@ Now we can see that the model clearly understands that we want to only extract t
 
 In this lab, you have gained in-depth theoretical and advanced practical knowledge related to OpenAI and various types of  prompt engineering methods.
 
+### Click on Next >> to proceed with the next exercise.
+
+![](../natural_language_query/images/next-page.png)

@@ -18,7 +18,7 @@ In this lab, you'll explore the concept of prompt engineering, learning how to c
 ## What is a prompt?
 ![image](https://www.closerscopy.com/img/blinking-cursor-v2.gif)
 
-We've all seen the blinking cursor. Waiting expectantly for us to act, denoting our chance to provide input...
+We've all seen the blinking cursor, waiting expectantly for us to act, denoting our chance to provide input...
 
 One way to think of a prompt is as a piece of text that is used to initiate or provide context for the generation of output, primarily natural language in our use cases, by the language model. This could be an input sentence, question, or topic to generate a response from the language model.
 
@@ -37,22 +37,23 @@ Let's go ahead and launch the Azure AI Foundry playground to learn about prompt 
 
 1. In the **Azure portal**, search for **OpenAI** and select **Azure OpenAI**.
 
-   ![](../natural_language_query/images/search_openai.png)
+   ![](../natural_language_query/images/E4S1.png)
 
-1. On **Azure AI services | Azure OpenAI** blade, select **openai-<inject key="DeploymentID" enableCopy="false"/>**
+1. On **AI Foundary | Azure OpenAI** blade, select **openai-<inject key="DeploymentID" enableCopy="false"/>**
+
+    ![](../natural_language_query/images/E4S2.png)
 
 1. In the Azure OpenAI resource pane, click on **Go to Azure Azure AI Foundry Portal** it will navigate to **Azure AI Foundry portal**.
 
-   ![](../natural_language_query/images/azurefoundry.png)
+   ![](../natural_language_query/images/E4S3.png)
 
-1. In the **Azure AI Foundry
-| Azure OpenAI Service**, click on **Chat** under play **Playgrounds** from the left menu.
+1. In the **Azure AI Foundry | Azure OpenAI** service, click on **Chat** under **Playgrounds** from the left menu.
 
-    ![](../natural_language_query/images/azureaifoundry.png)
+    ![](../natural_language_query/images/E4S4.png)
 
 1. In the **Chat** section, give any query from the **Chat session** **(2)** to get the response from the openai. 
 
-   ![](../natural_language_query/images/chat-playground.png)
+   ![](../natural_language_query/images/E4S5.png)
    
    > **Note**: Chat may not respond with the exact output as shown in the screenshots. Following are the examples of what you'll most likely see in this exercise, but the response may vary.
  
@@ -195,13 +196,13 @@ As we cover more and more examples and applications that are possible with promp
 
 A prompt can contain any of the following components:
 
-- **Instruction** - a specific task or instruction you want the model to perform
+- **Instruction-** a specific task or instruction you want the model to perform
 
-- **Context** - can involve external information or additional context that can steer the model to better responses
+- **Context-** can involve external information or additional context that can steer the model to better responses
 
-- **Input Data** - is the input or question that we are interested in finding a response for
+- **Input Data-** is the input or question that we are interested in finding a response for
 
-- **Output Indicator** - indicates the type or format of output.
+- **Output Indicator-** indicates the type or format of output.
 
 Not all the components are required for a prompt, and the format depends on the task at hand. We will touch on more concrete examples in our upcoming guides.
 
@@ -211,21 +212,21 @@ Not all the components are required for a prompt, and the format depends on the 
 
 There are many parameters that you can adjust to change the performance of your model:
 
-- **Parameters**: Custom parameters that alter the model responses. When you are starting out we recommend using the defaults for most parameters
+- **Parameters:** Custom parameters that alter the model responses. When you are starting out we recommend using the defaults for most parameters
 
-- **Past messages included**: Select the number of past messages to include in each new API request. This helps give the model context for new user queries. Setting this number to 10 will include 5 user queries and 5 system responses.
+- **Past messages included:** Select the number of past messages to include in each new API request. This helps give the model context for new user queries. Setting this number to 10 will include 5 user queries and 5 system responses.
 
--  **Temperature**: Controls randomness. Lowering the temperature means that the model produces more repetitive and deterministic responses. Increasing the temperature results in more unexpected or creative responses. Try adjusting temperature or Top P but not both.
+-  **Temperature:** Controls randomness. Lowering the temperature means that the model produces more repetitive and deterministic responses. Increasing the temperature results in more unexpected or creative responses. Try adjusting temperature or Top P but not both.
 
-- **Max response (tokens)**:	Set a limit on the number of tokens per model response. The API on the latest models supports a maximum of 128,000 tokens shared between the prompt (including system message, examples, message history, and user query) and the model's response. One token is roughly four characters for typical English text.
+- **Max response (tokens):**	Set a limit on the number of tokens per model response. The API on the latest models supports a maximum of 128,000 tokens shared between the prompt (including system message, examples, message history, and user query) and the model's response. One token is roughly four characters for typical English text.
 
-- **Top p**:	Similar to temperature, this controls randomness but uses a different method. Lowering Top P narrows the model’s token selection to likelier tokens. Increasing Top P lets the model choose from tokens with both high and low likelihood. Try adjusting temperature or Top P but not both.
+- **Top p:**	Similar to temperature, this controls randomness but uses a different method. Lowering Top P narrows the model’s token selection to likelier tokens. Increasing Top P lets the model choose from tokens with both high and low likelihood. Try adjusting temperature or Top P but not both.
 
-- **Stop sequences**:	Stop sequence make the model end its response at a desired point. The model response ends before the specified sequence, so it won't contain the stop sequence text. For GPT-35-Turbo, using <|im_end|> ensures that the model response doesn't generate a follow-up user query. You can include as many as four-stop sequences.
+- **Stop sequences:**	Stop sequence make the model end its response at a desired point. The model response ends before the specified sequence, so it won't contain the stop sequence text. For GPT-35-Turbo, using <|im_end|> ensures that the model response doesn't generate a follow-up user query. You can include as many as four-stop sequences.
 
-- **Frequency penalty**: Reduces the chance of repeating a token proportionally based on how often it has appeared in the text so far. This decreases the likelihood of repeating the exact same text in a response.
+- **Frequency penalty:** Reduces the chance of repeating a token proportionally based on how often it has appeared in the text so far. This decreases the likelihood of repeating the exact same text in a response.
 
-- **Presence penalty**: Reduce the chance of repeating any token that has appeared in the text at all so far. This increases the likelihood of introducing new topics in a response.
+- **Presence penalty:** Reduce the chance of repeating any token that has appeared in the text at all so far. This increases the likelihood of introducing new topics in a response.
 
 The Current token count is viewable from the Chat playground. Since the API calls are priced by token and it's possible to set a max response token limit, you'll want to keep an eye out for the current token count to make sure the conversation-in doesn't exceed the max response token count.
 
@@ -355,12 +356,14 @@ IT Support Agent:
 I apologize that you are having difficulty accessing your account. Please click on the "Forgot Password?" link on the sign-on page and follow the on-screen instructions to reset your password and access your account.
 ```
 
-Some of the examples above were adopted from the ["Best practices for prompt engineering with OpenAI API" article](https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-openai-api) and the 
+Some of the examples above were adopted from the ["Best practices for prompt engineering with OpenAI API"](https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-openai-api) article and the 
 [Democratizing Artificial Intelligence Research, Education, and Technologies's Prompt Engineering Guide](https://github.com/dair-ai/Prompt-Engineering-Guide)
 
 
 ## Summary 
 
-In this lab, You learned how to create powerful prompts for AI models by examining the idea of prompt engineering in this assignment. Using Azure OpenAI Playground, you gained practical experience by experimenting with various prompt types and comprehending their components and design advice.
+In this lab, you learned how to create powerful prompts for AI models by examining the idea of prompt engineering in this assignment. Using Azure OpenAI Playground, you gained practical experience by experimenting with various prompt types and comprehending their components and design advice.
 
-### You have successfully completed the lab
+### You have successfully completed the lab. Click on **Next >>** to proceed with the next exercise.
+
+![](../natural_language_query/images/next-page.png)

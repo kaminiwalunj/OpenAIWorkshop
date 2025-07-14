@@ -65,7 +65,7 @@ Welcome to your Use Azure Open AI like a Pro to build powerful AI Applications W
  
 Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
  
-   ![](media/labguide-1.png "Lab Environment")
+   ![](media/GSS1.png "Lab Environment")
 
 ### Virtual Machine & Lab Guide
  
@@ -75,7 +75,7 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
  
-   ![](media/miw(3-3).png)
+   ![](media/GSS2.png)
  
 ## Utilizing the Split Window Feature
  
@@ -97,7 +97,7 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
 
 ## Login to Azure Portal
 
-1. In the JumpVM, click on the Azure portal shortcut of the Microsoft Edge browser from the desktop.
+1. In the LabVM, click on the Azure portal shortcut of the Microsoft Edge browser from the desktop.
 
    ![](media/img-3.png "Lab Environment")
 
@@ -125,11 +125,11 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
    
 1. Now you will see the Azure Portal Dashboard, click on **Resource groups** from the Navigate panel to see the resource groups.
 
-    ![](media/select-rg.png "Resource groups")
+    ![](media/GSS8.png "Resource groups")
    
 1. Confirm you have resource groups present as shown in the screenshot below. The last six digits in the resource group name are unique for every user.
 
-    ![](media/openai-1.png "Resource groups")
+    ![](media/GSS9.png "Resource groups")
 
 This hands-on lab aims to empower participants in leveraging OpenAI technologies within Azure environments, spanning data ingestion, application development, prompt engineering, model optimization, and theoretical AI concepts for comprehensive learning and application.
 
