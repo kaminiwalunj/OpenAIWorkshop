@@ -1,6 +1,6 @@
 # Exercise 4C: Fine Tuning (Read-Only)
 
-### Estimated Duration: 15 Minutes
+### Estimated Duration: 25 Minutes
 
 This lab focuses on the process of fine-tuning OpenAI models to improve their performance on specific tasks or datasets. Participants learn how to adjust model parameters, optimize training strategies, and evaluate model performance metrics through practical exercises and examples.
 
