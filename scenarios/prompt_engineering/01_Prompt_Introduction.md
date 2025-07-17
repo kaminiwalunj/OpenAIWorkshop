@@ -1,6 +1,6 @@
 # Exercise 4a: Introduction to Prompt Engineering & Azure AI Foundry portal
 
-### Estimated Duration: 90 minutes
+### Estimated Duration: 90 Minutes
 
 In this lab, you'll explore the concept of prompt engineering, learning how to craft effective prompts for AI models. You'll get hands-on experience with Azure OpenAI Playground, experimenting with different types of prompts and understanding their elements and design tips.
 
