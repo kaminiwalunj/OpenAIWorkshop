@@ -1,16 +1,16 @@
 # Exercise 4D: Basic Overview of Azure OpenAI Service Hyperparameters (Read-Only)
 
-### Estimated Duration: 15 Minutes
+### Estimated Duration: 20 Minutes
 
-This lab provides foundational knowledge on hyperparameters in the context of Azure OpenAI Service. Participants gain understanding of how hyperparameters influence model training and performance, and learn basic techniques for tuning these parameters to achieve better results.
+This exercise provides foundational knowledge on hyperparameters in the context of the Azure OpenAI Service. Participants gain an understanding of how hyperparameters influence model training and performance, and learn basic techniques for tuning these parameters to achieve better results.
 
-## Quick Note on adjusting Hyperparameters
+## Quick Note on Adjusting Hyperparameters
 
 When working with prompts, you will be interacting with the LLM via an API or directly. You can configure a few parameters to get different results for your prompts.
 
 **Temperature-** In short, the lower the temperature, the more deterministic the results are, in the sense that the most probable next token is always picked. Increasing temperatures could lead to more randomness, encouraging more diverse or creative outputs. We are essentially increasing the weights of the other possible tokens. In terms of application, we might want to use a lower temperature for something like fact-based QA to encourage more factual and concise responses. For poem generation or other creative tasks, it might be beneficial to increase the temperature.
 
-**Top_p-** Similarly, with top_p, a sampling technique with temperature called nucleus sampling, you can control how deterministic the model is at generating a response. If you are looking for exact and factual answers, keep this low. If you are looking for more diverse responses, increase to a higher value.
+**Top_p-** Similarly, with top_p, a sampling technique with temperature called nucleus sampling, you can control how deterministic the model is at generating a response. If you are looking for exact and factual answers, keep this low. If you are looking for more diverse responses, increase the value.
 
 The general recommendation is to alter one, not both.
 
