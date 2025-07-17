@@ -265,7 +265,6 @@ You will be able to complete the following tasks:
 
 1. Copy and paste the following script into the editor **(1)**, then change the **Connect to** value by selecting **openaisql01 (2)** from the drop-down. For **Use database**, ensure that **openaisql01 (3)** is selected. Click the **Run (4)** button in the top-left corner to execute the script. Once done, click **Publish all (5)** just above the **Run** button to publish your work so far.
 
-
     ```SQL
     CREATE TABLE [dbo].[cs_detail]
     (
@@ -473,7 +472,7 @@ While still within Synapse Studio, we will now create a **Data flow** to ingest 
 
 ## Summary
 
-In this lab, you successfully ingested data into a storage account, created a Synapse workspace, built a pipeline and data flow, and queried the results within a SQL table.
+In this exercise, you successfully ingested data into a storage account, created a Synapse workspace, built a pipeline and data flow, and queried the results within a SQL table.
 
 ### You have successfully completed the exercise. Click on **Next >>** to proceed with the next exercise.
 
