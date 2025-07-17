@@ -2,7 +2,7 @@
 
 ### Estimated Duration: 90 Minutes
 
-In this lab, you'll explore the concept of prompt engineering, learning how to craft effective prompts for AI models. You'll get hands-on experience with Azure OpenAI Playground, experimenting with different types of prompts and understanding their elements and design tips.
+In this exercise, you'll explore the concept of prompt engineering, learning how to craft effective prompts for AI models. You'll get hands-on experience with Azure OpenAI Playground, experimenting with different types of prompts and understanding their elements and design tips.
 
 ## Topics
 
@@ -28,11 +28,11 @@ Prompt engineering is a relatively [new discipline](https://www.businessinsider.
 This guide covers the basics of standard prompts to provide a rough idea of how to interact with and instruct the LLMs found on [Azure AI Foundry portal's Playground](https://oai.azure.com/portal/playground). 
 
 ###  Trying out Prompt Engineering with Azure OpenAI Playground
-Azure AI Foundry portal provides access to model management, deployment, experimentation, customization, and learning resources. The Chat playground within Azure AI Foundry portal is based on a conversation-in, message-out interface. You can initialize the session with a system message to set up the chat context.
+The Azure AI Foundry portal provides access to model management, deployment, experimentation, customization, and learning resources. The Chat playground within the Azure AI Foundry portal is based on a conversation-in, message-out interface. You can initialize the session with a system message to set up the chat context.
 
-In the Chat playground, you're able to add few-shot examples. The term few-shot refers to providing a few of examples to help the model learn what it needs to do. You can think of it in contrast to zero-shot, which refers to providing no examples.
+In the Chat playground, you're able to add a few-shot examples. The term few-shot refers to providing a few of examples to help the model learn what it needs to do. You can think of it in contrast to zero-shot, which refers to providing no examples.
 
-In the Assistant setup, you can provide few-shot examples of what the user input may be, and what the assistant response should be. The assistant tries to mimic the responses you include here in tone, rules, and format you've defined in your system message.
+In the Assistant setup, you can provide a few-shot examples of what the user input may be and what the assistant response should be. The assistant tries to mimic the responses you include here in tone, rules, and format you've defined in your system message.
 Let's go ahead and launch the Azure AI Foundry playground to learn about prompt engineering. 
 
 1. In the **Azure portal**, search for **OpenAI** and select **Azure OpenAI**.
@@ -43,7 +43,7 @@ Let's go ahead and launch the Azure AI Foundry playground to learn about prompt 
 
     ![](../natural_language_query/images/E4S2.png)
 
-1. In the Azure OpenAI resource pane, click on **Go to Azure Azure AI Foundry Portal** it will navigate to **Azure AI Foundry portal**.
+1. In the Azure OpenAI resource pane, click on **Go to Azure AI Foundry Portal**, which will navigate to the **Azure AI Foundry portal**.
 
    ![](../natural_language_query/images/E4S3.png)
 
@@ -55,7 +55,7 @@ Let's go ahead and launch the Azure AI Foundry playground to learn about prompt 
 
    ![](../natural_language_query/images/E4S5.png)
    
-   > **Note**: Chat may not respond with the exact output as shown in the screenshots. Following are the examples of what you'll most likely see in this exercise, but the response may vary.
+   > **Note:** Chat may not respond with the exact output as shown in the screenshots. Following are the examples of what you'll most likely see in this exercise, but the response may vary.
  
 ---
 ## Basic Prompt Examples
@@ -102,7 +102,7 @@ Did our instructions improve our output? Admittedly, this is not the funniest jo
 ---
 ## Standard Prompts
 
-We looked at two very basic prompts above as well as the output they generated. Now that we are familiar with the basic concepts of prompt engineering, let's look at some common formats for prompts. 
+We looked at two very basic prompts above, as well as the output they generated. Now that we are familiar with the basic concepts of prompt engineering, let's look at some common formats for prompts. 
 
 ### Question Format
 
@@ -231,8 +231,6 @@ There are many parameters that you can adjust to change the performance of your 
 The Current token count is viewable from the Chat playground. Since the API calls are priced by token and it's possible to set a max response token limit, you'll want to keep an eye out for the current token count to make sure the conversation-in doesn't exceed the max response token count.
 
 ## General Tips for Designing Prompts
-
-
 Here are some tips to keep in mind while you are designing your prompts:
 
 ### Start Simple
@@ -362,7 +360,7 @@ Some of the examples above were adopted from the ["Best practices for prompt eng
 
 ## Summary 
 
-In this lab, you learned how to create powerful prompts for AI models by examining the idea of prompt engineering in this assignment. Using Azure OpenAI Playground, you gained practical experience by experimenting with various prompt types and comprehending their components and design advice.
+In this exercise, you learned how to create powerful prompts for AI models by examining the idea of prompt engineering in this assignment. Using Azure OpenAI Playground, you gained practical experience by experimenting with various prompt types and comprehending their components and design advice.
 
 ### You have successfully completed the lab. Click on **Next >>** to proceed with the next exercise.
 
