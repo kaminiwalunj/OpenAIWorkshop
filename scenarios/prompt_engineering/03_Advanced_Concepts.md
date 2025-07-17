@@ -2,7 +2,7 @@
 
 ### Estimated Duration: 30 Minutes
 
-This lab provides in-depth theoretical and advanced practical knowledge related to OpenAI and its applications. It covers the introduction to promot engineering and it's use cases and various types of prompts one can implement to fetch the desired results.
+This exercise provides in-depth theoretical and advanced practical knowledge related to OpenAI and its applications. It covers the introduction to promot engineering and it's use cases and various types of prompts one can implement to fetch the desired results.
 
 ## Topics
 
@@ -101,7 +101,7 @@ Here's a Zero-Shot Prompt equivalent.
 
 *Prompt:*
 ```
-Tell me in which city a university is located. Provide the city name, state code and country, comma separated as one line.
+Tell me in which city a university is located. Provide the city name, state code and country, comma-separated as one line.
 
 University: UCLA
 ```
@@ -115,7 +115,7 @@ City: Los Angeles, CA, USA
 
 ## Few-Shot Prompts
 
-Few-Shot prompts enable you to provide multiple examples of the model to learn from. This is useful when you want to fine-tune the output for more complex scenarios where the output may vary based on the input. It may also be a simpler way to define a task than providing detailed, natural language instructions of what you expect.
+Few-shot prompts enable you to provide multiple examples of the model to learn from. This is useful when you want to fine-tune the output for more complex scenarios where the output may vary based on the input. It may also be a simpler way to define a task than providing detailed, natural language instructions of what you expect.
 
 Here's an example of entity extraction that is well-suited to few-shot prompts.
 
@@ -210,7 +210,7 @@ Now we can see that the model clearly understands that we want to only extract t
 
 ## Summary
 
-In this lab, you have gained in-depth theoretical and advanced practical knowledge related to OpenAI and various types of  prompt engineering methods.
+In this exercise, you have gained in-depth theoretical and advanced practical knowledge related to OpenAI and various types of  prompt engineering methods.
 
 ### Click on Next >> to proceed with the next exercise.
 
