@@ -1,6 +1,6 @@
 # Exercise 1: Build an Open AI Pipeline to Ingest Batch Data, Perform Intelligent Operations, and Analyze in Synapse
 
-### Estimated Duration: 120 minutes
+### Estimated Duration: 120 Minutes
 
 This lab aims to demonstrate how to integrate OpenAI capabilities into Azure Synapse Analytics for processing batch data, performing intelligent operations like natural language processing or predictive analytics, and analyzing the results efficiently within the Synapse environment.
 
@@ -34,19 +34,17 @@ You will be able to complete the following tasks:
 
 5. Within the **Advanced settings** pane, enter the following details:
 
-    - **Subscription**: Default- Choose the only existing subscription assigned for this lab **(1)**.
+    - **Subscription:** Default- Choose the only existing subscription assigned for this lab **(1)**.
     
-    - **Resource group**: Select **Use existing** **(2)**
+    - **Resource group:** Select **Use existing** **(2)**
 
       - openai-<inject key="DeploymentID" enableCopy="false"></inject>
 
-    
-    - **Storage account**: Select **Use existing** **(3)**
+    - **Storage account:** Select **Use existing** **(3)**
 
       - openaistorage<inject key="DeploymentID" enableCopy="false"></inject>
-
     
-    - **File share**: Create a new file share **(4)**
+    - **File share:** Create a new file share **(4)**
 
    ![](images/10-06-2024(3).png)
 
@@ -58,7 +56,7 @@ You will be able to complete the following tasks:
     
     ![](images/E1T1S7.png)
 
-    > **Note**: Please disregard the warning `the storage file share subscription ID is not registered to Microsoft.CloudShell Namespace` and proceed with the next task.
+    > **Note:** Please disregard the warning `the storage file share subscription ID is not registered to Microsoft.CloudShell Namespace` and proceed with the next task.
 
 ### B. Upload files to a storage account:
 
@@ -118,7 +116,7 @@ You will be able to complete the following tasks:
     conda activate document-creation
     ```
 
-    > **Note:** If you encounter the **"Conda: command not found"** error after running this command, close your current CloudShell session, start a new Bash session, and then try running the below mentioned commands and then commands of **Step 6** again.
+    > **Note:** If you encounter the **"Conda: command not found"** error after running this command, close your current CloudShell session, start a new Bash session, and then try running the below-mentioned commands and then the commands of **Step 6** again.
 
     ```bash
     pip install --upgrade pip
@@ -132,7 +130,7 @@ You will be able to complete the following tasks:
 
 
 1. Type **y** and hit Enter to proceed. 
-    > **Note**: Proceed to the next step if you are not prompted for this.
+    > **Note:** Proceed to the next step if you are not prompted for this.
 
 1. In the [Azure portal](https://portal.azure.com), navigate to the **openai-<inject key="DeploymentID" enableCopy="false"/>** resource group, and then select your Storage Account with the `azfunctions` suffix from the list of resources.
 
@@ -150,7 +148,7 @@ You will be able to complete the following tasks:
 
    ![](images/batch_file_upload2.png)
 
-   > **Note**: Make sure you are in the **openaifilesworkshop/scenarios/openai_batch_pipeline/document_generation** directory before running the command. If you are not already in this directory, use the following command to navigate to it:
+   > **Note:** Make sure you are in the **openaifilesworkshop/scenarios/openai_batch_pipeline/document_generation** directory before running the command. If you are not already in this directory, use the following command to navigate to it:
    >```bash
    >cd openaifilesworkshop/scenarios/openai_batch_pipeline/document_generation
    >```   
@@ -183,7 +181,7 @@ You will be able to complete the following tasks:
 
 3. You will be navigated to the **Create Synapse Analytics** page, where you will be configuring the Synapse workspace.
    
-4. On the Basics tab, provide the following details :
+4. On the Basics tab, provide the following details:
 
    - **Subscription:** Use **Existing Subscription(1)**.
    - **Resource Group:** Use **openai-<inject key="DeploymentID" enableCopy="false"></inject>(2)**
@@ -196,7 +194,7 @@ You will be able to complete the following tasks:
 
    ![](images/image(2).png)
 
-5. On the **Security** tab, ensure that the Authentication method is set to **Use both local and Microsoft Entra ID authentication** and click on **Next: Networking**
+5. On the **Security** tab, ensure that the Authentication method is set to **Use both local and Microsoft Entra ID authentication** and click on **Next: Networking**.
 
    ![](images/image(3).png)
 
@@ -204,7 +202,7 @@ You will be able to complete the following tasks:
 
    ![](images/image(4).png)
 
-   > **Note**: The deployment might take approximately 5 minutes to complete.
+   > **Note:** The deployment might take approximately 5 minutes to complete.
    
 7. Once the resource is deployed, click on **Go to resource group**
 
@@ -214,7 +212,7 @@ You will be able to complete the following tasks:
    
    ![](images/E1T2AS8.png)
 
-9. In the Azure Synapse Studio, navigate to **Manage > SQL pools** and then click on **+New**.
+9. In the Azure Synapse Studio, navigate to **Manage > SQL pools** and then click on **+ New**.
 
     ![](images/E1T2AS9.png)
 
@@ -224,7 +222,7 @@ You will be able to complete the following tasks:
 
     - Performance level: Reduce it to **DW100c**
 
-    - Click on **Review + create**
+    - Click on **Review + create**.
    
     ![](images/E1T2AS10.png)
       
@@ -232,7 +230,7 @@ You will be able to complete the following tasks:
 
     ![](images/E1T2AS11.png)
 
-    > **Note**: The deployment might take approximately 10 minutes to complete.
+    > **Note:** The deployment might take approximately 10 minutes to complete.
 
 12. Now navigate back to Azure portal, **synapseworkspace<inject key="DeploymentID" enableCopy="false"></inject>**, select **Apache Spark pools (1)** from left pane under Analytics pools and click on **+ New (2)**.
 
@@ -293,7 +291,7 @@ We'll next need to create two linked services: one for our source (the JSON file
 
       ![](images/synapse6.png)
 
-1. Provide the name of your linked service as **openailinkedservice (1)**. Change the **Authentication Type** to **Account Key (2)**. Next, select the **subscription (3)** you are working with and finally select the storage account with **azfunctions (4)** as suffix that you created in the starter template and uploaded the JSON files to. Then click **Test Connection (5)**. After the connection is successful, click the blue **Create (6)** button in the bottom left corner of the New Linked Service window.
+1. Provide the name of your linked service as **openailinkedservice (1)**. Change the **Authentication Type** to **Account Key (2)**. Next, select the **subscription (3)** you are working with and finally select the storage account with **azfunctions (4)** as a suffix that you created in the starter template and uploaded the JSON files to. Then click **Test Connection (5)**. After the connection is successful, click the blue **Create (6)** button in the bottom left corner of the New Linked Service window.
 
       ![](images/img-6a.png)
 
@@ -343,13 +341,13 @@ While still within the Synapse Studio, we will now need to create a **Data flow*
 
       >**Note:** It will take a minute or two for the **data flow debug** session to get enabled.
 
-1. Now head to the **Data preview** tab and run a preview to check your work thus far.
+1. Now, head to the **Data preview** tab and run a preview to check your work thus far.
     
      ![](images/E1T2DS8.png)
       
-      >**Note**: Click the collapse button in the left tab to clearly view the data preview option, making the preview easier to see.
+      >**Note:** Click the collapse button in the left tab to clearly view the data preview option, making the preview easier to see.
       
-      >**Note**: If you're unable to view data under the Data Preview tab, please click on the Refresh button repeatedly until the data appears.
+      >**Note:** If you're unable to view data under the Data Preview tab, please click on the Refresh button repeatedly until the data appears.
    
 1. Next, we can add in our **Select** tile and do our minor alterations before writing the data out to the Synapse SQL table. To begin, click the small **+ (1)** sign next to our ingestion tile and choose the **Select (2)** option.
 
@@ -363,7 +361,7 @@ While still within the Synapse Studio, we will now need to create a **Data flow*
 
       ![](images/E1T2DS11.png)
 
-      > **Note**: If the test connection takes more than 3–4 minutes, follow the steps below.
+      > **Note:** If the test connection takes more than 3–4 minutes, follow the steps below.
 
       - Click on **Edit**.
 
@@ -383,9 +381,9 @@ While still within the Synapse Studio, we will now need to create a **Data flow*
 
 1. To correct this, let's use our **Select (1)** tile to change the names as follows to get the expected output values:
 
-    - **Summary**: `interaction_summary` **(2)**
+    - **Summary:** `interaction_summary` **(2)**
     
-    - **CustomerSentiment**: `sentiment` **(3)**
+    - **CustomerSentiment:** `sentiment` **(3)**
 
     ![](images/E1T2DS14.png)
     
@@ -428,8 +426,6 @@ Then expand the **Staging (3)** section at the bottom of the settings and utiliz
 
       ![](images/E1T2FS2.png)
 
-
-
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - If you receive a success message, you can proceed to the next task.
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
@@ -457,8 +453,7 @@ Then expand the **Staging (3)** section at the bottom of the settings and utiliz
    
  4. Your query results, if you are using the files uploaded as part of this repository or the workshop, you should see similar **Results (6)** to those below.
 
-    ![](images/E1T3S4.png)
-         
+    ![](images/E1T3S4.png)         
 
 ## Summary
 
