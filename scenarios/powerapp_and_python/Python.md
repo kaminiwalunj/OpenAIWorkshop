@@ -1,8 +1,8 @@
 # Exercise 3: Build an Open AI application with Python
 
-### Estimated Duration: 90 minutes
+### Estimated Duration: 90 Minutes
 
-In this lab, participants will develop an application using OpenAI's APIs and Python programming language. The goal is to demonstrate how to implement AI functionalities such as language generation, sentiment analysis, or recommendation systems using Python, leveraging OpenAI's powerful models and tools.
+In this Exercise, participants will develop an application using OpenAI's APIs and the Python programming language. The goal is to demonstrate how to implement AI functionalities such as language generation, sentiment analysis, or recommendation systems using Python, leveraging OpenAI's powerful models and tools.
 
 1. Navigate back to the **Azure Portal**. Search **Azure Synapse Analytics (1)** and select **Azure Synapse Analytics (2)** in the Azure portal.
 
