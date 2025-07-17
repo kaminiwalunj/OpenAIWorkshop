@@ -1,6 +1,6 @@
 # Exercise 4E: Glossary (Read-Only)
 
-### Estimated Duration: 15 Minutes
+### Estimated Duration: 20 Minutes
 
 Azure OpenAI Large Language Models (LLMs) like GPT-4 excel in natural language tasks by generating coherent text. Prompt engineering optimizes input prompts to influence model outputs effectively for desired responses.
 
