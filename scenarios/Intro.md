@@ -1,6 +1,6 @@
 # Use Azure Open AI like a Pro to build powerful AI Applications
 
-### Overall Estimated Duration: 8 hours
+### Overall Estimated Duration: 8 Hours
 
 ## Overview
 
@@ -67,7 +67,7 @@ Once you're ready to dive in, your virtual machine and lab guide will be right a
  
    ![](media/GSS1.png "Lab Environment")
 
-### Virtual Machine & Lab Guide
+## Virtual Machine & Lab Guide
  
 Your virtual machine is your workhorse throughout the workshop. The lab guide is your roadmap to success.
  
@@ -85,7 +85,7 @@ For convenience, you can open the lab guide in a separate window by selecting th
  
 ## Managing Your Virtual Machine
  
-Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
+Feel free to **Start, Stop, or Restart (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
  
   ![](media/res-1.png)
 
@@ -95,13 +95,11 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
 
    ![](media/zoom-feature.png)
 
-## Login to Azure Portal
+## Let's Get Started with Azure Portal
 
-1. In the LabVM, click on the Azure portal shortcut of the Microsoft Edge browser from the desktop.
+1. In the LabVM, click on the **Azure Portal** shortcut of the Microsoft Edge browser from the desktop.
 
    ![](media/img-3.png "Lab Environment")
-
-1. In the Welcome to Microsoft Edge page, select **Start without your data**, and on the help for importing Google browsing data page select **Continue without this data** button and proceed to select **Confirm and start browsing** on the next page.
    
 1. On the **Sign in to Microsoft Azure** tab, you will see a login screen. Enter the following email/username and then click on **Next**. 
    * Email/Username: <inject key="AzureAdUserEmail"></inject>
@@ -116,8 +114,6 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
 1. If you see the pop-up **Stay Signed in?**, click **No**
 
    ![](media/stay-signed-in.png)
-
-1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
 
 1. If a **Welcome to Microsoft Azure** popup window appears, click **Cancel** to skip the tour.
 
