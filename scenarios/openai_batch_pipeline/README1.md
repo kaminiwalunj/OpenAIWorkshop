@@ -2,9 +2,9 @@
 
 ### Estimated Duration: 120 Minutes
 
-This lab aims to demonstrate how to integrate OpenAI capabilities into Azure Synapse Analytics for processing batch data, performing intelligent operations like natural language processing or predictive analytics, and analyzing the results efficiently within the Synapse environment.
+In this Exercise, you will integrate OpenAI capabilities into Azure Synapse Analytics for processing batch data, performing intelligent operations like natural language processing or predictive analytics, and analyzing the results efficiently within the Synapse environment.
 
-## Lab Objectives
+## Exercise Objectives
 
 You will be able to complete the following tasks:
 
@@ -46,9 +46,9 @@ You will be able to complete the following tasks:
     
     - **File share:** Create a new file share **(4)**
 
-   ![](images/10-06-2024(3).png)
+      ![](images/10-06-2024(3).png)
 
-6. Enter the file share name as **blob (1)**, select **Ok**, and click on **Select (2)**.
+6. Enter the file share name as **blob (1)**, select **OK**, and click on **Select (2)**.
 
     ![](images/10-06-2024(4).png)
 
@@ -124,19 +124,21 @@ You will be able to complete the following tasks:
     ```
 
     > **Note:** If you encounter errors while running the above pip commands, execute the commands below:
-    >
-    >     pip install --user --upgrade pip
-    >     pip install --user -r reqs.txt
-
+    
+    ```
+    pip install --user --upgrade pip
+    pip install --user -r reqs.txt
+    ```
 
 1. Type **y** and hit Enter to proceed. 
+    
     > **Note:** Proceed to the next step if you are not prompted for this.
 
-1. In the [Azure portal](https://portal.azure.com), navigate to the **openai-<inject key="DeploymentID" enableCopy="false"/>** resource group, and then select your Storage Account with the `azfunctions` suffix from the list of resources.
+1. Navigate to the **openai-<inject key="DeploymentID" enableCopy="false"/>** resource group, and then select your Storage Account with the `azfunctions` suffix from the list of resources.
 
     ![](images/E2T1BS8.png)
     
-1. Switch to the **Access keys (1)** blade and select **Show (2)**, which is next to the Connection String value. Select the copy button for the first **connection string (3)**. Paste the value into a text editor, such as Notepad, for later reference.
+1. Navigate to the **Access keys (1)** blade located under the **Security + networking** section. Next, select **Show (2)** to reveal the connection string value. Then, click the copy button next to the first **Connection string (3)**. Finally, paste the copied value into a text editor, such as Notepad, for later reference.
 
    ![](images/E2T1BS9.png)
 
@@ -149,12 +151,13 @@ You will be able to complete the following tasks:
    ![](images/batch_file_upload2.png)
 
    > **Note:** Make sure you are in the **openaifilesworkshop/scenarios/openai_batch_pipeline/document_generation** directory before running the command. If you are not already in this directory, use the following command to navigate to it:
-   >```bash
-   >cd openaifilesworkshop/scenarios/openai_batch_pipeline/document_generation
-   >```   
-   > Once you're in the correct directory, you can execute the required command.
+   
+   ```bash
+   cd openaifilesworkshop/scenarios/openai_batch_pipeline/document_generation
+   ```
       
-1. Once you have successfully uploaded the JSON files to the storage account, navigate to **Containers (1)**, click on **workshop-data (2)**, and select the **cleansed_documents (3)** folder and verify that the files have been uploaded.
+1. Once the JSON files have been successfully uploaded to the storage account, navigate to **Containers (1)** under the **Data storage** section. Click on **workshop-data (2)**, then open the **cleansed\_documents (3)** folder and verify that the files have been uploaded correctly.
+
    
    ![](images/pro3.png)
 
@@ -169,7 +172,7 @@ You will be able to complete the following tasks:
 
 ## Task 2: Set up Synapse Workspace
 
-### **A. Set up Synapse Workspace**
+### A. Set up Synapse Workspace
 
 1. In Azure portal, search for **Synapse** and select **Azure Synapse Analytics**.
 
@@ -181,24 +184,24 @@ You will be able to complete the following tasks:
 
 3. You will be navigated to the **Create Synapse Analytics** page, where you will be configuring the Synapse workspace.
    
-4. On the Basics tab, provide the following details:
+4. On the **Basics** tab, provide the following details:
 
-   - **Subscription:** Use **Existing Subscription(1)**.
-   - **Resource Group:** Use **openai-<inject key="DeploymentID" enableCopy="false"></inject>(2)**
-   - **Workspace name:** **synapseworkspace<inject key="DeploymentID" enableCopy="false"></inject>(3)**
-   - **Region:** Select Default region(4)
-   - **Select Data Lake Storage Gen2:** Select **From Subscription(5)**
-   - **Account name:** Select **asadatalake<inject key="DeploymentID" enableCopy="false"></inject>(6)**
-   - **File system name:** **defaultfs(7)**
-   - Click on **Next : Security>(8)**
+   - **Subscription:** Use **Existing Subscription (1)**.
+   - **Resource Group:** Use **openai-<inject key="DeploymentID" enableCopy="false"></inject> (2)**
+   - **Workspace name:** **synapseworkspace<inject key="DeploymentID" enableCopy="false"></inject> (3)**
+   - **Region:** Select Default region **(4)**
+   - **Select Data Lake Storage Gen2:** Select **From Subscription (5)**
+   - **Account name:** Select **asadatalake<inject key="DeploymentID" enableCopy="false"></inject> (6)**
+   - **File system name:** **defaultfs (7)**
+   - Click on **Next : Security > (8)**
 
-   ![](images/image(2).png)
+     ![](images/image(2).png)
 
-5. On the **Security** tab, ensure that the Authentication method is set to **Use both local and Microsoft Entra ID authentication** and click on **Next: Networking**.
+5. On the **Security** tab, ensure that the Authentication method is set to **Use both local and Microsoft Entra ID authentication** and click on **Next: Networking >**.
 
    ![](images/image(3).png)
 
-6. On the networking tab, make sure Managed virtual network is **Disable (1)** and **Allow connections from all IP addresses (2)** is checked, then click on **Review + create** and **Create** to deploy the resource.
+6. On the **Networking** tab, make sure Managed virtual network is **Disable (1)** and **Allow connections from all IP addresses (2)** is checked, then click on **Review + create** and **Create** to deploy the resource.
 
    ![](images/image(4).png)
 
@@ -208,15 +211,15 @@ You will be able to complete the following tasks:
 
    ![](images/image(5).png)
 
-8. Navigate to the synapse workspace which you have created, on the **Overview (1)** page, click on **Open (2)** under Open Synapse Studio to navigate to Azure Synapse Studio.
+8. On the **Overview (1)** page of the Synapse workspace you created, click on **Open (2)** under **Open Synapse Studio** to launch Azure Synapse Studio.
    
    ![](images/E1T2AS8.png)
 
-9. In the Azure Synapse Studio, navigate to **Manage > SQL pools** and then click on **+ New**.
+9. In Azure Synapse Studio, go to the **Manage (1)** section, select **SQL pools (2)**, and then click on **+ New (3)** to create a new SQL pool.
 
     ![](images/E1T2AS9.png)
 
-10. On the Basics tab of the New dedicated SQL pool, provide the following details:
+10. On the **Basics** tab of the New dedicated SQL pool, provide the following details:
 
     - Dedicated SQL pool name: **openaisql01**
 
@@ -224,7 +227,7 @@ You will be able to complete the following tasks:
 
     - Click on **Review + create**.
    
-    ![](images/E1T2AS10.png)
+      ![](images/E1T2AS10.png)
       
 11. On **Review + create** page, click on **Create** and wait for the deployment to complete.
 
@@ -232,35 +235,36 @@ You will be able to complete the following tasks:
 
     > **Note:** The deployment might take approximately 10 minutes to complete.
 
-12. Now navigate back to Azure portal, **synapseworkspace<inject key="DeploymentID" enableCopy="false"></inject>**, select **Apache Spark pools (1)** from left pane under Analytics pools and click on **+ New (2)**.
+12. Now navigate back to **synapseworkspace<inject key="DeploymentID" enableCopy="false"></inject>**, select **Apache Spark pools (1)** from the left pane under **Analytics pools**, and click on **+ New (2)** to create a new Spark pool.
 
     ![](images/E1T2AS12.png)  
 
-13. On the New Apache Spark pool page, provide the following details and click on **Review + create (6)**, then click on **Create** tab to create the Apache Spark pool.
+13. On the **New Apache Spark pool** page, provide the following details and click on **Review + create (6)**, then click on **Create** tab to create the Apache Spark pool.
 
     - Apache Spark pool name: **openaisparkpool (1)**
 
     - Isolated Compute: **Disabled (2)**
 
-    - Node size: **Small(4vCores/32GB) (3)**
+    - Node size: **Small (4vCores/32GB) (3)**
 
     - Autoscale: **Disabled (4)**
 
     - Number of nodes: **3 (5)**
 
-    ![](images/E1T2AS13.png)
+      ![](images/E1T2AS13.png)
    
-### **B. Create Target SQL Table**
+### B. Create Target SQL Table
 
-1. In the [Azure portal](https://portal.azure.com), navigate to **synapseworkspace<inject key="DeploymentID" enableCopy="false"/>** synapse workspace from **openai-<inject key="DeploymentID" enableCopy="false"/>** resource group. From the **Overview** tab, click on **Open** to launch the Synapse workspace.
+1. Navigate to **synapseworkspace<inject key="DeploymentID" enableCopy="false"/>** Synapse workspace from the **openai-<inject key="DeploymentID" enableCopy="false"/>** resource group. From the **Overview** tab, click on **Open** to launch the Synapse workspace.
 
       ![](images/image(9).png)
 
-1. Click into the **Develop (1)** section of the Synapse Studio, click the **+ (2)** sign in the top left, and select **SQL script (3)**. This will open a new window with a SQL script editor. 
+1. Click into the **Develop (1)** section of Synapse Studio, then click the **+ (2)** icon in the top left corner and select **SQL script (3)**. This will open a new window with the SQL script editor.
 
       ![](images/synapse3.png)
 
-1. Copy and paste the following script into the editor **(1)**, then change the **Connect to** value by selecting **openaisql01(2)** from the drop-down, and for **Use database**, ensure that **openaisql01(3)** is selected, and click the **Run (4)** button in the top-left corner, as shown in the picture below. Finish this step by pressing **Publish all (5)** just above the **Run** button to publish our work thus far.
+1. Copy and paste the following script into the editor **(1)**, then change the **Connect to** value by selecting **openaisql01 (2)** from the drop-down. For **Use database**, ensure that **openaisql01 (3)** is selected. Click the **Run (4)** button in the top-left corner to execute the script. Once done, click **Publish all (5)** just above the **Run** button to publish your work so far.
+
 
     ```SQL
     CREATE TABLE [dbo].[cs_detail]
@@ -279,75 +283,83 @@ You will be able to complete the following tasks:
 
    ![](images/E1T2BS4.png)
 
-### **C. Create Source and Target Linked Services**
+### C. Create Source and Target Linked Services
 
 We'll next need to create two linked services: one for our source (the JSON files in the Data Lake) and another for the Synapse SQL Database that houses the table we created in the previous step.
 
-1. Click back into the **Manage (1)** section of the Synapse Studio and click the **Linked services (2)** option under the **External connections** section. Then click **+ New (3)** in the top-left.
+1. Click back into the **Manage (1)** section of Synapse Studio and select **Linked services (2)** under the **External connections** section. Then, click **+ New (3)** in the top-left corner.
 
       ![](images/E1T2CS1.png)
    
-1. Start by creating the linked services for the source of our data, the JSON files housed in the ADLS Gen2 storage we created with our initial template. In the search bar that opens after you click New, search for **blob (1)**, select **Azure Blob Storage (2)** as depicted below, and click on **Continue (3)**.
+1. Start by creating the linked service for the data source the JSON files stored in the ADLS Gen2 storage account created using the initial template. Search for **blob (1)**, select **Azure Blob Storage (2)**, and click **Continue (3)**.
 
       ![](images/synapse6.png)
 
-1. Provide the name of your linked service as **openailinkedservice (1)**. Change the **Authentication Type** to **Account Key (2)**. Next, select the **subscription (3)** you are working with and finally select the storage account with **azfunctions (4)** as a suffix that you created in the starter template and uploaded the JSON files to. Then click **Test Connection (5)**. After the connection is successful, click the blue **Create (6)** button in the bottom left corner of the New Linked Service window.
+1. Provide the name of your linked service as **openailinkedservice (1)**. Change the **Authentication Type** to **Account Key (2)**. Next, select the **subscription (3)** you are working with and finally select the storage account with **azfunctions (4)** as a suffix that you created in the starter template and uploaded the JSON files to. Then click **Test connection (5)**. After the connection is successful, click the blue **Create (6)** button in the bottom left corner of the New Linked Service window.
 
       ![](images/img-6a.png)
 
-1. Click **+ New** in the top-left. Search for **Synapse (1)**, select **Azure Synapse Analytics (2)**, and click on **Continue (3)**.
+1. Click **+ New** again, search for **Synapse (1)**, select **Azure Synapse Analytics (2)**, and click **Continue (3)**.
 
       ![](images/synapse8.png)
 
-1. In the New linked service window that opens, fill in a name for your target linked service as **synapselinkedservice** **(1)**. Select **1.0 (2)** for the version. Select the **Azure subscription (3)** for which you have been working. Select the **synapseworkspace<inject key="DeploymentID" enableCopy="false"/> (4)** for **Server name** and **openaisql01 (5)** as the **Database name**. Be certain to change the **Authentication type** to **System-assigned managed identity (6)**, then scroll down and click on **Test connection (7)** and click **Create (8)**.
+4. In the New Linked Service window:
+
+   - Enter **synapselinkedservice (1)** as the name
+   - Set **Version** to **1.0 (2)**
+   - Choose your **Azure Subscription (3)**
+   - Select **synapseworkspace<inject key="DeploymentID" enableCopy="false"/> (4)** as the **Server name**
+   - Set **Database name** to **openaisql01 (5)**
+   - Change **Authentication type** to **System-assigned managed identity (6)**
+   - Then click **Test connection (7)** and finally click **Create (8)**.
 
       ![](images/E1T2CS5-1.png)
 
       ![](images/E1T2CS5-2.png)
 
-1. Once you have created the two linked services, be certain to press the **Publish all** button at the top to publish your work. Finalize the creation of the linked services and click **Publish**.
+1. After both linked services are created, click **Publish all** at the top of Synapse Studio and then click **Publish**.
 
       ![](images/publish-linked.png)
    
-### **D. Create Synapse Data Flow**
+### D. Create Synapse Data Flow
 
-While still within the Synapse Studio, we will now need to create a **Data flow** to ingest our JSON data and write it to our SQL database. For this workshop, this will be a very simple data flow that ingests the data, renames some columns, and writes it back out to the target table.
+While still within Synapse Studio, we will now create a **Data flow** to ingest JSON data and write it to the SQL database. This data flow will ingest the data, rename some columns, and write it to the target table.
 
-1. First, we'll want to go back to the **Develop (1)** tab, select **+ (2)**, and then **Data flow (3)**.
+1. Go to the **Develop (1)** tab, click the **+ (2)** icon, and select **Data flow (3)**.
 
       ![](images/synapse11.png)
    
-1. Once the data flow editor opens, click **Add Source**. A new window will open at the bottom of the screen. Select **+ New** on the **Dataset** row while leaving the other options as default.
+1. Once the data flow editor opens, click **Add Source**. A panel will appear at the bottom. Select **+ New** on the **Dataset** row, leaving other settings as default.
 
       ![](images/E1T2DS2.png)
 
-1. A new window should open on the right side of your screen. Next, search for **Azure Blob Storage (1)**, select **Azure Blob Storage (2)**, and then click on **Continue (3)**.
+1. In the panel on the right, search for **Azure Blob Storage (1)**, select **Azure Blob Storage (2)**, and click **Continue (3)**.
    
       ![](images/synapse13-1.png)
 
-1. Next, select the **JSON (1)** option as our incoming data is in JSON format and click **Continue (2)**.
+1. Choose the **JSON (1)** format for the dataset and click **Continue (2)**.
 
       ![](images/synapse14-1.png)
 
-1. Select the Linked Service with the name **openailinkedservice (1)** we just set up in the steps above. You will need to select the proper **File path** to select the directory where our JSON files are stored. It should be something to the effect of **workshop-data / cleansed_documents (2)**. Click on the **OK** button to close the window.
+1. Select the linked service named **openailinkedservice (1)** that was created earlier. Under **File path**, choose the directory **workshop-data / cleansed\_documents (2)** where the JSON files are stored, and click **OK**.
 
       ![](images/synapse15.png)
    
-1. Next, we'll need to move to the **Source options (1)** panel and drop down the **JSON settings (2)** options. We need to change the **Document form** option to the **Array of documents (3)** setting. This allows our flow to read each JSON file as a separate entry into our database.
+1. Go to the **Source options (1)** panel, expand **JSON settings (2)**, and set **Document form** to **Array of documents (3)**.
 
       ![](images/E1T2DS6.png)   
 
-1. Enable the toggle **data flow debug** session located at the top menu bar adjacent to the validate button, and click on **OK** on the *Turn on data flow debug* pop-up window.
+1. Enable the **Data flow debug** toggle from the top menu bar and click **OK** when the pop-up appears.
 
-      >**Note:** It will take a minute or two for the **data flow debug** session to get enabled.
+      >**Note:** It may take a minute or two for the debug session to initialize.
 
-1. Now, head to the **Data preview** tab and run a preview to check your work thus far.
+1. Navigate to the **Data preview** tab and run a preview to verify that data is loading correctly.
     
      ![](images/E1T2DS8.png)
       
       >**Note:** Click the collapse button in the left tab to clearly view the data preview option, making the preview easier to see.
       
-      >**Note:** If you're unable to view data under the Data Preview tab, please click on the Refresh button repeatedly until the data appears.
+      >**Note:** If the preview does not appear immediately, click the **Refresh** button repeatedly until the data loads..
    
 1. Next, we can add in our **Select** tile and do our minor alterations before writing the data out to the Synapse SQL table. To begin, click the small **+ (1)** sign next to our ingestion tile and choose the **Select (2)** option.
 
@@ -357,7 +369,12 @@ While still within the Synapse Studio, we will now need to create a **Data flow*
 
       ![](images/E1T2DS10.png)
 
-1. Once the **Sink (1)** tile opens, choose **Inline (2)** for the *Sink type*. Then select **Azure Synapse Analytics (3)** for the *Inline dataset type*, and for the **Linked service**, select **synapselinkedservice (4)**, which was created in the previous step. Ensure to run **Test connection (5)** for the linked service.
+1. In the **Sink (1)** add the below settings:
+
+    - Set **Sink type** to **Inline (2)**,
+    - Set **Inline dataset type** to **Azure Synapse Analytics (3)**.
+    - Select **synapselinkedservice (4)** as the **Linked service**.
+    - Click **Test connection (5)** to verify.
 
       ![](images/E1T2DS11.png)
 
@@ -365,11 +382,11 @@ While still within the Synapse Studio, we will now need to create a **Data flow*
 
       - Click on **Edit**.
 
-      ![](images/E1T2DS11-1.png)    
+        ![](images/E1T2DS11-1.png)    
 
       - In the Edit linked service window that opens, select the Azure selection method as **From Azure subscription** **(1)**. Select the **Azure subscription (2)** for which you have been working. Select the **synapseworkspace<inject key="DeploymentID" enableCopy="false"/> (3)** for **Server name** and **openaisql (4)** as the **Database name**, and then click on **Test connection (5)** and click **Save (6)**.
-
-      ![](images/E1T2DS11-2.png)
+      
+        ![](images/E1T2DS11-2.png)
 
 1. We will then need to head over to the **Settings (1)** tab and adjust the **Schema name** and **Table name**. If you utilized the script provided earlier to make the target table, the Schema name is **dbo (2)** and the Table name is **cs_detail (3)**.
 
@@ -385,23 +402,23 @@ While still within the Synapse Studio, we will now need to create a **Data flow*
     
     - **CustomerSentiment:** `sentiment` **(3)**
 
-    ![](images/E1T2DS14.png)
+      ![](images/E1T2DS14.png)
     
-1. If we return to our **Sink (1)** tile and under **Data preview (2)** click **Refresh (3)**, we will now see our expected 5 columns of output.
+1. Return to the **Sink (1)** tile, go to the **Data preview (2)** tab, and click **Refresh (3)** to verify all 5 columns appear correctly.
 
       ![](images/E1T2DS15.png)
 
-1. Once you have reviewed the data and are satisfied that all columns are mapped successfully (you should have 5 columns total, all showing data in a string format), we can press **Publish all** at the top to save our current configuration. A window will open on the right side of the screen; press the blue **Publish** button at the bottom left of it to save your changes.
+1. Once you're satisfied with the column mappings (ensure all 5 are present and formatted as strings), click **Publish all** at the top. In the confirmation panel that opens, click the blue **Publish** button to save your configuration.
 
       ![](images/E1T2DS16.png)
 
-1. Your completed and saved Data flow will look like the following:
+1. Your completed and saved data flow should resemble the structure shown below.
 
       ![](images/E1T2DS17.png)
 
-### **E. Create Synapse Pipeline**
+### E. Create Synapse Pipeline
 
-1. Once we have created our **Data flow**, we will need to set up a **Pipeline** to house it. To create a **Pipeline**, navigate to the left-hand menu bar and choose the **Integrate (1)** option. Then click the **+ (2)** at the top of the Integrate menu to **Add a new resource** and choose **Pipeline (3)**.
+1. After creating the **Data flow**, the next step is to configure a **Pipeline** to contain it. In Synapse Studio, go to the left-hand menu and select **Integrate (1)**. At the top of the page, click the **+ (2)** button and choose **Pipeline (3)** to create a new pipeline.
 
       ![](images/new-pipeline-1.png)
 
@@ -409,20 +426,19 @@ While still within the Synapse Studio, we will now need to create a **Data flow*
 
       ![](images/E1T2ES1.png)
 
-3. Under the **Settings (1)** tab of the **Data flow**, select the **Data flow (2)** drop-down menu and select the name of the data flow you created in the previous step. 
-Then expand the **Staging (3)** section at the bottom of the settings and utilize the drop-down menu for the **Staging linked service**. Choose the linked service you created **openailinkedservice (4)** to ensure the **Test connection (5)**. Next, set a **Staging storage folder** at the very bottom and enter **workshop-data/Staging** **(6)**.
+3. Under the **Settings (1)** tab of the **Data flow** activity, use the **Data flow (2)** dropdown to select the flow you created earlier. Expand the **Staging (3)** section and choose your linked service **openailinkedservice (4)**. Click **Test connection (5)** to verify. Then, specify the **Staging storage folder** as **workshop-data/Staging (6)**.
 
       ![](images/E1T2ES3.png)
 
-4. Then click **Publish all** to publish your changes and save your progress, and press the blue **Publish** button at the bottom left of it to save your changes.
+4. Click **Publish all** in the toolbar, and then confirm by selecting the **Publish** button at the bottom to save your pipeline configuration.
 
-### **F. Trigger Synapse Pipeline**
+### F. Trigger Synapse Pipeline
 
-1. Once you have successfully published your work, we need to trigger our pipeline. To do this, just below the tabs at the top of the studio, there is a *lightning bolt* icon that says **Add trigger (1)**. Click to add a trigger and select **Trigger now (2)** to begin a pipeline run, then when the window opens up, click on **OK**.
+1. Once the pipeline is published, you can trigger it by clicking the **Add trigger (1)** lightning bolt icon above the tabs. Select **Trigger now (2)** from the dropdown, then confirm the trigger in the popup by clicking **OK**.
 
       ![](images/E1T2FS1.png)
     
-2. To look at the pipeline run, navigate to the left-hand side of the screen and choose the **Monitor (1)** option. Then select the **Pipeline runs (2)** option in the **Integration** section. You will then see the pipeline run that you have triggered under the **Triggered (3)** section as **Pipeline 1 (4)**. This pipeline should take approximately 4 minutes (if you are using the uploaded data for the workshop).
+2. To monitor the pipeline run, navigate to the **Monitor (1)** section on the left. Under **Integration**, select **Pipeline runs (2)**. You’ll see the status of your pipeline execution under **Triggered (3)**, listed as **Pipeline 1 (4)**. The run typically completes in about 4 minutes.
 
       ![](images/E1T2FS2.png)
 
@@ -435,13 +451,13 @@ Then expand the **Staging (3)** section at the bottom of the settings and utiliz
 
 ## Task 3: Query Results in Our SQL Table
 
-1. Ensure that your pipeline run status has **Succeeded**.
+1. First, confirm that your pipeline run has **Succeeded**.
 
       ![](images/E1T3S1.png)
 
-2. Now that the data is in the target table, it is available for usage by running SQL queries against it or connecting Power BI and creating visualizations. Upload some of the transcript files to the generated_documents folder in your container and see how it creates a new file in the cleansed_documents folder.
+2. With the data now in the target SQL table, you can begin querying it or connecting it to Power BI for visualization. To explore the output, upload transcript files to the **generated\_documents** folder. You’ll observe new cleansed files appearing in the **cleansed\_documents** folder.
 
-3. To query the new data, navigate to the menu on the left-hand side, and choose **Develop (1)**. Click on the existing **SQL Script (2)** and replace the content with the **SQL Code (3)** below. Then select **openaisql01 (4)** pool **Run (5)**. 
+3. To run a query, open the **Develop (1)** tab and select the existing **SQL Script (2)**. Replace the existing code with the SQL below **(3)**. Choose **openaisql01 (4)** as the SQL pool and click **Run (5)**.
 
      ```SQL 
     SELECT sentiment, count(*) as "Sum of Sentiment"
@@ -451,13 +467,13 @@ Then expand the **Staging (3)** section at the bottom of the settings and utiliz
      ```
     ![](images/E1T3S3.png)
    
- 4. Your query results, if you are using the files uploaded as part of this repository or the workshop, you should see similar **Results (6)** to those below.
+4. Once executed, the query will display the sentiment analysis results. If you're using the sample files, you should see output similar to the example below **(6)**.
 
     ![](images/E1T3S4.png)         
 
 ## Summary
 
-In this lab, you have ingested the data into a Storage account, set up Synapse Workspace and produced Query Results in our SQL Table.
+In this lab, you successfully ingested data into a storage account, created a Synapse workspace, built a pipeline and data flow, and queried the results within a SQL table.
 
 ### You have successfully completed the lab. Click on **Next >>** to proceed with the next exercise.
 
