@@ -475,6 +475,6 @@ While still within Synapse Studio, we will now create a **Data flow** to ingest 
 
 In this lab, you successfully ingested data into a storage account, created a Synapse workspace, built a pipeline and data flow, and queried the results within a SQL table.
 
-### You have successfully completed the lab. Click on **Next >>** to proceed with the next exercise.
+### You have successfully completed the exercise. Click on **Next >>** to proceed with the next exercise.
 
 ![](images/next-page.png)

@@ -4,17 +4,17 @@
 
 In this Exercise, participants will develop an application using OpenAI's APIs and the Python programming language. The goal is to demonstrate how to implement AI functionalities such as language generation, sentiment analysis, or recommendation systems using Python, leveraging OpenAI's powerful models and tools.
 
-1. Navigate back to the **Azure Portal**. Search **Azure Synapse Analytics (1)** and select **Azure Synapse Analytics (2)** in the Azure portal.
+1. Navigate back to the **Azure Portal**, search for **Azure Synapse Analytics (1)**, and select it **(2)** from the results.
 
      ![](images/azure-syn.png)
 
-1. On **Azure Synapse Analytics** window select **synapseworkspace<inject key="DeploymentID" enableCopy="false"/>**.   
+2. In the **Azure Synapse Analytics** window, select **synapseworkspace<inject key="DeploymentID" enableCopy="false"/>**. 
 
-1. On the **Overview** blade under the **Getting started** section, click **Open** to open Synapse Studio.
+1. On the **Overview** page of the Synapse workspace you created, click on **Open** under **Open Synapse Studio** to launch Azure Synapse Studio.
      
      ![](../openai_batch_pipeline/images/image(9).png)
     
-1. Click on **Develop (1)**, then click on **+ (2)**, and select **Import (3)**.
+1. In Synapse Studio, click on **Develop (1)**, then click **+ (2)** and select **Import (3)**.
 
     ![](images/E3S4.png)
 
@@ -22,17 +22,17 @@ In this Exercise, participants will develop an application using OpenAI's APIs a
 
      ![](images/notebook.png)
 
-1. Click the **Collapse** icon to maximize the screen.
+1. Click the **Collapse** icon to maximize the workspace.
 
     ![](images/E3S6.png)
 
-1. Select **openaisparkpool** from the drop-down menu of **Attach to**.
+1. From the **Attach to** dropdown, select **openaisparkpool**.
 
     ![](images/E3S7.png)
 
-1. Click on the **▷ Run** button next to each cell, step-by-step, in the order mentioned below.
+1. Run each notebook cell sequentially by clicking the **Run (▷)** button next to each, following the steps below.
 
-1. Under **1. Install OpenAI**, click on the **Run** button next to the first cell. 
+1. Under **1. Install OpenAI**, click **Run** next to the first cell.
 
     ![](images/E3S9.png)
 
@@ -44,17 +44,17 @@ In this Exercise, participants will develop an application using OpenAI's APIs a
 
      ![](images/Ex3S10.png)
    
-1. From Azure Portal, navigate to the **openaicustom-<inject key="DeploymentID" enableCopy="false"/> (1)** resource group, and select the **openai-<inject key="DeploymentID" enableCopy="false"/> (2)** Azure OpenAI resource.
+1. From the Azure Portal, go to the **openaicustom-<inject key="DeploymentID" enableCopy="false"/> (1)** resource group and select the **openai-<inject key="DeploymentID" enableCopy="false"/> (2)** Azure OpenAI resource.
 
     ![](images/E3S11.png)
 
-1. Under Resource Management, select **Keys and Endpoint (1)**, and click **Show Keys (2)**. Copy **Key 1 (3)** and **Endpoint (4)**, and replace the **AZURE_OPENAI_API_KEY** and **AZURE_OPENAI_ENDPOINT** with your API key and Endpoint URL in the script.
+1. Under Resource Management, select **Keys and Endpoint (1)** under **Resource Management** section, and click **Show Keys (2)**. Copy **Key 1 (3)** and **Endpoint (4)**, and replace the **AZURE_OPENAI_API_KEY** and **AZURE_OPENAI_ENDPOINT** with your API key and Endpoint URL in the script.
 
    ![](images/E3S12.png)
      
     > **Note:** If you come across the error "OpenAI module not found," please follow these steps:
 
-     - Add * next to 0.* to initiate the installation of the latest OpenAI module.
+     - Add an asterisk (`*`) next to `0.` to initiate the installation of the latest OpenAI module.
 
      - Run the "Install OpenAI" cell. Once the installation is complete, re-run the notebook.
 
@@ -80,11 +80,11 @@ In this Exercise, participants will develop an application using OpenAI's APIs a
 
      ![](images/E3S17.png)
 
-1. After running the Notebook cells successfully, click on **Publish all**.
+1. After successfully executing all cells, click **Publish all**.
 
      ![](images/E3S18.png)
 
-1. Then click on **Publish** to save the changes. 
+1. Finally, click **Publish** to save all changes.
 
     ![](images/E3S19.png)
 
@@ -97,8 +97,8 @@ In this Exercise, participants will develop an application using OpenAI's APIs a
 
 ## Summary
 
-In this lab, you have successfully developed an application by implementing AI functionalities such as language generation, sentiment analysis, or recommendation systems using Python, leveraging OpenAI's powerful models and tools.
+In this exercise, you created and ran a Python-based notebook inside Azure Synapse Studio, integrating it with OpenAI to demonstrate capabilities such as language generation and sentiment analysis.
 
-### You have successfully completed the lab. Click on **Next >>** to proceed with the next exercise.
+### You have successfully completed the exercise. Click on **Next >>** to proceed with the next exercise.
 
 ![](images/next-page.png)
