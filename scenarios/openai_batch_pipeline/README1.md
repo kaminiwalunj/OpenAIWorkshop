@@ -14,6 +14,8 @@ You will be able to complete the following tasks:
 
 ## Task 1: Ingest Data to Storage account
 
+This task focuses on ingesting data into an Azure Storage Account. It involves uploading or transferring datasets to cloud storage in a structured and secure manner. The stored data will be used for further processing and analysis in the AI pipeline.
+
 ### A. Launch Azure Cloud Shell
 
 1. In the [Azure portal](https://portal.azure.com?azure-portal=true), select the **[>_]** (*Cloud Shell*) button at the top of the page to the right of the search box. A Cloud Shell pane will open at the bottom of the portal.
@@ -171,6 +173,8 @@ You will be able to complete the following tasks:
 <validation step="ef9a8088-8af2-426f-9672-70c0b0c227b5" />
 
 ## Task 2: Set up Synapse Workspace
+
+This task involves setting up an Azure Synapse Workspace to enable data integration, analysis, and pipeline creation. It includes configuring necessary resources, linking storage accounts, and preparing the workspace environment for running data workflows and AI operations.
 
 ### A. Set up Synapse Workspace
 
@@ -449,6 +453,8 @@ While still within Synapse Studio, we will now create a **Data flow** to ingest 
 <validation step="3e716f01-6da8-431e-aa81-4041b9054091" />
 
 ## Task 3: Query Results in Our SQL Table
+
+This task focuses on querying data stored in a SQL table within Azure Synapse. It involves writing and executing SQL queries to retrieve, filter, and analyze the ingested data for further processing or validation.
 
 1. First, confirm that your pipeline run has **Succeeded**.
 
