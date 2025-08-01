@@ -50,3 +50,5 @@ A token may be a word, part of a word, or just characters like punctuation. (e.g
 In this exercise, you are familiarized with OpenAI large language models (LLM), natural language processing (NLP), prompt, prompt engineering and tokens.
 
 ### You have successfully completed the Hands-on Lab.
+
+The lab offered a hands-on overview of building AI applications using Azure OpenAI. It covered pipeline creation in Synapse, app development with Power Apps and Python, and key concepts like prompt engineering, fine-tuning, and hyperparameters. Together, these modules provided a solid foundation for understanding and applying Azure OpenAI capabilities in real-world scenarios.
