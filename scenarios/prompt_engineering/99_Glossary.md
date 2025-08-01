@@ -51,4 +51,4 @@ In this exercise, you are familiarized with OpenAI large language models (LLM), 
 
 ### You have successfully completed the Hands-on Lab.
 
-The lab offered a hands-on overview of building AI applications using Azure OpenAI. It covered pipeline creation in Synapse, app development with Power Apps and Python, and key concepts like prompt engineering, fine-tuning, and hyperparameters. Together, these modules provided a solid foundation for understanding and applying Azure OpenAI capabilities in real-world scenarios.
+By completing the **Use Azure OpenAI like a Pro to Build Powerful AI Applications** Hands-on lab, a practical understanding of building AI-driven solutions using Azure OpenAI was developed. The lab covered pipeline creation in Synapse, application development with Power Apps and Python, and explored key concepts such as prompt engineering, fine-tuning, and hyperparameter tuning. These modules together offer a strong foundation for applying Azure OpenAI capabilities in real-world use cases.
